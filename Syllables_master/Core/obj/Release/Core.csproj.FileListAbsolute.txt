@@ -1,0 +1,4 @@
+C:\Users\BOSS\Desktop\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Core\bin\Release\Core.dll
+C:\Users\BOSS\Desktop\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Core\bin\Release\Core.pdb
+C:\Users\BOSS\Desktop\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Core\obj\Release\Core.dll
+C:\Users\BOSS\Desktop\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Core\obj\Release\Core.pdb

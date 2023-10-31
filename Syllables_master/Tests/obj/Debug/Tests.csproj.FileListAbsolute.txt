@@ -1,0 +1,20 @@
+D:\Other\+Syllables-master модифікований\Syllables-master\Tests\obj\Debug\Tests.csprojResolveAssemblyReference.cache
+D:\Other\+Syllables-master модифікований\Syllables-master\Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\Other\+Syllables-master модифікований\Syllables-master\Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\Other\+Syllables-master модифікований\Syllables-master\Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\Other\+Syllables-master модифікований\Syllables-master\Tests\bin\Debug\Tests.dll
+D:\Other\+Syllables-master модифікований\Syllables-master\Tests\bin\Debug\Tests.pdb
+D:\Other\+Syllables-master модифікований\Syllables-master\Tests\bin\Debug\Core.dll
+D:\Other\+Syllables-master модифікований\Syllables-master\Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+D:\Other\+Syllables-master модифікований\Syllables-master\Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+D:\Other\+Syllables-master модифікований\Syllables-master\Tests\bin\Debug\Sklady.exe
+D:\Other\+Syllables-master модифікований\Syllables-master\Tests\bin\Debug\Core.pdb
+D:\Other\+Syllables-master модифікований\Syllables-master\Tests\bin\Debug\Sklady.pdb
+D:\Other\+Syllables-master модифікований\Syllables-master\Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+D:\Other\+Syllables-master модифікований\Syllables-master\Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+D:\Other\+Syllables-master модифікований\Syllables-master\Tests\obj\Debug\Tests.dll
+D:\Other\+Syllables-master модифікований\Syllables-master\Tests\obj\Debug\Tests.pdb
+\\Mac\Home\Desktop\untitled folder\Syllables master\+programs\+Syllables-master3ãª 2019-20(05.2020debug!)\Tests\obj\Debug\Tests.csproj.AssemblyReference.cache
+\\Mac\Home\Desktop\untitled folder\Syllables master\+programs\+Syllables-master3ãª 2019-20(05.2020debug!)\Tests\obj\Debug\Tests.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\untitled folder\Syllables master\+programs\+Syllables-master3ãª 2019-20(05.2020debug!)\Tests\obj\Debug\Tests.dll
+\\Mac\Home\Desktop\untitled folder\Syllables master\+programs\+Syllables-master3ãª 2019-20(05.2020debug!)\Tests\obj\Debug\Tests.pdb

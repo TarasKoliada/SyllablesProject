@@ -1,0 +1,71 @@
+D:\Диплом\+Syllables-master\Syllables-master\Core\bin\Debug\Core.dll
+D:\Диплом\+Syllables-master\Syllables-master\Core\bin\Debug\Core.pdb
+D:\Диплом\+Syllables-master\Syllables-master\Core\obj\Debug\Core.csproj.CoreCompileInputs.cache
+D:\Диплом\+Syllables-master\Syllables-master\Core\obj\Debug\Core.dll
+D:\Диплом\+Syllables-master\Syllables-master\Core\obj\Debug\Core.pdb
+D:\Диплом\+Syllables-master – копія\Syllables-master\Core\bin\Debug\Core.dll
+D:\Диплом\+Syllables-master – копія\Syllables-master\Core\bin\Debug\Core.pdb
+D:\Диплом\+Syllables-master – копія\Syllables-master\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+D:\Диплом\+Syllables-master – копія\Syllables-master\Core\obj\Debug\Core.csproj.CoreCompileInputs.cache
+D:\Диплом\+Syllables-master – копія\Syllables-master\Core\obj\Debug\Core.dll
+D:\Диплом\+Syllables-master – копія\Syllables-master\Core\obj\Debug\Core.pdb
+D:\Диплом\Консонант модифікований\+Syllables-master модифікований\Syllables-master\Core\bin\Debug\Core.dll
+D:\Диплом\Консонант модифікований\+Syllables-master модифікований\Syllables-master\Core\bin\Debug\Core.pdb
+D:\Диплом\Консонант модифікований\+Syllables-master модифікований\Syllables-master\Core\obj\Debug\Core.csprojAssemblyReference.cache
+D:\Диплом\Консонант модифікований\+Syllables-master модифікований\Syllables-master\Core\obj\Debug\Core.csproj.CoreCompileInputs.cache
+D:\Диплом\Консонант модифікований\+Syllables-master модифікований\Syllables-master\Core\obj\Debug\Core.dll
+D:\Диплом\Консонант модифікований\+Syllables-master модифікований\Syllables-master\Core\obj\Debug\Core.pdb
+D:\322\5555555555555\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+D:\322\5555555555555\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Core\obj\Debug\Core.dll
+D:\322\5555555555555\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Core\obj\Debug\Core.pdb
+D:\322\5555555555555\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Core\bin\Debug\Core.dll
+D:\322\5555555555555\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Core\bin\Debug\Core.pdb
+D:\franko\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Core\bin\Debug\Core.dll
+D:\franko\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Core\bin\Debug\Core.pdb
+D:\franko\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+D:\franko\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Core\obj\Debug\Core.dll
+D:\franko\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Core\obj\Debug\Core.pdb
+C:\Users\BOSS\Desktop\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Core\bin\Debug\Core.dll
+C:\Users\BOSS\Desktop\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Core\bin\Debug\Core.pdb
+C:\Users\BOSS\Desktop\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+C:\Users\BOSS\Desktop\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Core\obj\Debug\Core.dll
+C:\Users\BOSS\Desktop\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Core\obj\Debug\Core.pdb
+E:\+Syllables-master модифікований\Syllables-master\Core\bin\Debug\Core.dll
+E:\+Syllables-master модифікований\Syllables-master\Core\bin\Debug\Core.pdb
+E:\+Syllables-master модифікований\Syllables-master\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+E:\+Syllables-master модифікований\Syllables-master\Core\obj\Debug\Core.dll
+E:\+Syllables-master модифікований\Syllables-master\Core\obj\Debug\Core.pdb
+D:\Other\+Syllables-master модифікований\Syllables-master\Core\bin\Debug\Core.dll
+D:\Other\+Syllables-master модифікований\Syllables-master\Core\bin\Debug\Core.pdb
+D:\Other\+Syllables-master модифікований\Syllables-master\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+D:\Other\+Syllables-master модифікований\Syllables-master\Core\obj\Debug\Core.dll
+D:\Other\+Syllables-master модифікований\Syllables-master\Core\obj\Debug\Core.pdb
+C:\Users\Boss\Desktop\Syllables-master\Core\bin\Debug\Core.dll
+C:\Users\Boss\Desktop\Syllables-master\Core\bin\Debug\Core.pdb
+C:\Users\Boss\Desktop\Syllables-master\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+C:\Users\Boss\Desktop\Syllables-master\Core\obj\Debug\Core.dll
+C:\Users\Boss\Desktop\Syllables-master\Core\obj\Debug\Core.pdb
+\\Mac\Home\Desktop\untitled folder\Syllables master\+programs\+Syllables-master3ãª 2019-20(05.2020debug!)\Core\bin\Debug\Core.dll
+\\Mac\Home\Desktop\untitled folder\Syllables master\+programs\+Syllables-master3ãª 2019-20(05.2020debug!)\Core\bin\Debug\Core.pdb
+\\Mac\Home\Desktop\untitled folder\Syllables master\+programs\+Syllables-master3ãª 2019-20(05.2020debug!)\Core\obj\Debug\Core.csproj.AssemblyReference.cache
+\\Mac\Home\Desktop\untitled folder\Syllables master\+programs\+Syllables-master3ãª 2019-20(05.2020debug!)\Core\obj\Debug\Core.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\untitled folder\Syllables master\+programs\+Syllables-master3ãª 2019-20(05.2020debug!)\Core\obj\Debug\Core.dll
+\\Mac\Home\Desktop\untitled folder\Syllables master\+programs\+Syllables-master3ãª 2019-20(05.2020debug!)\Core\obj\Debug\Core.pdb
+\\Mac\Home\Desktop\untitled folder\Syllables master\programs\Syllables_master\Core\bin\Debug\Core.dll
+\\Mac\Home\Desktop\untitled folder\Syllables master\programs\Syllables_master\Core\bin\Debug\Core.pdb
+\\Mac\Home\Desktop\untitled folder\Syllables master\programs\Syllables_master\Core\obj\Debug\Core.csproj.AssemblyReference.cache
+\\Mac\Home\Desktop\untitled folder\Syllables master\programs\Syllables_master\Core\obj\Debug\Core.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\untitled folder\Syllables master\programs\Syllables_master\Core\obj\Debug\Core.dll
+\\Mac\Home\Desktop\untitled folder\Syllables master\programs\Syllables_master\Core\obj\Debug\Core.pdb
+D:\Laboratories\Курсові\Курсова 3 курс 2 семестр\Syllables_master\Core\bin\Debug\Core.dll
+D:\Laboratories\Курсові\Курсова 3 курс 2 семестр\Syllables_master\Core\bin\Debug\Core.pdb
+D:\Laboratories\Курсові\Курсова 3 курс 2 семестр\Syllables_master\Core\obj\Debug\Core.csproj.AssemblyReference.cache
+D:\Laboratories\Курсові\Курсова 3 курс 2 семестр\Syllables_master\Core\obj\Debug\Core.csproj.CoreCompileInputs.cache
+D:\Laboratories\Курсові\Курсова 3 курс 2 семестр\Syllables_master\Core\obj\Debug\Core.dll
+D:\Laboratories\Курсові\Курсова 3 курс 2 семестр\Syllables_master\Core\obj\Debug\Core.pdb
+C:\Coding\C#\SyllablesProject\Syllables_master\Core\bin\Debug\Core.dll
+C:\Coding\C#\SyllablesProject\Syllables_master\Core\bin\Debug\Core.pdb
+C:\Coding\C#\SyllablesProject\Syllables_master\Core\obj\Debug\Core.csproj.AssemblyReference.cache
+C:\Coding\C#\SyllablesProject\Syllables_master\Core\obj\Debug\Core.csproj.CoreCompileInputs.cache
+C:\Coding\C#\SyllablesProject\Syllables_master\Core\obj\Debug\Core.dll
+C:\Coding\C#\SyllablesProject\Syllables_master\Core\obj\Debug\Core.pdb

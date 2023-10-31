@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Sklady.Export.ExportResults">
+    <Position X="19.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Export\ExportResults.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sklady.Export.FileExportResults">
+    <Position X="19.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAEAQAAAAAAAAAAABABAA=</HashCode>
+      <FileName>Export\FileExportResults.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sklady.Export.ResultsExporter" Collapsed="true">
+    <Position X="10.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAJAAAgAAAAYQAAAABAIAAAAQAwAAAAAA=</HashCode>
+      <FileName>Export\ResultsExporter.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_charsTable" />
+      <Field Name="_statisticsTableGenerator" />
+      <Field Name="_settings" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Sklady.Export.StatisticsCalculator">
+    <Position X="9.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAASBAAAAAAAAAAAgAAgAAAAAAA=</HashCode>
+      <FileName>Export\StatisticsCalculator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sklady.Export.StatisticsTableGenerator">
+    <Position X="11.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAIAIgAgAQCABAAAABAAABCAAAAgAAACggAAA=</HashCode>
+      <FileName>Export\StatisticsTableGenerator.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_statisticsCalculator" />
+      <Field Name="_charactersTable" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Sklady.AnalyzeResults">
+    <Position X="11.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>Helpers\Models\AnalyzeResults.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sklady.Character">
+    <Position X="11.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAABAAABABAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\Models\Character.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sklady.InputFileModel">
+    <Position X="19.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACABAAAA=</HashCode>
+      <FileName>Helpers\Models\InputFileModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sklady.CharactersTable">
+    <Position X="14" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIEAAAAAAAQAFBMAAAABADAEAAACQAAYAgAAAEAAAA=</HashCode>
+      <FileName>TextProcessors\CharactersPowerTable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sklady.TextAnalyzer">
+    <Position X="18" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CgAIACBAAAEAAABAAAACAAAABACABwCIACBABABAAAA=</HashCode>
+      <FileName>TextProcessors\TextAnalyzer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_phoneticProcessor" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Sklady.WordAnalyzer">
+    <Position X="14" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAABAAAAAAAAAAACAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>TextProcessors\WordAnalyzer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="table" />
+      <Field Name="settings" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Sklady.Models.FileProcessingResult">
+    <Position X="9.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgIAACAAAAAAAAAAAAAQCKAAQAAgAAAAAAAEBABAIAA=</HashCode>
+      <FileName>Helpers\Models\FileProcessingResult.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="exporter" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Sklady.Models.Settings">
+    <Position X="16" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAQABBCAAAAAAgAAAAAAAAAAAAGAAAAAAICAAACAA=</HashCode>
+      <FileName>Helpers\Models\Settings.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Language" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Sklady.TextProcessors.AncientPhoneticProcessor">
+    <Position X="13" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAACAAAAABAAAggAAAEAAAAAAIAKAAAAAAAAAAAA=</HashCode>
+      <FileName>TextProcessors\AncientPhoneticProcessor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sklady.TextProcessors.PhoneticProcessorBase">
+    <Position X="16" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAQAAAAAAAAAAgIAIEAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>TextProcessors\PhoneticProcessor.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="CharactersTable" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Sklady.TextProcessors.RussianPhoneticProcessor">
+    <Position X="14.75" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAIAAAAgAAAEAAAAAAACCAAAAAAAAAAAA=</HashCode>
+      <FileName>TextProcessors\RussianPhoneticProcessor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sklady.TextProcessors.UkrainePhoneticProcessor">
+    <Position X="16.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACgABACAAAAAIAAAggACAEAAAAAAIACAQAIAAAAAAAA=</HashCode>
+      <FileName>TextProcessors\UkrainePhoneticProcessor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sklady.TextProcessors.EnglishPhoneticProcessor">
+    <Position X="18.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACgABACAAAAAIAAAggACAEAAAAAAIACAQAIAAAAAAAA=</HashCode>
+      <FileName>TextProcessors\EnglishPhoneticProcessor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sklady.TextProcessors.BulgraianProneticProcessor" Collapsed="true">
+    <Position X="21.75" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TextProcessors\BulgarianPhoneticProcessor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sklady.TextProcessors.PolishPhoneticProcessor">
+    <Position X="20" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACgABACAAAAAIAAAggACAEAAAAAAIACAQAIAAAAAAAA=</HashCode>
+      <FileName>TextProcessors\PolishPhoneticProcessor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Sklady.Languages" Collapsed="true">
+    <Position X="16" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAKAAAAAAAAAAAAABIAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>Helpers\Models\Languages.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Core.Models.Table">
+    <Position X="18" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\Models\Table.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

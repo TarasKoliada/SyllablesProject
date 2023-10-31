@@ -1,0 +1,253 @@
+D:\Диплом\+Syllables-master\Syllables-master\Sklady\bin\Debug\Sklady.exe.config
+D:\Диплом\+Syllables-master\Syllables-master\Sklady\bin\Debug\Sklady.exe.manifest
+D:\Диплом\+Syllables-master\Syllables-master\Sklady\bin\Debug\Sklady.application
+D:\Диплом\+Syllables-master\Syllables-master\Sklady\bin\Debug\Sklady.exe
+D:\Диплом\+Syllables-master\Syllables-master\Sklady\bin\Debug\Sklady.pdb
+D:\Диплом\+Syllables-master\Syllables-master\Sklady\bin\Debug\Core.dll
+D:\Диплом\+Syllables-master\Syllables-master\Sklady\bin\Debug\Core.pdb
+D:\Диплом\+Syllables-master\Syllables-master\Sklady\obj\Debug\Sklady.csprojResolveAssemblyReference.cache
+D:\Диплом\+Syllables-master\Syllables-master\Sklady\obj\Debug\Sklady.CharactersBase.resources
+D:\Диплом\+Syllables-master\Syllables-master\Sklady\obj\Debug\Sklady.Form1.resources
+D:\Диплом\+Syllables-master\Syllables-master\Sklady\obj\Debug\Sklady.MainView.resources
+D:\Диплом\+Syllables-master\Syllables-master\Sklady\obj\Debug\Sklady.Properties.Resources.resources
+D:\Диплом\+Syllables-master\Syllables-master\Sklady\obj\Debug\Sklady.SettingsForm.resources
+D:\Диплом\+Syllables-master\Syllables-master\Sklady\obj\Debug\Sklady.TestView.resources
+D:\Диплом\+Syllables-master\Syllables-master\Sklady\obj\Debug\Sklady.csproj.GenerateResource.Cache
+D:\Диплом\+Syllables-master\Syllables-master\Sklady\obj\Debug\Sklady.csproj.CoreCompileInputs.cache
+D:\Диплом\+Syllables-master\Syllables-master\Sklady\obj\Debug\Sklady.TrustInfo.xml
+D:\Диплом\+Syllables-master\Syllables-master\Sklady\obj\Debug\Sklady.exe.manifest
+D:\Диплом\+Syllables-master\Syllables-master\Sklady\obj\Debug\Sklady.application
+D:\Диплом\+Syllables-master\Syllables-master\Sklady\obj\Debug\Sklady.exe
+D:\Диплом\+Syllables-master\Syllables-master\Sklady\obj\Debug\Sklady.pdb
+D:\Диплом\+Syllables-master – копія\Syllables-master\Sklady\bin\Debug\Sklady.exe.config
+D:\Диплом\+Syllables-master – копія\Syllables-master\Sklady\bin\Debug\Sklady.exe.manifest
+D:\Диплом\+Syllables-master – копія\Syllables-master\Sklady\bin\Debug\Sklady.application
+D:\Диплом\+Syllables-master – копія\Syllables-master\Sklady\bin\Debug\Sklady.exe
+D:\Диплом\+Syllables-master – копія\Syllables-master\Sklady\bin\Debug\Sklady.pdb
+D:\Диплом\+Syllables-master – копія\Syllables-master\Sklady\bin\Debug\Core.dll
+D:\Диплом\+Syllables-master – копія\Syllables-master\Sklady\bin\Debug\Core.pdb
+D:\Диплом\+Syllables-master – копія\Syllables-master\Sklady\obj\Debug\Sklady.csprojResolveAssemblyReference.cache
+D:\Диплом\+Syllables-master – копія\Syllables-master\Sklady\obj\Debug\Sklady.CharactersBase.resources
+D:\Диплом\+Syllables-master – копія\Syllables-master\Sklady\obj\Debug\Sklady.Form1.resources
+D:\Диплом\+Syllables-master – копія\Syllables-master\Sklady\obj\Debug\Sklady.MainView.resources
+D:\Диплом\+Syllables-master – копія\Syllables-master\Sklady\obj\Debug\Sklady.Properties.Resources.resources
+D:\Диплом\+Syllables-master – копія\Syllables-master\Sklady\obj\Debug\Sklady.SettingsForm.resources
+D:\Диплом\+Syllables-master – копія\Syllables-master\Sklady\obj\Debug\Sklady.TestView.resources
+D:\Диплом\+Syllables-master – копія\Syllables-master\Sklady\obj\Debug\Sklady.csproj.GenerateResource.Cache
+D:\Диплом\+Syllables-master – копія\Syllables-master\Sklady\obj\Debug\Sklady.csproj.CoreCompileInputs.cache
+D:\Диплом\+Syllables-master – копія\Syllables-master\Sklady\obj\Debug\Sklady.TrustInfo.xml
+D:\Диплом\+Syllables-master – копія\Syllables-master\Sklady\obj\Debug\Sklady.exe.manifest
+D:\Диплом\+Syllables-master – копія\Syllables-master\Sklady\obj\Debug\Sklady.application
+D:\Диплом\+Syllables-master – копія\Syllables-master\Sklady\obj\Debug\Sklady.exe
+D:\Диплом\+Syllables-master – копія\Syllables-master\Sklady\obj\Debug\Sklady.pdb
+D:\Диплом\Консонант модифікований\+Syllables-master модифікований\Syllables-master\Sklady\bin\Debug\Sklady.exe.config
+D:\Диплом\Консонант модифікований\+Syllables-master модифікований\Syllables-master\Sklady\bin\Debug\Sklady.exe.manifest
+D:\Диплом\Консонант модифікований\+Syllables-master модифікований\Syllables-master\Sklady\bin\Debug\Sklady.application
+D:\Диплом\Консонант модифікований\+Syllables-master модифікований\Syllables-master\Sklady\bin\Debug\Sklady.exe
+D:\Диплом\Консонант модифікований\+Syllables-master модифікований\Syllables-master\Sklady\bin\Debug\Sklady.pdb
+D:\Диплом\Консонант модифікований\+Syllables-master модифікований\Syllables-master\Sklady\bin\Debug\Core.dll
+D:\Диплом\Консонант модифікований\+Syllables-master модифікований\Syllables-master\Sklady\bin\Debug\Core.pdb
+D:\Диплом\Консонант модифікований\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.csprojAssemblyReference.cache
+D:\Диплом\Консонант модифікований\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.CharactersBase.resources
+D:\Диплом\Консонант модифікований\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.Form1.resources
+D:\Диплом\Консонант модифікований\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.MainView.resources
+D:\Диплом\Консонант модифікований\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.Properties.Resources.resources
+D:\Диплом\Консонант модифікований\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.SettingsForm.resources
+D:\Диплом\Консонант модифікований\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.TestView.resources
+D:\Диплом\Консонант модифікований\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.csproj.GenerateResource.cache
+D:\Диплом\Консонант модифікований\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.csproj.CoreCompileInputs.cache
+D:\Диплом\Консонант модифікований\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.TrustInfo.xml
+D:\Диплом\Консонант модифікований\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.exe.manifest
+D:\Диплом\Консонант модифікований\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.application
+D:\Диплом\Консонант модифікований\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.csproj.CopyComplete
+D:\Диплом\Консонант модифікований\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.exe
+D:\Диплом\Консонант модифікований\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.pdb
+D:\322\5555555555555\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\bin\Debug\Sklady.exe.config
+D:\322\5555555555555\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.exe
+D:\322\5555555555555\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.pdb
+D:\322\5555555555555\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\bin\Debug\Sklady.exe.manifest
+D:\322\5555555555555\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\bin\Debug\Sklady.application
+D:\322\5555555555555\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\bin\Debug\Sklady.exe
+D:\322\5555555555555\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\bin\Debug\Sklady.pdb
+D:\322\5555555555555\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\bin\Debug\Core.dll
+D:\322\5555555555555\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\bin\Debug\Core.pdb
+D:\322\5555555555555\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.csprojResolveAssemblyReference.cache
+D:\322\5555555555555\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.CharactersBase.resources
+D:\322\5555555555555\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.Form1.resources
+D:\322\5555555555555\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.MainView.resources
+D:\322\5555555555555\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.Properties.Resources.resources
+D:\322\5555555555555\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.SettingsForm.resources
+D:\322\5555555555555\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.TestView.resources
+D:\322\5555555555555\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.csproj.GenerateResource.Cache
+D:\322\5555555555555\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.TrustInfo.xml
+D:\322\5555555555555\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.exe.manifest
+D:\322\5555555555555\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.application
+D:\franko\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\bin\Debug\Sklady.exe.config
+D:\franko\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.exe
+D:\franko\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.pdb
+D:\franko\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\bin\Debug\Sklady.exe.manifest
+D:\franko\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\bin\Debug\Sklady.application
+D:\franko\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\bin\Debug\Sklady.exe
+D:\franko\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\bin\Debug\Sklady.pdb
+D:\franko\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\bin\Debug\Core.dll
+D:\franko\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\bin\Debug\Core.pdb
+D:\franko\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.csprojResolveAssemblyReference.cache
+D:\franko\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.CharactersBase.resources
+D:\franko\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.Form1.resources
+D:\franko\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.MainView.resources
+D:\franko\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.Properties.Resources.resources
+D:\franko\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.SettingsForm.resources
+D:\franko\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.TestView.resources
+D:\franko\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.csproj.GenerateResource.Cache
+D:\franko\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.TrustInfo.xml
+D:\franko\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.exe.manifest
+D:\franko\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.application
+C:\Users\BOSS\Desktop\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\bin\Debug\Sklady.exe.config
+C:\Users\BOSS\Desktop\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.exe
+C:\Users\BOSS\Desktop\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.pdb
+C:\Users\BOSS\Desktop\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\bin\Debug\Sklady.exe.manifest
+C:\Users\BOSS\Desktop\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\bin\Debug\Sklady.application
+C:\Users\BOSS\Desktop\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\bin\Debug\Sklady.exe
+C:\Users\BOSS\Desktop\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\bin\Debug\Sklady.pdb
+C:\Users\BOSS\Desktop\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\bin\Debug\Core.dll
+C:\Users\BOSS\Desktop\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\bin\Debug\Core.pdb
+C:\Users\BOSS\Desktop\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.csprojResolveAssemblyReference.cache
+C:\Users\BOSS\Desktop\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.CharactersBase.resources
+C:\Users\BOSS\Desktop\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.Form1.resources
+C:\Users\BOSS\Desktop\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.MainView.resources
+C:\Users\BOSS\Desktop\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.Properties.Resources.resources
+C:\Users\BOSS\Desktop\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.SettingsForm.resources
+C:\Users\BOSS\Desktop\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.TestView.resources
+C:\Users\BOSS\Desktop\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.csproj.GenerateResource.Cache
+C:\Users\BOSS\Desktop\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.TrustInfo.xml
+C:\Users\BOSS\Desktop\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.exe.manifest
+C:\Users\BOSS\Desktop\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.application
+E:\+Syllables-master модифікований\Syllables-master\Sklady\bin\Debug\Sklady.exe.config
+E:\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.exe
+E:\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.pdb
+E:\+Syllables-master модифікований\Syllables-master\Sklady\bin\Debug\Sklady.exe.manifest
+E:\+Syllables-master модифікований\Syllables-master\Sklady\bin\Debug\Sklady.application
+E:\+Syllables-master модифікований\Syllables-master\Sklady\bin\Debug\Sklady.exe
+E:\+Syllables-master модифікований\Syllables-master\Sklady\bin\Debug\Sklady.pdb
+E:\+Syllables-master модифікований\Syllables-master\Sklady\bin\Debug\Core.dll
+E:\+Syllables-master модифікований\Syllables-master\Sklady\bin\Debug\Core.pdb
+E:\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.csprojResolveAssemblyReference.cache
+E:\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.CharactersBase.resources
+E:\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.Form1.resources
+E:\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.MainView.resources
+E:\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.Properties.Resources.resources
+E:\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.SettingsForm.resources
+E:\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.TestView.resources
+E:\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.csproj.GenerateResource.Cache
+E:\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.TrustInfo.xml
+E:\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.exe.manifest
+E:\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.application
+D:\Other\+Syllables-master модифікований\Syllables-master\Sklady\bin\Debug\Sklady.exe.config
+D:\Other\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.exe
+D:\Other\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.pdb
+D:\Other\+Syllables-master модифікований\Syllables-master\Sklady\bin\Debug\Sklady.exe.manifest
+D:\Other\+Syllables-master модифікований\Syllables-master\Sklady\bin\Debug\Sklady.application
+D:\Other\+Syllables-master модифікований\Syllables-master\Sklady\bin\Debug\Sklady.exe
+D:\Other\+Syllables-master модифікований\Syllables-master\Sklady\bin\Debug\Sklady.pdb
+D:\Other\+Syllables-master модифікований\Syllables-master\Sklady\bin\Debug\Core.dll
+D:\Other\+Syllables-master модифікований\Syllables-master\Sklady\bin\Debug\Core.pdb
+D:\Other\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.csprojResolveAssemblyReference.cache
+D:\Other\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.CharactersBase.resources
+D:\Other\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.Form1.resources
+D:\Other\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.MainView.resources
+D:\Other\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.Properties.Resources.resources
+D:\Other\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.SettingsForm.resources
+D:\Other\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.TestView.resources
+D:\Other\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.csproj.GenerateResource.Cache
+D:\Other\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.TrustInfo.xml
+D:\Other\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.exe.manifest
+D:\Other\+Syllables-master модифікований\Syllables-master\Sklady\obj\Debug\Sklady.application
+C:\Users\Boss\Desktop\Syllables-master\Sklady\bin\Debug\Sklady.exe.config
+C:\Users\Boss\Desktop\Syllables-master\Sklady\obj\Debug\Sklady.exe
+C:\Users\Boss\Desktop\Syllables-master\Sklady\obj\Debug\Sklady.pdb
+C:\Users\Boss\Desktop\Syllables-master\Sklady\bin\Debug\Sklady.exe.manifest
+C:\Users\Boss\Desktop\Syllables-master\Sklady\bin\Debug\Sklady.application
+C:\Users\Boss\Desktop\Syllables-master\Sklady\bin\Debug\Sklady.exe
+C:\Users\Boss\Desktop\Syllables-master\Sklady\bin\Debug\Sklady.pdb
+C:\Users\Boss\Desktop\Syllables-master\Sklady\bin\Debug\Core.dll
+C:\Users\Boss\Desktop\Syllables-master\Sklady\bin\Debug\Core.pdb
+C:\Users\Boss\Desktop\Syllables-master\Sklady\obj\Debug\Sklady.csprojResolveAssemblyReference.cache
+C:\Users\Boss\Desktop\Syllables-master\Sklady\obj\Debug\Sklady.CharactersBase.resources
+C:\Users\Boss\Desktop\Syllables-master\Sklady\obj\Debug\Sklady.Form1.resources
+C:\Users\Boss\Desktop\Syllables-master\Sklady\obj\Debug\Sklady.MainView.resources
+C:\Users\Boss\Desktop\Syllables-master\Sklady\obj\Debug\Sklady.Properties.Resources.resources
+C:\Users\Boss\Desktop\Syllables-master\Sklady\obj\Debug\Sklady.SettingsForm.resources
+C:\Users\Boss\Desktop\Syllables-master\Sklady\obj\Debug\Sklady.TestView.resources
+C:\Users\Boss\Desktop\Syllables-master\Sklady\obj\Debug\Sklady.csproj.GenerateResource.Cache
+C:\Users\Boss\Desktop\Syllables-master\Sklady\obj\Debug\Sklady.TrustInfo.xml
+C:\Users\Boss\Desktop\Syllables-master\Sklady\obj\Debug\Sklady.exe.manifest
+C:\Users\Boss\Desktop\Syllables-master\Sklady\obj\Debug\Sklady.application
+\\Mac\Home\Desktop\untitled folder\Syllables master\+programs\+Syllables-master3ãª 2019-20(05.2020debug!)\Sklady\obj\Debug\Sklady.exe
+\\Mac\Home\Desktop\untitled folder\Syllables master\+programs\+Syllables-master3ãª 2019-20(05.2020debug!)\Sklady\obj\Debug\Sklady.pdb
+\\Mac\Home\Desktop\untitled folder\Syllables master\programs\Syllables_master\Sklady\bin\Debug\Sklady.exe.config
+\\Mac\Home\Desktop\untitled folder\Syllables master\programs\Syllables_master\Sklady\bin\Debug\Sklady.exe.manifest
+\\Mac\Home\Desktop\untitled folder\Syllables master\programs\Syllables_master\Sklady\bin\Debug\Sklady.application
+\\Mac\Home\Desktop\untitled folder\Syllables master\programs\Syllables_master\Sklady\bin\Debug\Sklady.exe
+\\Mac\Home\Desktop\untitled folder\Syllables master\programs\Syllables_master\Sklady\bin\Debug\Sklady.pdb
+\\Mac\Home\Desktop\untitled folder\Syllables master\programs\Syllables_master\Sklady\bin\Debug\Core.dll
+\\Mac\Home\Desktop\untitled folder\Syllables master\programs\Syllables_master\Sklady\bin\Debug\Core.pdb
+\\Mac\Home\Desktop\untitled folder\Syllables master\programs\Syllables_master\Sklady\obj\Debug\Sklady.csproj.AssemblyReference.cache
+\\Mac\Home\Desktop\untitled folder\Syllables master\programs\Syllables_master\Sklady\obj\Debug\Sklady.csproj.SuggestedBindingRedirects.cache
+\\Mac\Home\Desktop\untitled folder\Syllables master\programs\Syllables_master\Sklady\obj\Debug\Sklady.CharactersBase.resources
+\\Mac\Home\Desktop\untitled folder\Syllables master\programs\Syllables_master\Sklady\obj\Debug\Sklady.Form1.resources
+\\Mac\Home\Desktop\untitled folder\Syllables master\programs\Syllables_master\Sklady\obj\Debug\Sklady.MainView.resources
+\\Mac\Home\Desktop\untitled folder\Syllables master\programs\Syllables_master\Sklady\obj\Debug\Sklady.Properties.Resources.resources
+\\Mac\Home\Desktop\untitled folder\Syllables master\programs\Syllables_master\Sklady\obj\Debug\Sklady.SettingsForm.resources
+\\Mac\Home\Desktop\untitled folder\Syllables master\programs\Syllables_master\Sklady\obj\Debug\Sklady.TestView.resources
+\\Mac\Home\Desktop\untitled folder\Syllables master\programs\Syllables_master\Sklady\obj\Debug\Sklady.csproj.GenerateResource.cache
+\\Mac\Home\Desktop\untitled folder\Syllables master\programs\Syllables_master\Sklady\obj\Debug\Sklady.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\untitled folder\Syllables master\programs\Syllables_master\Sklady\obj\Debug\Sklady.TrustInfo.xml
+\\Mac\Home\Desktop\untitled folder\Syllables master\programs\Syllables_master\Sklady\obj\Debug\Sklady.exe.manifest
+\\Mac\Home\Desktop\untitled folder\Syllables master\programs\Syllables_master\Sklady\obj\Debug\Sklady.application
+\\Mac\Home\Desktop\untitled folder\Syllables master\programs\Syllables_master\Sklady\obj\Debug\Sklady.csproj.CopyComplete
+\\Mac\Home\Desktop\untitled folder\Syllables master\programs\Syllables_master\Sklady\obj\Debug\Sklady.exe
+\\Mac\Home\Desktop\untitled folder\Syllables master\programs\Syllables_master\Sklady\obj\Debug\Sklady.pdb
+D:\Laboratories\Курсові\Курсова 3 курс 2 семестр\Syllables_master\Sklady\bin\Debug\Sklady.exe.config
+D:\Laboratories\Курсові\Курсова 3 курс 2 семестр\Syllables_master\Sklady\bin\Debug\Sklady.exe.manifest
+D:\Laboratories\Курсові\Курсова 3 курс 2 семестр\Syllables_master\Sklady\bin\Debug\Sklady.application
+D:\Laboratories\Курсові\Курсова 3 курс 2 семестр\Syllables_master\Sklady\bin\Debug\Sklady.exe
+D:\Laboratories\Курсові\Курсова 3 курс 2 семестр\Syllables_master\Sklady\bin\Debug\Sklady.pdb
+D:\Laboratories\Курсові\Курсова 3 курс 2 семестр\Syllables_master\Sklady\bin\Debug\Core.dll
+D:\Laboratories\Курсові\Курсова 3 курс 2 семестр\Syllables_master\Sklady\bin\Debug\Core.pdb
+D:\Laboratories\Курсові\Курсова 3 курс 2 семестр\Syllables_master\Sklady\obj\Debug\Sklady.csproj.AssemblyReference.cache
+D:\Laboratories\Курсові\Курсова 3 курс 2 семестр\Syllables_master\Sklady\obj\Debug\Sklady.CharactersBase.resources
+D:\Laboratories\Курсові\Курсова 3 курс 2 семестр\Syllables_master\Sklady\obj\Debug\Sklady.Form1.resources
+D:\Laboratories\Курсові\Курсова 3 курс 2 семестр\Syllables_master\Sklady\obj\Debug\Sklady.MainView.resources
+D:\Laboratories\Курсові\Курсова 3 курс 2 семестр\Syllables_master\Sklady\obj\Debug\Sklady.Properties.Resources.resources
+D:\Laboratories\Курсові\Курсова 3 курс 2 семестр\Syllables_master\Sklady\obj\Debug\Sklady.SettingsForm.resources
+D:\Laboratories\Курсові\Курсова 3 курс 2 семестр\Syllables_master\Sklady\obj\Debug\Sklady.TestView.resources
+D:\Laboratories\Курсові\Курсова 3 курс 2 семестр\Syllables_master\Sklady\obj\Debug\Sklady.csproj.GenerateResource.cache
+D:\Laboratories\Курсові\Курсова 3 курс 2 семестр\Syllables_master\Sklady\obj\Debug\Sklady.csproj.CoreCompileInputs.cache
+D:\Laboratories\Курсові\Курсова 3 курс 2 семестр\Syllables_master\Sklady\obj\Debug\Sklady.TrustInfo.xml
+D:\Laboratories\Курсові\Курсова 3 курс 2 семестр\Syllables_master\Sklady\obj\Debug\Sklady.exe.manifest
+D:\Laboratories\Курсові\Курсова 3 курс 2 семестр\Syllables_master\Sklady\obj\Debug\Sklady.application
+D:\Laboratories\Курсові\Курсова 3 курс 2 семестр\Syllables_master\Sklady\obj\Debug\Sklady.csproj.CopyComplete
+D:\Laboratories\Курсові\Курсова 3 курс 2 семестр\Syllables_master\Sklady\obj\Debug\Sklady.exe
+D:\Laboratories\Курсові\Курсова 3 курс 2 семестр\Syllables_master\Sklady\obj\Debug\Sklady.pdb
+C:\Coding\C#\SyllablesProject\Syllables_master\Sklady\bin\Debug\Sklady.exe.config
+C:\Coding\C#\SyllablesProject\Syllables_master\Sklady\bin\Debug\Sklady.exe.manifest
+C:\Coding\C#\SyllablesProject\Syllables_master\Sklady\bin\Debug\Sklady.application
+C:\Coding\C#\SyllablesProject\Syllables_master\Sklady\bin\Debug\Sklady.exe
+C:\Coding\C#\SyllablesProject\Syllables_master\Sklady\bin\Debug\Sklady.pdb
+C:\Coding\C#\SyllablesProject\Syllables_master\Sklady\bin\Debug\Core.dll
+C:\Coding\C#\SyllablesProject\Syllables_master\Sklady\bin\Debug\Core.pdb
+C:\Coding\C#\SyllablesProject\Syllables_master\Sklady\obj\Debug\Sklady.csproj.AssemblyReference.cache
+C:\Coding\C#\SyllablesProject\Syllables_master\Sklady\obj\Debug\Sklady.CharactersBase.resources
+C:\Coding\C#\SyllablesProject\Syllables_master\Sklady\obj\Debug\Sklady.Form1.resources
+C:\Coding\C#\SyllablesProject\Syllables_master\Sklady\obj\Debug\Sklady.MainView.resources
+C:\Coding\C#\SyllablesProject\Syllables_master\Sklady\obj\Debug\Sklady.Properties.Resources.resources
+C:\Coding\C#\SyllablesProject\Syllables_master\Sklady\obj\Debug\Sklady.SettingsForm.resources
+C:\Coding\C#\SyllablesProject\Syllables_master\Sklady\obj\Debug\Sklady.TestView.resources
+C:\Coding\C#\SyllablesProject\Syllables_master\Sklady\obj\Debug\Sklady.csproj.GenerateResource.cache
+C:\Coding\C#\SyllablesProject\Syllables_master\Sklady\obj\Debug\Sklady.csproj.CoreCompileInputs.cache
+C:\Coding\C#\SyllablesProject\Syllables_master\Sklady\obj\Debug\Sklady.TrustInfo.xml
+C:\Coding\C#\SyllablesProject\Syllables_master\Sklady\obj\Debug\Sklady.exe.manifest
+C:\Coding\C#\SyllablesProject\Syllables_master\Sklady\obj\Debug\Sklady.application
+C:\Coding\C#\SyllablesProject\Syllables_master\Sklady\obj\Debug\Sklady.csproj.CopyComplete
+C:\Coding\C#\SyllablesProject\Syllables_master\Sklady\obj\Debug\Sklady.exe
+C:\Coding\C#\SyllablesProject\Syllables_master\Sklady\obj\Debug\Sklady.pdb

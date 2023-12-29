@@ -1,0 +1,2 @@
+C:\#Study\ОПМ\SyllablesProject\Old\SyllablesProject\Syllables_master\Tests\obj\Release\Tests.csproj.AssemblyReference.cache
+C:\#Study\ОПМ\SyllablesProject\Old\SyllablesProject\Syllables_master\Tests\obj\Release\Tests.csproj.CoreCompileInputs.cache

@@ -69,3 +69,9 @@ C:\Coding\C#\SyllablesProject\Syllables_master\Core\obj\Debug\Core.csproj.Assemb
 C:\Coding\C#\SyllablesProject\Syllables_master\Core\obj\Debug\Core.csproj.CoreCompileInputs.cache
 C:\Coding\C#\SyllablesProject\Syllables_master\Core\obj\Debug\Core.dll
 C:\Coding\C#\SyllablesProject\Syllables_master\Core\obj\Debug\Core.pdb
+C:\#Study\ОПМ\SyllablesProject\Old\SyllablesProject\Syllables_master\Core\bin\Debug\Core.dll
+C:\#Study\ОПМ\SyllablesProject\Old\SyllablesProject\Syllables_master\Core\bin\Debug\Core.pdb
+C:\#Study\ОПМ\SyllablesProject\Old\SyllablesProject\Syllables_master\Core\obj\Debug\Core.csproj.AssemblyReference.cache
+C:\#Study\ОПМ\SyllablesProject\Old\SyllablesProject\Syllables_master\Core\obj\Debug\Core.csproj.CoreCompileInputs.cache
+C:\#Study\ОПМ\SyllablesProject\Old\SyllablesProject\Syllables_master\Core\obj\Debug\Core.dll
+C:\#Study\ОПМ\SyllablesProject\Old\SyllablesProject\Syllables_master\Core\obj\Debug\Core.pdb

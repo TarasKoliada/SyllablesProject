@@ -16,7 +16,7 @@ namespace Sklady
 
         public override string ToString()
         {
-            return IsConsonant? String.Format("{0} - {1}", CharacterValue, Power) : CharacterValue.ToString();
+            return IsConsonant ? String.Format("{0} - {1}", CharacterValue, Power) : CharacterValue.ToString();
         }
     }
 }

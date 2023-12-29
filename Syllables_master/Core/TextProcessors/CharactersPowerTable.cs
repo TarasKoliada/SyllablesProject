@@ -17,6 +17,8 @@ namespace Sklady
 
         private List<Character> _currentTable;
 
+        private IEnumerable<Character> _unionOpt;
+
         private Table selectedTable;
 
         public Table SelectedTable
@@ -32,6 +34,13 @@ namespace Sklady
             }
         }
 
+        public IEnumerable<Character> UnionOpt
+        {
+            get
+            {
+                return _unionOpt;
+            }
+        }
         
         public CharactersTable(Table selectedTable)
         {
@@ -40,6 +49,7 @@ namespace Sklady
             _table2 = GetSecondTable();
             SelectedTable = selectedTable;
             _currentTable = SelectedTable == Table.Table1 ? _table1 : _table2;
+            _unionOpt = _currentTable.Union(_vowel);
         }
 
         public bool isConsonant(char character)
@@ -49,18 +59,19 @@ namespace Sklady
 
         public Character Get(char character)
         {
-            return _currentTable.Union(_vowel).SingleOrDefault(c => c.CharacterValue == character);
+            return _unionOpt.SingleOrDefault(c => c.CharacterValue == character);
         }
 
         public int GetPower(char character)
         {
-            var foundCharacter = _currentTable.Union(_vowel).SingleOrDefault(c => c.CharacterValue == character);
+            var foundCharacter = _unionOpt.SingleOrDefault(c => c.CharacterValue == character);
             return foundCharacter != null ? foundCharacter.Power : 0;
         }
 
         private void ChangeTable(Table table)
         {
             _currentTable = table == Table.Table1 ? _table1 : _table2;
+            _unionOpt = _currentTable.Union(_vowel);
         }
 
         public List<Character> GetConsonants()
@@ -76,11 +87,13 @@ namespace Sklady
         public void Add(Character character)
         {
             _currentTable.Add(character);
+            _unionOpt = _currentTable.Union(_vowel);
         }
 
         public void Remove(char character)
         {
-           _currentTable.RemoveAll(c => c.CharacterValue == character);
+            _currentTable.RemoveAll(c => c.CharacterValue == character);
+            _unionOpt = _currentTable.Union(_vowel);
         }        
 
         private List<Character> GetFirstTable()

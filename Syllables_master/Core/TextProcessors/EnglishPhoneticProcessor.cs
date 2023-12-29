@@ -11,6 +11,42 @@ namespace Sklady.TextProcessors
     {
         private string[] dzPrefixes = new string[] { "під", "над", "від" };
 
+        // Patterns for ReductionReplacements
+        private readonly Dictionary<string, string> ReductionReplacementsPatterns = new Dictionary<string, string>
+        {
+            {"cionals", "cinals"},
+            {"sional", "sonal"},
+            {"tional", "tonal"},
+            {"cions", "cons"},
+            {"sions", "sons"},
+            {"tions", "tons"},
+            {"were", "wer"},
+            {"cion", "con"},
+            {"sion", "son"},
+            {"ore", "or"},
+            {"ous", "os"},
+            {"ae", "a"},
+            {"ai", "a"},
+            {"au", "u"}
+        };
+
+        // Patterns for AsymilativeReplacements
+        private Dictionary<string, string> AsymilativeReplacementsPatterns = new Dictionary<string, string>
+        {
+            {"ea", "e"},
+            {"ee", "e"},
+            {"^are^", "ar"},
+            {"eo", "o"},
+            {"ua", "u"},
+            {"ue", "e"},
+            {"ui", "i"},
+            {"ie", "i"},
+            {"ed^", "d"},
+            {"y^", "i"},
+            {"e^", "y"}
+        };
+
+
         public EnglishPhoneticProcessor ( CharactersTable charactersTable, bool[] isCheckbox )
             : base(charactersTable, isCheckbox)
         {
@@ -50,39 +86,26 @@ namespace Sklady.TextProcessors
 
         private string ReductionReplacements(string res)
         {
-            res = Regex.Replace(res, "cionals", "cinals");
-            res = Regex.Replace(res, "sional", "sonal");
-            res = Regex.Replace(res, "tional", "tonal");
-            res = Regex.Replace(res, "cions", "cons");
-            res = Regex.Replace(res, "sions", "sons");
-            res = Regex.Replace(res, "tions", "tons");
-            res = Regex.Replace(res, "were", "wer");
-            res = Regex.Replace(res, "cion", "con");
-            res = Regex.Replace(res, "sion", "son");
-            res = Regex.Replace(res, "ore", "or");
-            res = Regex.Replace(res, "ous", "os");
-            res = Regex.Replace(res, "ae", "a");
-            res = Regex.Replace(res, "ai", "a");
-            res = Regex.Replace(res, "au", "u");
+            var stringBuilder = new StringBuilder(res);
 
-            return res;
+            foreach (var pattern in ReductionReplacementsPatterns)
+            {
+                stringBuilder.Replace(pattern.Key, pattern.Value);
+            }
+
+            return stringBuilder.ToString();
         }
 
         private string AsymilativeReplacements(string res)
         {
-            res = Regex.Replace(res, "(e)(a)", "e");
-            res = Regex.Replace(res, "(e)(e)", "e");
-            res = Regex.Replace(res, "^(a)(r)(e)^", "ar");
-            res = Regex.Replace(res, "(e)(o)", "o");
-            res = Regex.Replace(res, "(i)(e)", "i");
-            res = Regex.Replace(res, "(u)(a)", "u");
-            res = Regex.Replace(res, "(u)(e)", "e");
-            res = Regex.Replace(res, "(u)(i)", "i");
-            res = Regex.Replace(res, "(e)(d)^", "d");
-            res = Regex.Replace(res, "(y)^", "i");
-            res = Regex.Replace(res, "(e)^", "y");
+            var stringBuilder = new StringBuilder(res);
 
-            return res;
+            foreach (var pattern in AsymilativeReplacementsPatterns)
+            {
+                stringBuilder.Replace(pattern.Key, pattern.Value);
+            }
+
+            return stringBuilder.ToString();
         }
 
         private string ProcessDoubleConsonants(string input)

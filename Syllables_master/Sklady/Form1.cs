@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
+//using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -20,7 +20,7 @@ namespace Sklady
 {
     public partial class Form1 : Form
     {
-        public Form1 ( )
+        public Form1()
         {
             InitializeComponent();
             mainView1.OnFilesProcessed += MainView1_OnFilesProcessed1;
@@ -28,13 +28,13 @@ namespace Sklady
 
         private ExportResults _exportResults;
 
-        private void MainView1_OnFilesProcessed1 ( ExportResults result )
+        private void MainView1_OnFilesProcessed1(ExportResults result)
         {
             _exportResults = result;
             UpdateSaveButton(result.FileExportResults);
         }
 
-        private void openToolStripMenuItem_Click ( object sender, EventArgs e )
+        private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var dialog = new FolderBrowserDialog();
             dialog.SelectedPath = GlobalSettings.LastOpenFolderPath;
@@ -63,7 +63,7 @@ namespace Sklady
             GlobalSettings.LastOpenFolderPath = dialog.SelectedPath;
         }
 
-        private void saveToolStripMenuItem_Click ( object sender, EventArgs e )
+        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
             const string SyllablesFolderName = "Syllables";
             const string FirstSyllablesFolderName = "FirstSyllables";
@@ -96,19 +96,19 @@ namespace Sklady
             GlobalSettings.LastSaveFolderPath = folderDialog.SelectedPath;
         }
 
-        private void SaveCvv ( string statisticsTableCsv, string path )
+        private void SaveCvv(string statisticsTableCsv, string path)
         {
             var fullPath = Path.Combine(path, "Statistics.csv");
             File.WriteAllText(fullPath, statisticsTableCsv, Encoding.UTF8);
         }
 
-        private void SaveFile ( string result, string path, string fileName )
+        private void SaveFile(string result, string path, string fileName)
         {
             var fullPath = Path.Combine(path, fileName);
             File.WriteAllText(fullPath, result, Encoding.UTF8);
         }
-
-        private void LoadCsv ( string statisticsTableCsv, string path )
+        /*
+        private void LoadCsvOld ( string statisticsTableCsv, string path )
         {
             var fullPath = Path.Combine(path, "Statistics.csv");
 
@@ -136,44 +136,82 @@ namespace Sklady
                     dt.Rows.Add(Row);
                 }
                 dataGridView1.DataSource = dt;
+        }
+        */
 
-            /*}
+        private void LoadCsv(string statisticsTableCsv, string path)
+        {
+            var fullPath = Path.Combine(path, "Statistics.csv");
+
+            try
+            {
+                string CSVFilePathName = fullPath;
+                string[] lines = File.ReadAllLines(CSVFilePathName);
+
+                // Assuming the first line contains column headers
+                string[] headers = lines[0].Split(new char[] { '\t' });
+
+                List<Dictionary<string, string>> data = new List<Dictionary<string, string>>();
+
+                for (int i = 1; i < lines.Length; i++)
+                {
+                    string[] fields = lines[i].Split(new char[] { '\t' });
+                    if (fields.Length < headers.Length)
+                    {
+                        continue;
+                    }
+
+                    Dictionary<string, string> row = new Dictionary<string, string>();
+                    for (int f = 0; f < headers.Length; f++)
+                    {
+                        row[headers[f].ToLower()] = fields[f];
+                    }
+
+                    data.Add(row);
+                }
+
+                // You can now use the 'data' list to perform further operations if needed.
+                // For example, you can bind it to a DataGridView if necessary.
+
+                // Example: Binding data to a DataGridView (if needed)
+                // dataGridView1.DataSource = data.Select(d => new { /* your columns here */ }).ToList();
+            }
             catch (Exception ex)
             {
                 MessageBox.Show("Error is " + ex.ToString());
                 throw;
-            }*/
-
+            }
         }
 
 
-        private void Form1_Load ( object sender, EventArgs e )
+
+        private void Form1_Load(object sender, EventArgs e)
         {
             saveToolStripMenuItem.Enabled = false;
         }
 
-        private void exitToolStripMenuItem_Click ( object sender, EventArgs e )
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void settingsToolStripMenuItem_Click ( object sender, EventArgs e )
+        private void settingsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var form = new SettingsForm();
             form.ShowDialog();
         }
 
-        private void charactersToolStripMenuItem_Click ( object sender, EventArgs e )
+        private void charactersToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var form = new CharactersBase();
             form.ShowDialog();
         }
 
-        private void UpdateSaveButton ( List<FileExportResults> results )
+        private void UpdateSaveButton(List<FileExportResults> results)
         {
             if (menuStrip1.InvokeRequired)
             {
-                menuStrip1.Invoke((MethodInvoker)delegate( )
+                menuStrip1.Invoke((MethodInvoker)delegate ()
                {
                    saveToolStripMenuItem.Enabled = results.Any();
                });
@@ -187,65 +225,65 @@ namespace Sklady
 
 
         //word statistics english
-        public void button1_Click ( object sender, EventArgs e )
+        public void button1_Click(object sender, EventArgs e)
         {
             button3.PerformClick();
 
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
-            string fileName = openFileDialog1.FileName;
-            string txt = File.ReadAllText(fileName);
-            txt = txt.ToLower();
-            txt = Regex.Replace(txt, @"[\d-]", string.Empty);
-            // Use regular expressions to replace characters
-            // that are not letters or numbers with spaces.
-            Regex reg_exp = new Regex("[^a-zA-Z0-9]");
-            txt = reg_exp.Replace(txt, " ");
-            Regex re = new Regex(@"\b\w{0,1}\b");
-            txt = re.Replace(txt, "");
+                string fileName = openFileDialog1.FileName;
+                string txt = File.ReadAllText(fileName);
+                txt = txt.ToLower();
+                txt = Regex.Replace(txt, @"[\d-]", string.Empty);
+                // Use regular expressions to replace characters
+                // that are not letters or numbers with spaces.
+                Regex reg_exp = new Regex("[^a-zA-Z0-9]");
+                txt = reg_exp.Replace(txt, " ");
+                Regex re = new Regex(@"\b\w{0,1}\b");
+                txt = re.Replace(txt, "");
 
-            // Split the text into words.
-            string[] words = txt.Split(
-            new char[] { ' ' },
-            StringSplitOptions.RemoveEmptyEntries);
+                // Split the text into words.
+                string[] words = txt.Split(
+                new char[] { ' ' },
+                StringSplitOptions.RemoveEmptyEntries);
 
-            // Use LINQ to get the unique words.
-            var word_query =
-                (from string word in words
-                 orderby word
-                 select word).Distinct();
+                // Use LINQ to get the unique words.
+                var word_query =
+                    (from string word in words
+                     orderby word
+                     select word).Distinct();
 
-            // Display the result.
-            string[] result = word_query.ToArray();
-
-
-            DataGridView dataGridView2 = new DataGridView();
-            this.dataGridView2.Columns.Add("word", "word");
-            this.dataGridView2.Columns.Add("length", "length");
-            this.dataGridView2.Columns.Add("syllables", "syllables");
-            this.dataGridView2.Columns.Add("syllable length", "syllable length");
+                // Display the result.
+                string[] result = word_query.ToArray();
 
 
-            int syllables = 0;
-            //avgSylLength = Math.Round((double)result[i].Length / syllables, 4);
-            //avgSylLengthPh = Math.Round((double)phonems / syllables, 4);
-            for (int i = 1; i < result.Length; i++)
-            {
-                syllables = Regex.Matches(result[i], @"a|e|i|o|u|y").Count;
-                if (syllables == 0)
+                DataGridView dataGridView2 = new DataGridView();
+                this.dataGridView2.Columns.Add("word", "word");
+                this.dataGridView2.Columns.Add("length", "length");
+                this.dataGridView2.Columns.Add("syllables", "syllables");
+                this.dataGridView2.Columns.Add("syllable length", "syllable length");
+
+
+                int syllables = 0;
+                //avgSylLength = Math.Round((double)result[i].Length / syllables, 4);
+                //avgSylLengthPh = Math.Round((double)phonems / syllables, 4);
+                for (int i = 1; i < result.Length; i++)
                 {
-                    syllables += 1;
+                    syllables = Regex.Matches(result[i], @"a|e|i|o|u|y").Count;
+                    if (syllables == 0)
+                    {
+                        syllables += 1;
+                    }
+                    if (result[i].Length < 5)
+                    {
+                        syllables = 1;
+                    }
+                    this.dataGridView2.Rows.Add(result[i], result[i].Length, syllables, Math.Round((double)result[i].Length / syllables, 10));
                 }
-                if (result[i].Length < 5)
-                {
-                    syllables = 1;
-                }
-                this.dataGridView2.Rows.Add(result[i], result[i].Length, syllables, Math.Round((double)result[i].Length / syllables, 10));
-            }
             }
         }
-        
-        private void button3_Click ( object sender, EventArgs e )
+
+        private void button3_Click(object sender, EventArgs e)
         {
             dataGridView2.Columns.Clear();
             dataGridView2.Rows.Clear();
@@ -254,7 +292,7 @@ namespace Sklady
         }
 
         // word statistics for ua/ru/bg
-        private void button2_Click ( object sender, EventArgs e )
+        private void button2_Click(object sender, EventArgs e)
         {
             button4.PerformClick();
 
@@ -327,7 +365,7 @@ namespace Sklady
             }
         }
 
-        private void button4_Click ( object sender, EventArgs e )
+        private void button4_Click(object sender, EventArgs e)
         {
             dataGridView3.Columns.Clear();
             dataGridView3.Rows.Clear();
@@ -335,14 +373,14 @@ namespace Sklady
 
         }
 
-        private void button5_Click ( object sender, EventArgs e )
+        private void button5_Click(object sender, EventArgs e)
         {
             exportToCSV();
         }
 
 
 
-        private void exportToCSV ( )
+        private void exportToCSV()
         {
             DataGridView dg = new DataGridView();
 
@@ -400,13 +438,13 @@ namespace Sklady
             MessageBox.Show("CSV file saved.");
         }
 
-        private void button6_Click ( object sender, EventArgs e )
+        private void button6_Click(object sender, EventArgs e)
         {
             exportToCSV();
         }
 
         //word statistics for polish
-        private void button7_Click ( object sender, EventArgs e )
+        private void button7_Click(object sender, EventArgs e)
         {
             button8.PerformClick();
 
@@ -479,13 +517,27 @@ namespace Sklady
 
             }
         }
-        private void button8_Click ( object sender, EventArgs e )
+        private void button8_Click(object sender, EventArgs e)
         {
             dataGridView4.Columns.Clear();
             dataGridView4.Rows.Clear();
             dataGridView4.Refresh();
         }
 
+        private void fileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mainView1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void testView1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

@@ -1,6 +1,7 @@
 using Core.Models;
 using Sklady.Models;
 using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,7 +19,6 @@ namespace Sklady.Export
         private StatisticsCalculator _statisticsCalculator;
         private bool _useAbsoluteValues = false;
         private CharactersTable _charactersTable;
-        
 
         public StatisticsTableGenerator(bool useAbsoluteMeasures = false)
         {
@@ -28,7 +28,7 @@ namespace Sklady.Export
 
         public string GetTableString(List<FileProcessingResult> results)
         {
-            var sb = new StringBuilder();
+            var sb = new StringBuilder();   
             ProcessCVVHeaders(results);
             ProcessRepetitionsHeaders(results);
             ProcessLettersHeaders(results);
@@ -36,15 +36,19 @@ namespace Sklady.Export
             var headerItems = GenerateTableHeader();
             sb.AppendLine(String.Join(_separator, headerItems));
 
-
             var filesStatistics = new List<List<double>>();
 
-            foreach (var resItem in results)
+            var allFileStatistics = new List<double>[results.Count];
+            Parallel.For(0, results.Count, i =>
             {
-                var fileStatistics = GenerateStatistics(resItem);
+                var fileStatistics = GenerateStatistics(results[i]);
                 filesStatistics.Add(fileStatistics);
+                allFileStatistics[i] = fileStatistics;
+            });
 
-                sb.AppendLine(String.Format("{0}\t{1}", resItem.FileName, String.Join(_separator, fileStatistics)));
+            for (var i = 0; i < results.Count; i++)
+            {
+                sb.AppendLine(String.Format("{0}\t{1}", results[i].FileName, String.Join(_separator, allFileStatistics[i])));
             }
 
             var groupedStatistics = GroupByMeasure(filesStatistics);
@@ -93,7 +97,7 @@ namespace Sklady.Export
             var CVVSyllablesStatistics = new List<double>();
             var RepetitionsStatistics = new List<double>();
             var LettersStatistics = new List<double>();
-            var CandVSums = GetCVCounts(fileResult);           
+            var CandVSums = fileResult.CandVSums;       
 
             foreach (var header in _cvvHeaders)
             {
@@ -133,9 +137,11 @@ namespace Sklady.Export
 
             if (!_useAbsoluteValues)
             {
-                CVVSyllablesStatistics = CVVSyllablesStatistics.Select(r => (double)r / fileResult.SyllablesCount).ToList();
-                LettersStatistics = LettersStatistics.Select(r => (double)r / fileResult.TextLength).ToList();
-                RepetitionsStatistics = RepetitionsStatistics.Select(r => (double)r / fileResult.TextLength).ToList();
+                Parallel.Invoke(
+                    () => CVVSyllablesStatistics = CVVSyllablesStatistics.Select(r => (double)r / fileResult.SyllablesCount).ToList(),
+                    () => LettersStatistics = LettersStatistics.Select(r => (double)r / fileResult.TextLength).ToList(),
+                    () => RepetitionsStatistics = RepetitionsStatistics.Select(r => (double)r / fileResult.TextLength).ToList()
+                );
             }
 
             res.AddRange(CandVSums);
@@ -147,49 +153,61 @@ namespace Sklady.Export
             res.Insert(0, fileResult.TextLength);            
 
             return res;
-        }       
+        }         
 
-        private List<double> GetCVCounts(FileProcessingResult fileResult)
+        public List<double> GetCVCountsParallel(FileProcessingResult fileResult)
         {
             var CCount = 0.0;
             var VCount = 0.0;
             var openSyllables = 0.0;
-            var closedSyllables = 0.0;            
+            var closedSyllables = 0.0;
 
-            foreach(var item in fileResult.ReadableResults)
+            // remove all syllables null
+            fileResult.ReadableResults.RemoveAll(c => c.Syllables == null);
+
+            // Using Parallel.ForEach for parallel processing
+            Parallel.ForEach(fileResult.ReadableResults, item =>
             {
-                for (var i = 0; i < item.Syllables.Length; i++)
+                try
                 {
-                    var HalfCharsCount = item.Syllables[i].Count(c => c == 'Y' || c == 'u');
-
-                    CCount += item.Syllables[i].Count(c => _charactersTable.isConsonant(c)); // as we're counting Y as 0.5V 
-                    VCount += item.Syllables[i].Count(c => !_charactersTable.isConsonant(c)); // and 0.5C we have to make corresponding calculations                   
-
-                    if (_charactersTable.isConsonant(item.Syllables[i].Last()))
+                    for (var i = 0; i < item.Syllables.Length; i++)
                     {
-                        closedSyllables++;
-                    }
-                    else
-                    {
-                        openSyllables++;
+                        var HalfCharsCount = item.Syllables[i].Count(c => c == 'Y' || c == 'u');
+
+                        CCount += item.Syllables[i].Count(c => _charactersTable.isConsonant(c));
+                        VCount += item.Syllables[i].Count(c => !_charactersTable.isConsonant(c));
+
+                        if (_charactersTable.isConsonant(item.Syllables[i].Last()))
+                        {
+                            closedSyllables++;
+                        }
+                        else
+                        {
+                            openSyllables++;
+                        }
                     }
                 }
-            }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            });
 
             if (!_useAbsoluteValues)
             {
-                CCount = CCount / fileResult.TextLength;
-                VCount = VCount / fileResult.TextLength;
+                CCount /= fileResult.TextLength;
+                VCount /= fileResult.TextLength;
             }
 
             var CtoV = CCount / VCount;
 
-            openSyllables = openSyllables / fileResult.SyllablesCount;
-            closedSyllables = closedSyllables / fileResult.SyllablesCount;
+            openSyllables /= fileResult.SyllablesCount;
+            closedSyllables /= fileResult.SyllablesCount;
             var openToClosed = openSyllables / closedSyllables;
 
+            //return [CCount, VCount, CtoV, openSyllables, closedSyllables, openToClosed];
             return new List<double>() { CCount, VCount, CtoV, openSyllables, closedSyllables, openToClosed };
-        }       
+        }
 
         private List<string> GenerateTableHeader()
         {
@@ -204,12 +222,20 @@ namespace Sklady.Export
 
         private void ProcessCVVHeaders(List<FileProcessingResult> results)
         {
-            var cvvSet = new SortedSet<string>();
+            var cvvSet = new ConcurrentBag<string>();
 
-            foreach (var item in results)
+            Parallel.ForEach(results, item =>
             {
-                cvvSet.UnionWith(item.CvvStatistics.Select(c => c.Key));
-            }
+                var cvvs = item.CvvStatistics.Select(c => c.Key);
+        
+                lock (cvvSet)
+                {
+                    foreach (var cvv in cvvs)
+                    {
+                        cvvSet.Add(cvv);
+                    }
+                }
+            });
 
             _cvvHeaders = cvvSet.ToList();
         }

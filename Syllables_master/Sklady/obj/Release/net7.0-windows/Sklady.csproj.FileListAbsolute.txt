@@ -1,0 +1,60 @@
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8to.NET6\SyllablesProject\Syllables_master\Sklady\bin\Release\net7.0-windows\Sklady.exe
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8to.NET6\SyllablesProject\Syllables_master\Sklady\bin\Release\net7.0-windows\Sklady.dll.config
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8to.NET6\SyllablesProject\Syllables_master\Sklady\bin\Release\net7.0-windows\Sklady.dll.manifest
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8to.NET6\SyllablesProject\Syllables_master\Sklady\bin\Release\net7.0-windows\Sklady.application
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8to.NET6\SyllablesProject\Syllables_master\Sklady\bin\Release\net7.0-windows\Sklady.deps.json
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8to.NET6\SyllablesProject\Syllables_master\Sklady\bin\Release\net7.0-windows\Sklady.runtimeconfig.json
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8to.NET6\SyllablesProject\Syllables_master\Sklady\bin\Release\net7.0-windows\Sklady.dll
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8to.NET6\SyllablesProject\Syllables_master\Sklady\bin\Release\net7.0-windows\Sklady.pdb
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8to.NET6\SyllablesProject\Syllables_master\Sklady\bin\Release\net7.0-windows\Core.dll
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8to.NET6\SyllablesProject\Syllables_master\Sklady\bin\Release\net7.0-windows\Core.pdb
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8to.NET6\SyllablesProject\Syllables_master\Sklady\obj\Release\net7.0-windows\Sklady.csproj.AssemblyReference.cache
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8to.NET6\SyllablesProject\Syllables_master\Sklady\obj\Release\net7.0-windows\Sklady.CharactersBase.resources
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8to.NET6\SyllablesProject\Syllables_master\Sklady\obj\Release\net7.0-windows\Sklady.Form1.resources
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8to.NET6\SyllablesProject\Syllables_master\Sklady\obj\Release\net7.0-windows\Sklady.MainView.resources
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8to.NET6\SyllablesProject\Syllables_master\Sklady\obj\Release\net7.0-windows\Sklady.Properties.Resources.resources
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8to.NET6\SyllablesProject\Syllables_master\Sklady\obj\Release\net7.0-windows\Sklady.SettingsForm.resources
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8to.NET6\SyllablesProject\Syllables_master\Sklady\obj\Release\net7.0-windows\Sklady.TestView.resources
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8to.NET6\SyllablesProject\Syllables_master\Sklady\obj\Release\net7.0-windows\Sklady.csproj.GenerateResource.cache
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8to.NET6\SyllablesProject\Syllables_master\Sklady\obj\Release\net7.0-windows\Sklady.GeneratedMSBuildEditorConfig.editorconfig
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8to.NET6\SyllablesProject\Syllables_master\Sklady\obj\Release\net7.0-windows\Sklady.csproj.CoreCompileInputs.cache
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8to.NET6\SyllablesProject\Syllables_master\Sklady\obj\Release\net7.0-windows\Sklady.sourcelink.json
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8to.NET6\SyllablesProject\Syllables_master\Sklady\obj\Release\net7.0-windows\Sklady.TrustInfo.xml
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8to.NET6\SyllablesProject\Syllables_master\Sklady\obj\Release\net7.0-windows\Sklady.dll.manifest
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8to.NET6\SyllablesProject\Syllables_master\Sklady\obj\Release\net7.0-windows\Sklady.application
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8to.NET6\SyllablesProject\Syllables_master\Sklady\obj\Release\net7.0-windows\Sklady.csproj.CopyComplete
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8to.NET6\SyllablesProject\Syllables_master\Sklady\obj\Release\net7.0-windows\Sklady.dll
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8to.NET6\SyllablesProject\Syllables_master\Sklady\obj\Release\net7.0-windows\refint\Sklady.dll
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8to.NET6\SyllablesProject\Syllables_master\Sklady\obj\Release\net7.0-windows\Sklady.pdb
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8to.NET6\SyllablesProject\Syllables_master\Sklady\obj\Release\net7.0-windows\Sklady.genruntimeconfig.cache
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8to.NET6\SyllablesProject\Syllables_master\Sklady\obj\Release\net7.0-windows\ref\Sklady.dll
+C:\#Study\ОПМ\SyllablesProjectGit\Syllables_master\Sklady\bin\Release\net7.0-windows\Sklady.exe
+C:\#Study\ОПМ\SyllablesProjectGit\Syllables_master\Sklady\bin\Release\net7.0-windows\Sklady.dll.config
+C:\#Study\ОПМ\SyllablesProjectGit\Syllables_master\Sklady\bin\Release\net7.0-windows\Sklady.dll.manifest
+C:\#Study\ОПМ\SyllablesProjectGit\Syllables_master\Sklady\bin\Release\net7.0-windows\Sklady.application
+C:\#Study\ОПМ\SyllablesProjectGit\Syllables_master\Sklady\bin\Release\net7.0-windows\Sklady.deps.json
+C:\#Study\ОПМ\SyllablesProjectGit\Syllables_master\Sklady\bin\Release\net7.0-windows\Sklady.runtimeconfig.json
+C:\#Study\ОПМ\SyllablesProjectGit\Syllables_master\Sklady\bin\Release\net7.0-windows\Sklady.dll
+C:\#Study\ОПМ\SyllablesProjectGit\Syllables_master\Sklady\bin\Release\net7.0-windows\Sklady.pdb
+C:\#Study\ОПМ\SyllablesProjectGit\Syllables_master\Sklady\bin\Release\net7.0-windows\Core.dll
+C:\#Study\ОПМ\SyllablesProjectGit\Syllables_master\Sklady\bin\Release\net7.0-windows\Core.pdb
+C:\#Study\ОПМ\SyllablesProjectGit\Syllables_master\Sklady\obj\Release\net7.0-windows\Sklady.csproj.AssemblyReference.cache
+C:\#Study\ОПМ\SyllablesProjectGit\Syllables_master\Sklady\obj\Release\net7.0-windows\Sklady.CharactersBase.resources
+C:\#Study\ОПМ\SyllablesProjectGit\Syllables_master\Sklady\obj\Release\net7.0-windows\Sklady.Form1.resources
+C:\#Study\ОПМ\SyllablesProjectGit\Syllables_master\Sklady\obj\Release\net7.0-windows\Sklady.MainView.resources
+C:\#Study\ОПМ\SyllablesProjectGit\Syllables_master\Sklady\obj\Release\net7.0-windows\Sklady.Properties.Resources.resources
+C:\#Study\ОПМ\SyllablesProjectGit\Syllables_master\Sklady\obj\Release\net7.0-windows\Sklady.SettingsForm.resources
+C:\#Study\ОПМ\SyllablesProjectGit\Syllables_master\Sklady\obj\Release\net7.0-windows\Sklady.TestView.resources
+C:\#Study\ОПМ\SyllablesProjectGit\Syllables_master\Sklady\obj\Release\net7.0-windows\Sklady.csproj.GenerateResource.cache
+C:\#Study\ОПМ\SyllablesProjectGit\Syllables_master\Sklady\obj\Release\net7.0-windows\Sklady.GeneratedMSBuildEditorConfig.editorconfig
+C:\#Study\ОПМ\SyllablesProjectGit\Syllables_master\Sklady\obj\Release\net7.0-windows\Sklady.csproj.CoreCompileInputs.cache
+C:\#Study\ОПМ\SyllablesProjectGit\Syllables_master\Sklady\obj\Release\net7.0-windows\Sklady.sourcelink.json
+C:\#Study\ОПМ\SyllablesProjectGit\Syllables_master\Sklady\obj\Release\net7.0-windows\Sklady.TrustInfo.xml
+C:\#Study\ОПМ\SyllablesProjectGit\Syllables_master\Sklady\obj\Release\net7.0-windows\Sklady.dll.manifest
+C:\#Study\ОПМ\SyllablesProjectGit\Syllables_master\Sklady\obj\Release\net7.0-windows\Sklady.application
+C:\#Study\ОПМ\SyllablesProjectGit\Syllables_master\Sklady\obj\Release\net7.0-windows\Sklady.csproj.CopyComplete
+C:\#Study\ОПМ\SyllablesProjectGit\Syllables_master\Sklady\obj\Release\net7.0-windows\Sklady.dll
+C:\#Study\ОПМ\SyllablesProjectGit\Syllables_master\Sklady\obj\Release\net7.0-windows\refint\Sklady.dll
+C:\#Study\ОПМ\SyllablesProjectGit\Syllables_master\Sklady\obj\Release\net7.0-windows\Sklady.pdb
+C:\#Study\ОПМ\SyllablesProjectGit\Syllables_master\Sklady\obj\Release\net7.0-windows\Sklady.genruntimeconfig.cache
+C:\#Study\ОПМ\SyllablesProjectGit\Syllables_master\Sklady\obj\Release\net7.0-windows\ref\Sklady.dll

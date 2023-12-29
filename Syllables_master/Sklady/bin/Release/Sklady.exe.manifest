@@ -42,36 +42,36 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Core.dll" size="40960">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Core.dll" size="53760">
       <assemblyIdentity name="Core" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>71Wri4RKMOTUxR1h5FaBBYdTJoXFzcOeBAwYNkKnCSw=</dsig:DigestValue>
+        <dsig:DigestValue>7oBz7Fxeum+YKJkQgdegaMj3fyHFKdzgB7ZFNPujMoU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Sklady.exe" size="38912">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Sklady.exe" size="50176">
       <assemblyIdentity name="Sklady" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>MAHPHACGfi5P1lfnPZStj5h0laivZ73rkXH7FlLhJec=</dsig:DigestValue>
+        <dsig:DigestValue>XbzxjcDQOFCyZjMMk8LKt1+47vRHAGRZs3NsWK6zxVw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="Sklady.exe.config" size="178">
+  <file name="Sklady.exe.config" size="184">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>pOyyBcweXMlNB4Kmf4v1ezhl5BH5FT8d9w+toOcdxD4=</dsig:DigestValue>
+      <dsig:DigestValue>FihlZtVNgcNyH37Pf0Jtll3jZOm+L55ijXNjtoS2/mo=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">

@@ -11,6 +11,33 @@ namespace Sklady.TextProcessors
     {
         private string[] dzPrefixes = new string[] { "під", "над", "від" };
 
+        private readonly Dictionary<string, string> ReductionReplacementsPatterns = new Dictionary<string, string>
+        {
+            { "нтськ", "нск" },
+            { "стськ", "ск" },
+            { "нтст", "нст" },
+            { "стц", "сц" },
+            { "стч", "шч" },
+            { "стд", "зд" },
+            { "стс", "с" },
+            { "стн", "сн" },
+            { "нтс", "нс" },
+            { "тст", "ц" },
+            { "тьс", "ц" }
+        };
+
+        private readonly Dictionary<string, string> AsymilativeReplacementsPatterns = new Dictionary<string, string>
+        {
+            { "(с)(ш)", "$2" },
+            { "(з)(ж)", "$2" },
+            { "^(з)(ш)", "$2" },
+            { "(ш)(с)", "$2" },
+            { "(ч)(ц)", "$2" },
+            { "(т)(с)", "ц" },
+            { "(т)(ц)", "$2" },
+            { "(т)(ч)", "$2" }
+        };
+
         public UkrainePhoneticProcessor ( CharactersTable charactersTable, bool[] isCheckbox )
             : base(charactersTable, isCheckbox)
         {
@@ -53,34 +80,26 @@ namespace Sklady.TextProcessors
 
         private string ReductionReplacements(string res)
         {
-            res = Regex.Replace(res, "нтськ", "нск");
-            res = Regex.Replace(res, "стськ", "ск");
-            res = Regex.Replace(res, "нтст", "нст");
-            res = Regex.Replace(res, "стц", "сц");
-            res = Regex.Replace(res, "стч", "шч");
-            res = Regex.Replace(res, "стд", "зд");
-            res = Regex.Replace(res, "стс", "с");
-            res = Regex.Replace(res, "стн", "сн");
-            res = Regex.Replace(res, "нтс", "нс");
-            res = Regex.Replace(res, "нтс", "нс");
-            res = Regex.Replace(res, "тст", "ц");
-            res = Regex.Replace(res, "тьс", "ц");
+            var stringBuilder = new StringBuilder(res);
 
-            return res;
+            foreach (var pattern in ReductionReplacementsPatterns)
+            {
+                stringBuilder.Replace(pattern.Key, pattern.Value);
+            }
+
+            return stringBuilder.ToString();
         }
 
         private string AsymilativeReplacements(string res)
-        {                 
-            res = Regex.Replace(res, "(с)(ш)", "$2");
-            res = Regex.Replace(res, "(з)(ж)", "$2");
-            res = Regex.Replace(res, "^(з)(ш)", "$2");
-            res = Regex.Replace(res, "(ш)(с)", "$2");
-            res = Regex.Replace(res, "(ч)(ц)", "$2");
-            res = Regex.Replace(res, "(т)(с)", "ц");
-            res = Regex.Replace(res, "(т)(ц)", "$2");
-            res = Regex.Replace(res, "(т)(ч)", "$2");
+        {
+            var stringBuilder = new StringBuilder(res);
 
-            return res;
+            foreach (var pattern in AsymilativeReplacementsPatterns)
+            {
+                stringBuilder.Replace(pattern.Key, pattern.Value);
+            }
+
+            return stringBuilder.ToString();
         }
 
         private string ProcessDoubleConsonants(string input)

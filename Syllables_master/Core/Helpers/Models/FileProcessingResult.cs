@@ -7,10 +7,11 @@ using System.Threading.Tasks;
 
 namespace Sklady.Models
 {
-    public class FileProcessingResult
+    public class FileProcessingResult : IDisposable
     {
         private Dictionary<string, int> _cvvStatistics;
         private List<AnalyzeResults> _cvvResults;
+        private List<double> _candVSums;
 
         private ResultsExporter exporter;
 
@@ -19,8 +20,65 @@ namespace Sklady.Models
             ReadableResults = new List<AnalyzeResults>();
             CvvResults = new List<AnalyzeResults>();
             this.exporter = exporter;
-            this.Repetitions = new Dictionary<string, int>();
-            this.Letters = new Dictionary<char, int>();
+            Repetitions = new Dictionary<string, int>();
+            Letters = new Dictionary<char, int>();
+        }
+
+        public void DisposeReadableResults()
+        {
+            foreach (var res in ReadableResults)
+            {
+                res.Dispose();
+            }
+
+            ReadableResults.Clear();
+        }
+
+        public void DisposeCvvResults()
+        {
+            foreach (var res in CvvResults)
+            {
+                res.Dispose();
+            }
+
+            CvvResults.Clear();
+        }
+
+        public void Dispose()
+        {
+            var itemsToDispose = new List<List<AnalyzeResults>>
+            {
+                //ReadableResults,
+                CvvResults,
+                _cvvResults
+            };
+
+            foreach (var item in itemsToDispose)
+            {
+                foreach (var res in item)
+                {
+                    res.Dispose();
+                }
+
+                item.Clear();
+            }
+
+            ReadableResults = null;
+            CvvResults = null;
+            _cvvResults = null;
+            _cvvStatistics.Clear();
+            _candVSums.Clear();
+            Repetitions.Clear();
+            Letters.Clear();
+
+            _cvvStatistics = null;
+            _candVSums = null;
+            exporter = null;
+            Repetitions = null;
+            Letters = null;
+
+            GC.Collect();
+            GC.WaitForPendingFinalizers();
         }
 
         public List<AnalyzeResults> ReadableResults { get; set; }
@@ -36,7 +94,7 @@ namespace Sklady.Models
             {
                 _cvvResults = value;                
             }
-        }       
+        }
 
         public int TextLength
         {
@@ -72,11 +130,13 @@ namespace Sklady.Models
 
         public string FileName { get; set; }        
 
+        public List<double> CandVSums { get => _candVSums; set => _candVSums = value; }
+
         private Dictionary<string, int> GetCvvStatistics()
         {
             var res = new Dictionary<string, int>();           
 
-            var exportedCvv = exporter.ConvertToCvv(this.CvvResults.Select(c => c).ToList());
+            var exportedCvv = exporter.ConvertToCvv(CvvResults);
 
             foreach(var cvvResult in exportedCvv)
             {

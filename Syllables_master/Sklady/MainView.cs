@@ -1,13 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
 using System.Linq;
-using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Text.RegularExpressions;
 using Sklady.Export;
 using Sklady.Models;
 
@@ -97,33 +93,46 @@ namespace Sklady
 
             var task = Task.Factory.StartNew(() =>
             {
-                Parallel.ForEach(analyzers, textAnalyzer =>
+                UpdateProcessingPanel(true);
+
+                foreach (var textAnalyzer in analyzers)
                 {
                     var res = textAnalyzer.GetResults(checkboxArr);
                     fileProcessingResults.Add(res);
-                    
-                    UpdateProcessingPanel(true);
+
+                    res.CandVSums = _export.StatisticsTableGenerator.GetCVCountsParallel(res);
+                    var syllables = _export.GetSyllables(res.ReadableResults);
+                    var firstSyllables = _export.GetFirstSyllables(res.ReadableResults);
+                    (var syllablesCVV, var firstSyllablesCVV) = _export.GetSyllablesCVVUnified(res.ReadableResults);
                   
                     exportResult.FileExportResults.Add(new FileExportResults()
                     {
-                        Syllables = _export.GetSyllables(res.ReadableResults),
-                        FirstSyllables = _export.GetFirstSyllables(res.ReadableResults),
-                        SyllablesCVV = _export.GetSyllablesCVV(res.CvvResults),
-                        SyllablesFirstCVV = _export.GetSyllablesFirstCVV(res.CvvResults),
+                        Syllables = syllables,
+                        FirstSyllables = firstSyllables,
+                        SyllablesCVV = syllablesCVV,
+                        SyllablesFirstCVV = firstSyllablesCVV,
                         FileName = textAnalyzer.FileName
                     });
+
+                    res.DisposeReadableResults();
+                    res.DisposeCvvResults();
+
                     UpdateMainProgressBar(analyzers.Count);
-                });
+                }
 
                 exportResult.StatisticsTableCsv = _export.GetStatisticsTableCsv(fileProcessingResults);
+
+                // dispose fileProcessingResults
+                for (var i = 0; i < fileProcessingResults.Count; i++)
+                {
+                    fileProcessingResults[i].Dispose();
+                }
 
                 UpdateProcessingPanel(false);
 
                 if (OnFilesProcessed != null)
                     OnFilesProcessed(exportResult);
             });         
-
-            
         }
 
         private void UpdateProcessingPanel(bool visible)
@@ -208,23 +217,26 @@ namespace Sklady
 
         private void UpdateProgressBar(int current, int total, ProgressBar progressBar)
         {
+            // Optimize UI updates by reducing the frequency of Invoke calls
             if (current % UPDATE_UI_EVERY_N_ITEMS != 0 && total - current > UPDATE_UI_EVERY_N_ITEMS)
             {
                 return;
             }
 
-            if (progressBar.InvokeRequired)
-            {
-                progressBar.Invoke((MethodInvoker)delegate ()
-                {
-                    progressBar.Maximum = total;
-                    progressBar.Value = current;
-                });
-            }
-            else
+            // Simplify the UI update logic
+            Action updateAction = () =>
             {
                 progressBar.Maximum = total;
                 progressBar.Value = current;
+            };
+
+            if (progressBar.InvokeRequired)
+            {
+                progressBar.Invoke(updateAction);
+            }
+            else
+            {
+                updateAction();
             }
         }
 

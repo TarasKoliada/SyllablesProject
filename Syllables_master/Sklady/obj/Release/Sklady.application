@@ -4,7 +4,7 @@
   <description asmv2:publisher="Sklady" asmv2:product="Sklady" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <deployment install="true" mapFileExtensions="true" />
   <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">
-    <framework targetVersion="4.5" profile="Full" supportedRuntime="4.0.30319" />
+    <framework targetVersion="4.8" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
     <dependentAssembly dependencyType="install" codebase="Sklady.exe.manifest" size="5186">
@@ -14,7 +14,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>J33Ac69j522UOopF/YmsZ8F2a9rNRTLF3TdRLxUgEkU=</dsig:DigestValue>
+        <dsig:DigestValue>b3PXBU+2zhJG2S4ex4uDLQzpSWeHWAURgU/zvVx8Qjw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

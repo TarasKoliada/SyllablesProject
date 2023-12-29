@@ -18,3 +18,69 @@ C:\Users\BOSS\Desktop\01212Гук С\01Гук С\+Syllables-master модифі�
 C:\Users\BOSS\Desktop\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\obj\Release\Sklady.application
 C:\Users\BOSS\Desktop\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\obj\Release\Sklady.exe
 C:\Users\BOSS\Desktop\01212Гук С\01Гук С\+Syllables-master модифікований\Syllables-master\Sklady\obj\Release\Sklady.pdb
+C:\#Study\ОПМ\SyllablesProject\Old\SyllablesProject\Syllables_master\Sklady\bin\Release\Sklady.exe.config
+C:\#Study\ОПМ\SyllablesProject\Old\SyllablesProject\Syllables_master\Sklady\bin\Release\Sklady.exe.manifest
+C:\#Study\ОПМ\SyllablesProject\Old\SyllablesProject\Syllables_master\Sklady\bin\Release\Sklady.application
+C:\#Study\ОПМ\SyllablesProject\Old\SyllablesProject\Syllables_master\Sklady\bin\Release\Sklady.exe
+C:\#Study\ОПМ\SyllablesProject\Old\SyllablesProject\Syllables_master\Sklady\bin\Release\Sklady.pdb
+C:\#Study\ОПМ\SyllablesProject\Old\SyllablesProject\Syllables_master\Sklady\bin\Release\Core.dll
+C:\#Study\ОПМ\SyllablesProject\Old\SyllablesProject\Syllables_master\Sklady\bin\Release\Core.pdb
+C:\#Study\ОПМ\SyllablesProject\Old\SyllablesProject\Syllables_master\Sklady\obj\Release\Sklady.csproj.AssemblyReference.cache
+C:\#Study\ОПМ\SyllablesProject\Old\SyllablesProject\Syllables_master\Sklady\obj\Release\Sklady.CharactersBase.resources
+C:\#Study\ОПМ\SyllablesProject\Old\SyllablesProject\Syllables_master\Sklady\obj\Release\Sklady.Form1.resources
+C:\#Study\ОПМ\SyllablesProject\Old\SyllablesProject\Syllables_master\Sklady\obj\Release\Sklady.MainView.resources
+C:\#Study\ОПМ\SyllablesProject\Old\SyllablesProject\Syllables_master\Sklady\obj\Release\Sklady.Properties.Resources.resources
+C:\#Study\ОПМ\SyllablesProject\Old\SyllablesProject\Syllables_master\Sklady\obj\Release\Sklady.SettingsForm.resources
+C:\#Study\ОПМ\SyllablesProject\Old\SyllablesProject\Syllables_master\Sklady\obj\Release\Sklady.TestView.resources
+C:\#Study\ОПМ\SyllablesProject\Old\SyllablesProject\Syllables_master\Sklady\obj\Release\Sklady.csproj.GenerateResource.cache
+C:\#Study\ОПМ\SyllablesProject\Old\SyllablesProject\Syllables_master\Sklady\obj\Release\Sklady.csproj.CoreCompileInputs.cache
+C:\#Study\ОПМ\SyllablesProject\Old\SyllablesProject\Syllables_master\Sklady\obj\Release\Sklady.TrustInfo.xml
+C:\#Study\ОПМ\SyllablesProject\Old\SyllablesProject\Syllables_master\Sklady\obj\Release\Sklady.exe.manifest
+C:\#Study\ОПМ\SyllablesProject\Old\SyllablesProject\Syllables_master\Sklady\obj\Release\Sklady.application
+C:\#Study\ОПМ\SyllablesProject\Old\SyllablesProject\Syllables_master\Sklady\obj\Release\Sklady.csproj.CopyComplete
+C:\#Study\ОПМ\SyllablesProject\Old\SyllablesProject\Syllables_master\Sklady\obj\Release\Sklady.exe
+C:\#Study\ОПМ\SyllablesProject\Old\SyllablesProject\Syllables_master\Sklady\obj\Release\Sklady.pdb
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8\SyllablesProject\Syllables_master\Sklady\bin\Release\Sklady.exe.config
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8\SyllablesProject\Syllables_master\Sklady\bin\Release\Sklady.exe.manifest
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8\SyllablesProject\Syllables_master\Sklady\bin\Release\Sklady.application
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8\SyllablesProject\Syllables_master\Sklady\bin\Release\Sklady.exe
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8\SyllablesProject\Syllables_master\Sklady\bin\Release\Sklady.pdb
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8\SyllablesProject\Syllables_master\Sklady\bin\Release\Core.dll
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8\SyllablesProject\Syllables_master\Sklady\bin\Release\Core.pdb
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8\SyllablesProject\Syllables_master\Sklady\obj\Release\Sklady.csproj.AssemblyReference.cache
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8\SyllablesProject\Syllables_master\Sklady\obj\Release\Sklady.CharactersBase.resources
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8\SyllablesProject\Syllables_master\Sklady\obj\Release\Sklady.Form1.resources
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8\SyllablesProject\Syllables_master\Sklady\obj\Release\Sklady.MainView.resources
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8\SyllablesProject\Syllables_master\Sklady\obj\Release\Sklady.Properties.Resources.resources
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8\SyllablesProject\Syllables_master\Sklady\obj\Release\Sklady.SettingsForm.resources
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8\SyllablesProject\Syllables_master\Sklady\obj\Release\Sklady.TestView.resources
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8\SyllablesProject\Syllables_master\Sklady\obj\Release\Sklady.csproj.GenerateResource.cache
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8\SyllablesProject\Syllables_master\Sklady\obj\Release\Sklady.csproj.CoreCompileInputs.cache
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8\SyllablesProject\Syllables_master\Sklady\obj\Release\Sklady.TrustInfo.xml
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8\SyllablesProject\Syllables_master\Sklady\obj\Release\Sklady.exe.manifest
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8\SyllablesProject\Syllables_master\Sklady\obj\Release\Sklady.application
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8\SyllablesProject\Syllables_master\Sklady\obj\Release\Sklady.csproj.CopyComplete
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8\SyllablesProject\Syllables_master\Sklady\obj\Release\Sklady.exe
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8\SyllablesProject\Syllables_master\Sklady\obj\Release\Sklady.pdb
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8to.NET6\SyllablesProject\Syllables_master\Sklady\bin\Release\Sklady.exe.config
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8to.NET6\SyllablesProject\Syllables_master\Sklady\bin\Release\Sklady.exe.manifest
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8to.NET6\SyllablesProject\Syllables_master\Sklady\bin\Release\Sklady.application
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8to.NET6\SyllablesProject\Syllables_master\Sklady\bin\Release\Sklady.exe
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8to.NET6\SyllablesProject\Syllables_master\Sklady\bin\Release\Sklady.pdb
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8to.NET6\SyllablesProject\Syllables_master\Sklady\bin\Release\Core.dll
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8to.NET6\SyllablesProject\Syllables_master\Sklady\bin\Release\Core.pdb
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8to.NET6\SyllablesProject\Syllables_master\Sklady\obj\Release\Sklady.csproj.AssemblyReference.cache
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8to.NET6\SyllablesProject\Syllables_master\Sklady\obj\Release\Sklady.CharactersBase.resources
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8to.NET6\SyllablesProject\Syllables_master\Sklady\obj\Release\Sklady.Form1.resources
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8to.NET6\SyllablesProject\Syllables_master\Sklady\obj\Release\Sklady.MainView.resources
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8to.NET6\SyllablesProject\Syllables_master\Sklady\obj\Release\Sklady.Properties.Resources.resources
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8to.NET6\SyllablesProject\Syllables_master\Sklady\obj\Release\Sklady.SettingsForm.resources
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8to.NET6\SyllablesProject\Syllables_master\Sklady\obj\Release\Sklady.TestView.resources
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8to.NET6\SyllablesProject\Syllables_master\Sklady\obj\Release\Sklady.csproj.GenerateResource.cache
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8to.NET6\SyllablesProject\Syllables_master\Sklady\obj\Release\Sklady.csproj.CoreCompileInputs.cache
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8to.NET6\SyllablesProject\Syllables_master\Sklady\obj\Release\Sklady.TrustInfo.xml
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8to.NET6\SyllablesProject\Syllables_master\Sklady\obj\Release\Sklady.exe.manifest
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8to.NET6\SyllablesProject\Syllables_master\Sklady\obj\Release\Sklady.application
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8to.NET6\SyllablesProject\Syllables_master\Sklady\obj\Release\Sklady.csproj.CopyComplete
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8to.NET6\SyllablesProject\Syllables_master\Sklady\obj\Release\Sklady.exe
+C:\#Study\ОПМ\SyllablesProject\Old - From.NET8to.NET6\SyllablesProject\Syllables_master\Sklady\obj\Release\Sklady.pdb

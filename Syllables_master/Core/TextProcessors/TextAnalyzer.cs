@@ -3,6 +3,7 @@ using Sklady.Export;
 using Sklady.Models;
 using Sklady.TextProcessors;
 using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -12,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace Sklady
 {
-    public class TextAnalyzer
+    public partial class TextAnalyzer
     {
         private Stopwatch _stopWatch = new Stopwatch();
         public long ElapsedToCountWords { get { return _stopWatch.ElapsedMilliseconds; } }
@@ -87,12 +88,25 @@ namespace Sklady
 
         public FileProcessingResult GetResults(bool[] isCheckbox)
         {
-            var result = new FileProcessingResult(exporter);   
-            for (var i = 0; i < _words.Length; i++)
+            var result = new FileProcessingResult(exporter)
+            {
+                CvvResults = new List<AnalyzeResults>(_words.Length),
+                ReadableResults = new List<AnalyzeResults>(_words.Length)
+            };
+
+            foreach (var word in _words)
+            {
+                result.CvvResults.Add(new AnalyzeResults());
+                result.ReadableResults.Add(new AnalyzeResults());
+            }
+
+            var invokeStep = _words.Length / 10;
+
+            Parallel.For(0, _words.Length, i =>
             {
                 try
                 {
-                    UpdateRepetitions(result.Repetitions, _words[i]);                    
+                    UpdateRepetitions(result.Repetitions, _words[i]);
 
                     if (settings.PhoneticsMode)
                         _words[i] = _phoneticProcessor.Process(_words[i], isCheckbox); // In case of phonetics mode make corresponding replacements
@@ -101,33 +115,40 @@ namespace Sklady
 
                     UpdateLetters(result.Letters, _words[i]);
 
-                    var syllables = _wordAnalyzer.GetSyllables(_words[i]).ToArray();
+                    var tempWord = _words[i];
 
-                    if (settings.PhoneticsMode)                    
-                        syllables = RemoveApos(syllables); 
-                    
-
-                    result.CvvResults.Add(new AnalyzeResults()
+                    if (settings.PhoneticsMode)
                     {
-                        Word = _words[i],
-                        Syllables = RemoveApos(syllables)
-                    });
+                        RemoveAposWord(tempWord);
+                    }
 
-                    result.ReadableResults.Add(new AnalyzeResults()
+                    var syllables = _wordAnalyzer.GetSyllables(tempWord);
+
+                    result.CvvResults[i].Word = _words[i];
+                    result.CvvResults[i].Syllables = RemoveApos(syllables);
+
+                    result.ReadableResults[i].Word = _words[i];
+                    result.ReadableResults[i].Syllables = settings.PhoneticsMode ? syllables : UnprocessPhonetics(syllables);
+
+                    if (result.ReadableResults[i].Syllables == null)
                     {
-                        Word = _words[i],
-                        Syllables = settings.PhoneticsMode ? syllables : UnprocessPhonetics(syllables)
-                    });
+                        throw new Exception("Syllables are null");
+                    }
 
-                    OnWordAnalyzed?.Invoke(i + 1, _words.Length, FileName);
+                    if (i % invokeStep == 0)
+                    {
+                        OnWordAnalyzed?.Invoke(i + 1, _words.Length, FileName);
+                    }
                 }
                 catch (Exception ex)
                 {
-                   OnErrorOccured?.Invoke(ex, _words[i], FileName);
-                } 
-            }
+                    OnErrorOccured?.Invoke(ex, _words[i], FileName);
+                }
+            });
 
-            result.FileName = this.FileName;
+            OnWordAnalyzed?.Invoke(_words.Length, _words.Length, FileName);
+
+            result.FileName = FileName;
 
             return result;
         }
@@ -135,22 +156,19 @@ namespace Sklady
         private void UpdateLetters(Dictionary<char, int> letters, string word)
         {
             _stopWatch.Start();           
+            char[] charsToSkip = { '\'', '-', '\n', '\r', '\t' };
             for (var i = 0; i < word.Length; i++)
-            {                
-                if (word[i] == '\'' || word[i] == '-' || word[i] == '\n' || word[i] == '\r' || word[i] == '\t')
+            { 
+                if (Array.IndexOf(charsToSkip, word[i]) != -1)
                 {
                     continue;
                 }
 
                 var key = GetKeyForLetter(word[i]);
 
-                if (letters.ContainsKey(key))
+                lock(letters)
                 {
-                    letters[key] += 1;
-                }
-                else
-                {
-                    letters[key] = 1;
+                    letters[key] = letters.TryGetValue(key, out int value) ? value + 1 : 1;
                 }
             }
             _stopWatch.Stop();
@@ -158,32 +176,35 @@ namespace Sklady
 
         private char GetKeyForLetter(char letter)
         {
-            var predefinedPairs = new Dictionary<char, char>();
-            predefinedPairs.Add('я', 'а');
-            predefinedPairs.Add('є', 'е');
-            predefinedPairs.Add('ю', 'у');
-            predefinedPairs.Add('ї', 'і');
-            predefinedPairs.Add('ё', 'о');
+            var predefinedPairs = new Dictionary<char, char>
+            {
+                { 'я', 'а' },
+                { 'є', 'е' },
+                { 'ю', 'у' },
+                { 'ї', 'і' },
+                { 'ё', 'о' }
+            };
 
             if (settings.Language == Languages.Russian)
                 predefinedPairs.Add('е', 'э');
 
-            return predefinedPairs.ContainsKey(letter) ? predefinedPairs[letter] : letter;
+            return predefinedPairs.TryGetValue(letter, out char value) ? value : letter;
         }
 
         private void UpdateRepetitions(Dictionary<string, int> repetitions, string word)
         {
+            //var match = MyRegex1().Match(word);
             var match = Regex.Match(word, @"([а-яА-Я])\1+");
 
             if (match.Success)
             {
-                if (!repetitions.ContainsKey(match.Value))
+                if (!repetitions.TryGetValue(match.Value, out int value))
                 {
                     repetitions.Add(match.Value, 1);
                 }
                 else
                 {
-                    repetitions[match.Value]++;
+                    repetitions[match.Value] = ++value;
                 }
             }                     
         }
@@ -208,5 +229,16 @@ namespace Sklady
 
             return result;
         }
+
+        private string RemoveAposWord(string input)
+        {
+            //return MyRegex().Replace(input, "");
+            return input.Replace("'", "");
+        }
+
+        //[GeneratedRegex(@"\'")]
+        //private static partial Regex MyRegex();
+        //[GeneratedRegex(@"([а-яА-Я])\1+")]
+        //private static partial Regex MyRegex1();
     }
 }

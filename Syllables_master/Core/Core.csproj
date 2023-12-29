@@ -1,73 +1,15 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AFFC008E-C860-4277-AF95-FE6F8D1CF27D}</ProjectGuid>
+    <TargetFramework>net7.0</TargetFramework>
     <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Core</RootNamespace>
-    <AssemblyName>Core</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AssemblyTitle>Core</AssemblyTitle>
+    <Product>Core</Product>
+    <Copyright>Copyright ©  2017</Copyright>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Xml" />
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
   </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Export\ExportResults.cs" />
-    <Compile Include="Export\FileExportResults.cs" />
-    <Compile Include="Export\ResultsExporter.cs" />
-    <Compile Include="Export\StatisticsCalculator.cs" />
-    <Compile Include="Export\StatisticsTableGenerator.cs" />
-    <Compile Include="Helpers\RegexBuilder.cs" />
-    <Compile Include="Helpers\Models\AnalyzeResults.cs" />
-    <Compile Include="Helpers\Models\Character.cs" />
-    <Compile Include="Helpers\Models\FileProcessingResult.cs" />
-    <Compile Include="Helpers\Models\InputFileModel.cs" />
-    <Compile Include="Helpers\Models\Languages.cs" />
-    <Compile Include="Helpers\Models\Settings.cs" />
-    <Compile Include="Helpers\Models\Table.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TextProcessors\AncientPhoneticProcessor.cs" />
-    <Compile Include="TextProcessors\BulgarianPhoneticProcessor.cs" />
-    <Compile Include="TextProcessors\CharactersPowerTable.cs" />
-    <Compile Include="TextProcessors\EnglishPhoneticProcessor.cs" />
-    <Compile Include="TextProcessors\PhoneticProcessor.cs" />
-    <Compile Include="TextProcessors\PolishPhoneticProcessor.cs" />
-    <Compile Include="TextProcessors\RussianPhoneticProcessor.cs" />
-    <Compile Include="TextProcessors\TextAnalyzer.cs" />
-    <Compile Include="TextProcessors\UkrainePhoneticProcessor.cs" />
-    <Compile Include="TextProcessors\WordAnalyzer.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ClassDiagram1.cd" />
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -25,6 +25,14 @@ namespace Sklady.Export
             _charsTable = settings.CharactersTable; 
             _statisticsTableGenerator = new StatisticsTableGenerator(settings.AbsoluteMeasures);
         }
+
+        public StatisticsTableGenerator StatisticsTableGenerator
+        {
+            get
+            {
+                return _statisticsTableGenerator;
+            }
+        }
         
         public string GetFirstSyllables(List<AnalyzeResults> result)
         {          
@@ -44,39 +52,36 @@ namespace Sklady.Export
         public string GetSyllables(List<AnalyzeResults> result)
         {
             var sb = new StringBuilder();
-            var res = result.Select(r => r).ToList();
             
             sb.Append(String.Join(" ", result.Select(r => String.Join(_settings.SyllableSeparator, r.Syllables))));
 
             return sb.ToString();
         }
 
-        public string GetSyllablesCVV(List<AnalyzeResults> result)
+        public (string syllables, string firstSyllable) GetSyllablesCVVUnified(List<AnalyzeResults> result)
         {
-            var sb = new StringBuilder();
-            var res = result.Select(r => new AnalyzeResults() { Syllables = r.Syllables.Select(s => (string)s.Clone()).ToArray() }).ToList();
+            var sbSyllables = new StringBuilder();
+            var sbFirstSyllable = new StringBuilder();
 
-            res = ConvertToCvv(res);
+            result = ConvertToCvv(result);
 
-            for (var i = 0; i < res.Count; i++)
+            for (var i = 0; i < result.Count; i++)
             {
-                sb.Append(String.Join(_settings.SyllableSeparator, res[i].Syllables) + " ");
+                sbSyllables.Append(string.Join(_settings.SyllableSeparator, result[i].Syllables) + " ");
+                sbFirstSyllable.Append(string.Join(_settings.SyllableSeparator, result[i].Syllables.First()) + " ");
             }
 
-            return sb.ToString();
+            return (sbSyllables.ToString(), sbFirstSyllable.ToString());
         }
 
         public string GetSyllablesFirstCVV(List<AnalyzeResults> result)
         {
             var sb = new StringBuilder();
-            var res = result.Select(r => new AnalyzeResults() { Syllables = r.Syllables.Select(s => (string)s.Clone()).ToArray() }).ToList();
 
-            res = TakeOnlyFirstSyllable(res);
-            res = ConvertToCvv(res);
-
-            for (var i = 0; i < res.Count; i++)
+            for (var i = 0; i < result.Count; i++)
             {
-                sb.Append(String.Join(_settings.SyllableSeparator, res[i].Syllables) + " ");
+                //sb.Append(String.Join(_settings.SyllableSeparator, [result[i].Syllables.First()]) + " ");
+                sb.Append(String.Join(_settings.SyllableSeparator, result[i].Syllables.First()) + " ");
             }
 
             return sb.ToString();
@@ -87,25 +92,61 @@ namespace Sklady.Export
             return anResults.Select(c => new AnalyzeResults()
             {
                 Word = c.Word,
+                //Syllables = [c.Syllables.First()]
                 Syllables = new string[] { c.Syllables.First() }
             }).ToList();
         }        
 
-        public List<AnalyzeResults> ConvertToCvv(List<AnalyzeResults> anResults)
+        public List<AnalyzeResults> ConvertToCvvOld(List<AnalyzeResults> anResults)
         {
-            foreach (var resultitem in anResults)
+            var unionOpt = _charsTable.UnionOpt;
+
+            Parallel.ForEach(anResults, resultitem =>
             {
                 for (var i = 0; i < resultitem.Syllables.Length; i++)
                 {
-                    var list = resultitem.Syllables[i].ToList();
-                    list.RemoveAll(c => _charsTable.GetPower(c) == 0);
-                    resultitem.Syllables[i] = new string(list.ToArray());
-                    resultitem.Syllables[i] = new string(resultitem.Syllables[i].Select(s => _charsTable.isConsonant(s) ? 'c' : 'v').ToArray());
+                    var modifiedSyllable = "";
+                    for (var j = 0; j < resultitem.Syllables[i].Length; j++)
+                    {
+                        var character = resultitem.Syllables[i][j];
+                        if (unionOpt.Any(c => c.CharacterValue == character))
+                        {
+                            modifiedSyllable += _charsTable.isConsonant(character) ? 'c' : 'v';
+                        }
+                    }
+
+                    resultitem.Syllables[i] = modifiedSyllable;    
                 }
-            }
+            });
 
             return anResults;
         }
+
+        public List<AnalyzeResults> ConvertToCvv(List<AnalyzeResults> anResults)
+        {
+            var unionOptSet = new HashSet<char>(_charsTable.UnionOpt.Select(c => c.CharacterValue));
+
+            Parallel.ForEach(anResults, resultitem =>
+            {
+                for (var i = 0; i < resultitem.Syllables.Length; i++)
+                {
+                    var modifiedSyllable = new StringBuilder();
+
+                    foreach (var character in resultitem.Syllables[i])
+                    {
+                        if (unionOptSet.Contains(character))
+                        {
+                            modifiedSyllable.Append(_charsTable.isConsonant(character) ? 'c' : 'v');
+                        }
+                    }
+
+                    resultitem.Syllables[i] = modifiedSyllable.ToString();
+                }
+            });
+
+            return anResults;
+        }
+
 
         public string GetStatisticsTableCsv(List<FileProcessingResult> fileProcessingResults)
         {

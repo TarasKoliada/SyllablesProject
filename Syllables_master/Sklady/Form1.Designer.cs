@@ -28,395 +28,388 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.charactersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.mainView1 = new Sklady.MainView();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.testView1 = new Sklady.TestView();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.dataGridView4 = new System.Windows.Forms.DataGridView();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.menuStrip1.SuspendLayout();
-            this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.tabPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            this.tabPage5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
-            this.tabPage6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
-            this.SuspendLayout();
+            menuStrip1 = new System.Windows.Forms.MenuStrip();
+            fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            charactersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            tabControl1 = new System.Windows.Forms.TabControl();
+            tabPage1 = new System.Windows.Forms.TabPage();
+            mainView1 = new MainView();
+            tabPage2 = new System.Windows.Forms.TabPage();
+            testView1 = new TestView();
+            tabPage4 = new System.Windows.Forms.TabPage();
+            dataGridView1 = new System.Windows.Forms.DataGridView();
+            tabPage3 = new System.Windows.Forms.TabPage();
+            button6 = new System.Windows.Forms.Button();
+            button1 = new System.Windows.Forms.Button();
+            button3 = new System.Windows.Forms.Button();
+            dataGridView2 = new System.Windows.Forms.DataGridView();
+            tabPage5 = new System.Windows.Forms.TabPage();
+            button5 = new System.Windows.Forms.Button();
+            button4 = new System.Windows.Forms.Button();
+            button2 = new System.Windows.Forms.Button();
+            dataGridView3 = new System.Windows.Forms.DataGridView();
+            tabPage6 = new System.Windows.Forms.TabPage();
+            button9 = new System.Windows.Forms.Button();
+            button8 = new System.Windows.Forms.Button();
+            button7 = new System.Windows.Forms.Button();
+            dataGridView4 = new System.Windows.Forms.DataGridView();
+            openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            menuStrip1.SuspendLayout();
+            tabControl1.SuspendLayout();
+            tabPage1.SuspendLayout();
+            tabPage2.SuspendLayout();
+            tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
+            tabPage5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView3).BeginInit();
+            tabPage6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView4).BeginInit();
+            SuspendLayout();
             // 
             // menuStrip1
             // 
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1460, 44);
-            this.menuStrip1.TabIndex = 3;
-            this.menuStrip1.Text = "menuStrip1";
+            menuStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
+            menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { fileToolStripMenuItem });
+            menuStrip1.Location = new System.Drawing.Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            menuStrip1.Size = new System.Drawing.Size(973, 28);
+            menuStrip1.TabIndex = 3;
+            menuStrip1.Text = "menuStrip1";
             // 
             // fileToolStripMenuItem
             // 
-            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.openToolStripMenuItem,
-            this.saveToolStripMenuItem,
-            this.settingsToolStripMenuItem,
-            this.charactersToolStripMenuItem,
-            this.exitToolStripMenuItem});
-            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(71, 36);
-            this.fileToolStripMenuItem.Text = "File";
+            fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { openToolStripMenuItem, saveToolStripMenuItem, settingsToolStripMenuItem, charactersToolStripMenuItem, exitToolStripMenuItem });
+            fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
+            fileToolStripMenuItem.Text = "File";
             // 
             // openToolStripMenuItem
             // 
-            this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(258, 44);
-            this.openToolStripMenuItem.Text = "Open";
-            this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
+            openToolStripMenuItem.Name = "openToolStripMenuItem";
+            openToolStripMenuItem.Size = new System.Drawing.Size(161, 26);
+            openToolStripMenuItem.Text = "Open";
+            openToolStripMenuItem.Click += openToolStripMenuItem_Click;
             // 
             // saveToolStripMenuItem
             // 
-            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(258, 44);
-            this.saveToolStripMenuItem.Text = "Save";
-            this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
+            saveToolStripMenuItem.Name = "saveToolStripMenuItem";
+            saveToolStripMenuItem.Size = new System.Drawing.Size(161, 26);
+            saveToolStripMenuItem.Text = "Save";
+            saveToolStripMenuItem.Click += saveToolStripMenuItem_Click;
             // 
             // settingsToolStripMenuItem
             // 
-            this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(258, 44);
-            this.settingsToolStripMenuItem.Text = "Settings";
-            this.settingsToolStripMenuItem.Click += new System.EventHandler(this.settingsToolStripMenuItem_Click);
+            settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
+            settingsToolStripMenuItem.Size = new System.Drawing.Size(161, 26);
+            settingsToolStripMenuItem.Text = "Settings";
+            settingsToolStripMenuItem.Click += settingsToolStripMenuItem_Click;
             // 
             // charactersToolStripMenuItem
             // 
-            this.charactersToolStripMenuItem.Name = "charactersToolStripMenuItem";
-            this.charactersToolStripMenuItem.Size = new System.Drawing.Size(258, 44);
-            this.charactersToolStripMenuItem.Text = "Characters";
-            this.charactersToolStripMenuItem.Click += new System.EventHandler(this.charactersToolStripMenuItem_Click);
+            charactersToolStripMenuItem.Name = "charactersToolStripMenuItem";
+            charactersToolStripMenuItem.Size = new System.Drawing.Size(161, 26);
+            charactersToolStripMenuItem.Text = "Characters";
+            charactersToolStripMenuItem.Click += charactersToolStripMenuItem_Click;
             // 
             // exitToolStripMenuItem
             // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(258, 44);
-            this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            exitToolStripMenuItem.Size = new System.Drawing.Size(161, 26);
+            exitToolStripMenuItem.Text = "Exit";
+            exitToolStripMenuItem.Click += exitToolStripMenuItem_Click;
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Controls.Add(this.tabPage5);
-            this.tabControl1.Controls.Add(this.tabPage6);
-            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Location = new System.Drawing.Point(0, 44);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1460, 1075);
-            this.tabControl1.TabIndex = 4;
+            tabControl1.Controls.Add(tabPage1);
+            tabControl1.Controls.Add(tabPage2);
+            tabControl1.Controls.Add(tabPage4);
+            tabControl1.Controls.Add(tabPage3);
+            tabControl1.Controls.Add(tabPage5);
+            tabControl1.Controls.Add(tabPage6);
+            tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            tabControl1.Location = new System.Drawing.Point(0, 28);
+            tabControl1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            tabControl1.Name = "tabControl1";
+            tabControl1.SelectedIndex = 0;
+            tabControl1.Size = new System.Drawing.Size(973, 816);
+            tabControl1.TabIndex = 4;
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.mainView1);
-            this.tabPage1.Location = new System.Drawing.Point(8, 39);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.tabPage1.Size = new System.Drawing.Size(1444, 1028);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Main";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            tabPage1.Controls.Add(mainView1);
+            tabPage1.Location = new System.Drawing.Point(4, 29);
+            tabPage1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            tabPage1.Name = "tabPage1";
+            tabPage1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            tabPage1.Size = new System.Drawing.Size(965, 783);
+            tabPage1.TabIndex = 0;
+            tabPage1.Text = "Main";
+            tabPage1.UseVisualStyleBackColor = true;
             // 
             // mainView1
             // 
-            this.mainView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainView1.InputData = null;
-            this.mainView1.Location = new System.Drawing.Point(6, 6);
-            this.mainView1.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
-            this.mainView1.Name = "mainView1";
-            this.mainView1.Size = new System.Drawing.Size(1432, 1016);
-            this.mainView1.TabIndex = 0;
+            mainView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            mainView1.InputData = null;
+            mainView1.Location = new System.Drawing.Point(4, 5);
+            mainView1.Margin = new System.Windows.Forms.Padding(8, 10, 8, 10);
+            mainView1.Name = "mainView1";
+            mainView1.Size = new System.Drawing.Size(957, 773);
+            mainView1.TabIndex = 0;
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.testView1);
-            this.tabPage2.Location = new System.Drawing.Point(8, 39);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.tabPage2.Size = new System.Drawing.Size(1444, 1028);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Test";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            tabPage2.Controls.Add(testView1);
+            tabPage2.Location = new System.Drawing.Point(4, 29);
+            tabPage2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            tabPage2.Name = "tabPage2";
+            tabPage2.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            tabPage2.Size = new System.Drawing.Size(965, 783);
+            tabPage2.TabIndex = 1;
+            tabPage2.Text = "Test";
+            tabPage2.UseVisualStyleBackColor = true;
             // 
             // testView1
             // 
-            this.testView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.testView1.Location = new System.Drawing.Point(6, 6);
-            this.testView1.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
-            this.testView1.Name = "testView1";
-            this.testView1.Size = new System.Drawing.Size(1432, 1016);
-            this.testView1.TabIndex = 1;
+            testView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            testView1.Location = new System.Drawing.Point(4, 5);
+            testView1.Margin = new System.Windows.Forms.Padding(8, 10, 8, 10);
+            testView1.Name = "testView1";
+            testView1.Size = new System.Drawing.Size(957, 773);
+            testView1.TabIndex = 1;
             // 
             // tabPage4
             // 
-            this.tabPage4.Controls.Add(this.dataGridView1);
-            this.tabPage4.Location = new System.Drawing.Point(8, 39);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(1444, 1028);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Texts Statistics";
-            this.tabPage4.UseVisualStyleBackColor = true;
+            tabPage4.Controls.Add(dataGridView1);
+            tabPage4.Location = new System.Drawing.Point(4, 29);
+            tabPage4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            tabPage4.Name = "tabPage4";
+            tabPage4.Size = new System.Drawing.Size(965, 783);
+            tabPage4.TabIndex = 3;
+            tabPage4.Text = "Texts Statistics";
+            tabPage4.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(8, 52);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 82;
-            this.dataGridView1.Size = new System.Drawing.Size(1432, 800);
-            this.dataGridView1.TabIndex = 2;
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.AllowUserToDeleteRows = false;
+            dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new System.Drawing.Point(5, 42);
+            dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.ReadOnly = true;
+            dataGridView1.RowHeadersWidth = 82;
+            dataGridView1.Size = new System.Drawing.Size(955, 640);
+            dataGridView1.TabIndex = 2;
             // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.button6);
-            this.tabPage3.Controls.Add(this.button1);
-            this.tabPage3.Controls.Add(this.button3);
-            this.tabPage3.Controls.Add(this.dataGridView2);
-            this.tabPage3.Location = new System.Drawing.Point(8, 39);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1444, 1028);
-            this.tabPage3.TabIndex = 4;
-            this.tabPage3.Text = "Words Statistics(EN)";
-            this.tabPage3.UseVisualStyleBackColor = true;
+            tabPage3.Controls.Add(button6);
+            tabPage3.Controls.Add(button1);
+            tabPage3.Controls.Add(button3);
+            tabPage3.Controls.Add(dataGridView2);
+            tabPage3.Location = new System.Drawing.Point(4, 29);
+            tabPage3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            tabPage3.Name = "tabPage3";
+            tabPage3.Size = new System.Drawing.Size(965, 827);
+            tabPage3.TabIndex = 4;
+            tabPage3.Text = "Words Statistics(EN)";
+            tabPage3.UseVisualStyleBackColor = true;
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(1162, 769);
-            this.button6.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(204, 63);
-            this.button6.TabIndex = 6;
-            this.button6.Text = "Export Results";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            button6.Location = new System.Drawing.Point(775, 615);
+            button6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            button6.Name = "button6";
+            button6.Size = new System.Drawing.Size(136, 50);
+            button6.TabIndex = 6;
+            button6.Text = "Export Results";
+            button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(588, 713);
-            this.button1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(238, 63);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Open txt file";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            button1.Location = new System.Drawing.Point(392, 570);
+            button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            button1.Name = "button1";
+            button1.Size = new System.Drawing.Size(159, 50);
+            button1.TabIndex = 5;
+            button1.Text = "Open txt file";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(626, 788);
-            this.button3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(150, 44);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Clear";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            button3.Location = new System.Drawing.Point(417, 630);
+            button3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            button3.Name = "button3";
+            button3.Size = new System.Drawing.Size(100, 35);
+            button3.TabIndex = 4;
+            button3.Text = "Clear";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // dataGridView2
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(192, 23);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 82;
-            this.dataGridView2.Size = new System.Drawing.Size(1050, 654);
-            this.dataGridView2.TabIndex = 0;
+            dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView2.Location = new System.Drawing.Point(128, 18);
+            dataGridView2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            dataGridView2.Name = "dataGridView2";
+            dataGridView2.RowHeadersWidth = 82;
+            dataGridView2.Size = new System.Drawing.Size(700, 523);
+            dataGridView2.TabIndex = 0;
             // 
             // tabPage5
             // 
-            this.tabPage5.Controls.Add(this.button5);
-            this.tabPage5.Controls.Add(this.button4);
-            this.tabPage5.Controls.Add(this.button2);
-            this.tabPage5.Controls.Add(this.dataGridView3);
-            this.tabPage5.Location = new System.Drawing.Point(8, 39);
-            this.tabPage5.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(1444, 1028);
-            this.tabPage5.TabIndex = 5;
-            this.tabPage5.Text = "Word Statistics(UA/RU/BG)";
-            this.tabPage5.UseVisualStyleBackColor = true;
+            tabPage5.Controls.Add(button5);
+            tabPage5.Controls.Add(button4);
+            tabPage5.Controls.Add(button2);
+            tabPage5.Controls.Add(dataGridView3);
+            tabPage5.Location = new System.Drawing.Point(4, 29);
+            tabPage5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            tabPage5.Name = "tabPage5";
+            tabPage5.Size = new System.Drawing.Size(965, 827);
+            tabPage5.TabIndex = 5;
+            tabPage5.Text = "Word Statistics(UA/RU/BG)";
+            tabPage5.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(1162, 769);
-            this.button5.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(204, 63);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Export Results";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            button5.Location = new System.Drawing.Point(775, 615);
+            button5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            button5.Name = "button5";
+            button5.Size = new System.Drawing.Size(136, 50);
+            button5.TabIndex = 4;
+            button5.Text = "Export Results";
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(626, 788);
-            this.button4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(150, 44);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Clear";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            button4.Location = new System.Drawing.Point(417, 630);
+            button4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            button4.Name = "button4";
+            button4.Size = new System.Drawing.Size(100, 35);
+            button4.TabIndex = 3;
+            button4.Text = "Clear";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(588, 713);
-            this.button2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(238, 63);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Open txt file";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            button2.Location = new System.Drawing.Point(392, 570);
+            button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            button2.Name = "button2";
+            button2.Size = new System.Drawing.Size(159, 50);
+            button2.TabIndex = 2;
+            button2.Text = "Open txt file";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // dataGridView3
             // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(78, 25);
-            this.dataGridView3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.RowHeadersWidth = 82;
-            this.dataGridView3.Size = new System.Drawing.Size(1288, 654);
-            this.dataGridView3.TabIndex = 1;
+            dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView3.Location = new System.Drawing.Point(52, 20);
+            dataGridView3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            dataGridView3.Name = "dataGridView3";
+            dataGridView3.RowHeadersWidth = 82;
+            dataGridView3.Size = new System.Drawing.Size(859, 523);
+            dataGridView3.TabIndex = 1;
             // 
             // tabPage6
             // 
-            this.tabPage6.Controls.Add(this.button9);
-            this.tabPage6.Controls.Add(this.button8);
-            this.tabPage6.Controls.Add(this.button7);
-            this.tabPage6.Controls.Add(this.dataGridView4);
-            this.tabPage6.Location = new System.Drawing.Point(8, 39);
-            this.tabPage6.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(1444, 1028);
-            this.tabPage6.TabIndex = 6;
-            this.tabPage6.Text = "Word Statistics(PL)";
-            this.tabPage6.UseVisualStyleBackColor = true;
+            tabPage6.Controls.Add(button9);
+            tabPage6.Controls.Add(button8);
+            tabPage6.Controls.Add(button7);
+            tabPage6.Controls.Add(dataGridView4);
+            tabPage6.Location = new System.Drawing.Point(4, 29);
+            tabPage6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            tabPage6.Name = "tabPage6";
+            tabPage6.Size = new System.Drawing.Size(965, 783);
+            tabPage6.TabIndex = 6;
+            tabPage6.Text = "Word Statistics(PL)";
+            tabPage6.UseVisualStyleBackColor = true;
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(1162, 769);
-            this.button9.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(204, 63);
-            this.button9.TabIndex = 5;
-            this.button9.Text = "Export Results";
-            this.button9.UseVisualStyleBackColor = true;
+            button9.Location = new System.Drawing.Point(775, 615);
+            button9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            button9.Name = "button9";
+            button9.Size = new System.Drawing.Size(136, 50);
+            button9.TabIndex = 5;
+            button9.Text = "Export Results";
+            button9.UseVisualStyleBackColor = true;
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(626, 788);
-            this.button8.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(150, 44);
-            this.button8.TabIndex = 5;
-            this.button8.Text = "Clear";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            button8.Location = new System.Drawing.Point(417, 630);
+            button8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            button8.Name = "button8";
+            button8.Size = new System.Drawing.Size(100, 35);
+            button8.TabIndex = 5;
+            button8.Text = "Clear";
+            button8.UseVisualStyleBackColor = true;
+            button8.Click += button8_Click;
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(588, 713);
-            this.button7.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(238, 63);
-            this.button7.TabIndex = 5;
-            this.button7.Text = "Open txt file";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            button7.Location = new System.Drawing.Point(392, 570);
+            button7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            button7.Name = "button7";
+            button7.Size = new System.Drawing.Size(159, 50);
+            button7.TabIndex = 5;
+            button7.Text = "Open txt file";
+            button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
             // 
             // dataGridView4
             // 
-            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Location = new System.Drawing.Point(78, 25);
-            this.dataGridView4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.RowHeadersWidth = 82;
-            this.dataGridView4.Size = new System.Drawing.Size(1288, 654);
-            this.dataGridView4.TabIndex = 2;
+            dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView4.Location = new System.Drawing.Point(52, 20);
+            dataGridView4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            dataGridView4.Name = "dataGridView4";
+            dataGridView4.RowHeadersWidth = 82;
+            dataGridView4.Size = new System.Drawing.Size(859, 523);
+            dataGridView4.TabIndex = 2;
             // 
             // openFileDialog1
             // 
-            this.openFileDialog1.FileName = "openFileDialog1";
+            openFileDialog1.FileName = "openFileDialog1";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1460, 1119);
-            this.Controls.Add(this.tabControl1);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.Name = "Form1";
-            this.Text = "Syllables Processor";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
-            this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.tabPage3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            this.tabPage5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
-            this.tabPage6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(973, 844);
+            Controls.Add(tabControl1);
+            Controls.Add(menuStrip1);
+            MainMenuStrip = menuStrip1;
+            Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            Name = "Form1";
+            Text = "Syllables Processor";
+            Load += Form1_Load;
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
+            tabControl1.ResumeLayout(false);
+            tabPage1.ResumeLayout(false);
+            tabPage2.ResumeLayout(false);
+            tabPage4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            tabPage3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
+            tabPage5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridView3).EndInit();
+            tabPage6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridView4).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

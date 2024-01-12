@@ -45,6 +45,10 @@ namespace Sklady.TextProcessors
 
         public override string Process ( string input, bool[] isCheckbox )
         {
+            //Exclude russian letters  also
+            if (!ContainsOnlyUkrainianLetters(input))
+                throw new FormatException();
+
             var res = ProcessTwoSoundingLetters(input);
             res = ProcessDoubleConsonants(res);
             res = ProcessDzDj(res);
@@ -76,6 +80,11 @@ namespace Sklady.TextProcessors
                 res = Regex.Replace(res, "ь", "");
 
             return res;
+        }
+
+        private bool ContainsOnlyUkrainianLetters(string word)
+        {
+            return Regex.IsMatch(word, @"^[а-яґєіїй']+$");
         }
 
         private string ReductionReplacements(string res)

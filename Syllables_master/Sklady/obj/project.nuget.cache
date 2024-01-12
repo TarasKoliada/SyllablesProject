@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "QoTVMJ9Csb7XWHXPngNn1LZijW12+gt2cSjUCvrue65jsazHccRNnLRX/8/nM7eHSZC8OCoh/mRewc4iB02pxg==",
+  "dgSpecHash": "H2JX3y+uji7fS10OxkCfa/RgNbwWOEicutTTO18eTpskdxEeuEs/kNw08TGHpfId+fYXvGRSXArxLhIW3+JlNQ==",
   "success": true,
-  "projectFilePath": "C:\\#Study\\ОПМ\\SyllablesProjectGit\\Syllables_master\\Sklady\\Sklady.csproj",
+  "projectFilePath": "D:\\Laboratories\\Дипломна\\SyllablesProgram\\SyllablesProject\\Syllables_master\\Sklady\\Sklady.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\yaros\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+    "C:\\Users\\Legion\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }

@@ -3,7 +3,7 @@
   <asmv1:assemblyIdentity name="Sklady.exe" version="1.0.0.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="Launcher" version="8.0.0.0" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="Launcher" version="7.0.0.0" language="neutral" processorArchitecture="msil" />
     <commandLine file="Launcher.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -42,24 +42,24 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Launcher.exe" size="16384">
-      <assemblyIdentity name="Launcher" version="8.0.0.0" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Launcher.exe" size="15872">
+      <assemblyIdentity name="Launcher" version="7.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>k5CT1dy5Q8/csEj8OfuXoTq3Cf6pf6pFMhYrYYs67X4=</dsig:DigestValue>
+        <dsig:DigestValue>nsvUdIe6C3m1OE6wAgov3JGjlPooM7JWLWpyUFhjxU0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="Core.dll" size="54272">
+  <file name="Core.dll" size="54784">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>fshuJpmXtvSxM8PiAYdfowLa3rGoPGV024Ta61AMY6Q=</dsig:DigestValue>
+      <dsig:DigestValue>NIrTOQ0YO/J1jwvWdZW9G0amz4ee/d7T3I5/gZy8iRg=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Sklady.dll" size="50688">
@@ -68,7 +68,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>C196E/zRflUhTGo9uGuJ4Jm093Ri9BvfI7Kt9uPZkos=</dsig:DigestValue>
+      <dsig:DigestValue>2jQlPEMyMOX7bwCQwdzS4vsi9xmxuqp42WJzQRXxK6s=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Sklady.dll.config" size="184">
@@ -80,13 +80,13 @@
       <dsig:DigestValue>FihlZtVNgcNyH37Pf0Jtll3jZOm+L55ijXNjtoS2/mo=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Sklady.exe" size="154112">
+  <file name="Sklady.exe" size="153600">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>twnPCPmKlpDEVpM1z/1g939BIUiws0NBYOsFtU2g0F8=</dsig:DigestValue>
+      <dsig:DigestValue>P1eHMdKT7Je/V6526jgRxzRGrVTEba/POxfVR/00j1I=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">

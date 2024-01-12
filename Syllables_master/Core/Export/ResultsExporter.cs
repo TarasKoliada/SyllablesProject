@@ -1,6 +1,7 @@
 ﻿using Core.Models;
 using Sklady.Models;
 using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -52,8 +53,16 @@ namespace Sklady.Export
         public string GetSyllables(List<AnalyzeResults> result)
         {
             var sb = new StringBuilder();
-            
-            sb.Append(String.Join(" ", result.Select(r => String.Join(_settings.SyllableSeparator, r.Syllables))));
+
+            sb.Append(String.Join(" ", result.Select(r =>
+            {
+                if (r.Syllables == null || r.Word == null)
+                {
+                    return ""; // return an empty string or any other default value if r is null
+                }
+                else
+                    return String.Join(_settings.SyllableSeparator, r.Syllables);
+            })));
 
             return sb.ToString();
         }
@@ -125,27 +134,43 @@ namespace Sklady.Export
         public List<AnalyzeResults> ConvertToCvv(List<AnalyzeResults> anResults)
         {
             var unionOptSet = new HashSet<char>(_charsTable.UnionOpt.Select(c => c.CharacterValue));
+            var itemsToRemove = new ConcurrentBag<AnalyzeResults>(); // Collect items to be removed
 
             Parallel.ForEach(anResults, resultitem =>
             {
-                for (var i = 0; i < resultitem.Syllables.Length; i++)
+                // Check if resultitem.Syllables is null
+                if (resultitem.Syllables != null)
                 {
-                    var modifiedSyllable = new StringBuilder();
-
-                    foreach (var character in resultitem.Syllables[i])
+                    for (var i = 0; i < resultitem.Syllables.Length; i++)
                     {
-                        if (unionOptSet.Contains(character))
-                        {
-                            modifiedSyllable.Append(_charsTable.isConsonant(character) ? 'c' : 'v');
-                        }
-                    }
+                        var modifiedSyllable = new StringBuilder();
 
-                    resultitem.Syllables[i] = modifiedSyllable.ToString();
+                        foreach (var character in resultitem.Syllables[i])
+                        {
+                            if (unionOptSet.Contains(character))
+                            {
+                                modifiedSyllable.Append(_charsTable.isConsonant(character) ? 'c' : 'v');
+                            }
+                        }
+
+                        resultitem.Syllables[i] = modifiedSyllable.ToString();
+                    }
+                }
+                else
+                {
+                    itemsToRemove.Add(resultitem); // Add item to remove if resultitem.Syllables is null
                 }
             });
 
+            // Remove items marked for removal
+            foreach (var itemToRemove in itemsToRemove)
+            {
+                anResults.Remove(itemToRemove);
+            }
+
             return anResults;
         }
+
 
 
         public string GetStatisticsTableCsv(List<FileProcessingResult> fileProcessingResults)

@@ -90,24 +90,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\yaros\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Legion\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\#Study\\ОПМ\\SyllablesProjectGit\\Syllables_master\\Core\\Core.csproj",
+      "projectUniqueName": "D:\\Laboratories\\Дипломна\\SyllablesProgram\\SyllablesProject\\Syllables_master\\Core\\Core.csproj",
       "projectName": "Core",
-      "projectPath": "C:\\#Study\\ОПМ\\SyllablesProjectGit\\Syllables_master\\Core\\Core.csproj",
-      "packagesPath": "C:\\Users\\yaros\\.nuget\\packages\\",
-      "outputPath": "C:\\#Study\\ОПМ\\SyllablesProjectGit\\Syllables_master\\Core\\obj\\",
+      "projectPath": "D:\\Laboratories\\Дипломна\\SyllablesProgram\\SyllablesProject\\Syllables_master\\Core\\Core.csproj",
+      "packagesPath": "C:\\Users\\Legion\\.nuget\\packages\\",
+      "outputPath": "D:\\Laboratories\\Дипломна\\SyllablesProgram\\SyllablesProject\\Syllables_master\\Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\yaros\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Legion\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -154,7 +153,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.2.23502.2\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

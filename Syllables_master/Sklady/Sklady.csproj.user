@@ -15,6 +15,12 @@
     <EnableSecurityDebugging>false</EnableSecurityDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Update="CharactersBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="SettingsForm.cs">
       <SubType>Form</SubType>
     </Compile>

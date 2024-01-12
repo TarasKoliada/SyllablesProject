@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -51,9 +52,13 @@ namespace Sklady.TextProcessors
             : base(charactersTable, isCheckbox)
         {
         }
-
+        
         public override string Process ( string input, bool[] isCheckbox )
         {
+
+            if (!MatchesWithEnglishAlphabet(input))
+                throw new FormatException();
+
             var res = ProcessTwoSoundingLetters(input);
             res = ProcessDoubleConsonants(res);
             res = ReductionReplacements(res);
@@ -82,6 +87,13 @@ namespace Sklady.TextProcessors
                 res = Regex.Replace(res, "ь", "");
 
             return res;
+        }
+
+        public bool MatchesWithEnglishAlphabet(string word)
+        {
+            Regex regex = new("^[A-Za-z]+$");
+
+            return regex.IsMatch(word);
         }
 
         private string ReductionReplacements(string res)

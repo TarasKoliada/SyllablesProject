@@ -18,3 +18,13 @@ C:\#Study\ОПМ\SyllablesProjectGit\Syllables_master\Core\obj\Release\net7.0\Co
 C:\#Study\ОПМ\SyllablesProjectGit\Syllables_master\Core\obj\Release\net7.0\refint\Core.dll
 C:\#Study\ОПМ\SyllablesProjectGit\Syllables_master\Core\obj\Release\net7.0\Core.pdb
 C:\#Study\ОПМ\SyllablesProjectGit\Syllables_master\Core\obj\Release\net7.0\ref\Core.dll
+D:\Laboratories\Дипломна\SyllablesProgram\SyllablesProject\Syllables_master\Core\bin\Release\net7.0\Core.deps.json
+D:\Laboratories\Дипломна\SyllablesProgram\SyllablesProject\Syllables_master\Core\bin\Release\net7.0\Core.dll
+D:\Laboratories\Дипломна\SyllablesProgram\SyllablesProject\Syllables_master\Core\bin\Release\net7.0\Core.pdb
+D:\Laboratories\Дипломна\SyllablesProgram\SyllablesProject\Syllables_master\Core\obj\Release\net7.0\Core.csproj.AssemblyReference.cache
+D:\Laboratories\Дипломна\SyllablesProgram\SyllablesProject\Syllables_master\Core\obj\Release\net7.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Laboratories\Дипломна\SyllablesProgram\SyllablesProject\Syllables_master\Core\obj\Release\net7.0\Core.csproj.CoreCompileInputs.cache
+D:\Laboratories\Дипломна\SyllablesProgram\SyllablesProject\Syllables_master\Core\obj\Release\net7.0\Core.dll
+D:\Laboratories\Дипломна\SyllablesProgram\SyllablesProject\Syllables_master\Core\obj\Release\net7.0\refint\Core.dll
+D:\Laboratories\Дипломна\SyllablesProgram\SyllablesProject\Syllables_master\Core\obj\Release\net7.0\Core.pdb
+D:\Laboratories\Дипломна\SyllablesProgram\SyllablesProject\Syllables_master\Core\obj\Release\net7.0\ref\Core.dll

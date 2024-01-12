@@ -28,92 +28,120 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            richTextBox2 = new System.Windows.Forms.RichTextBox();
+            richTextBox1 = new System.Windows.Forms.RichTextBox();
+            button1 = new System.Windows.Forms.Button();
+            richTextBox3 = new System.Windows.Forms.RichTextBox();
+            label1 = new System.Windows.Forms.Label();
+            label2 = new System.Windows.Forms.Label();
+            label3 = new System.Windows.Forms.Label();
+            richTextBox4 = new System.Windows.Forms.RichTextBox();
+            label4 = new System.Windows.Forms.Label();
+            SuspendLayout();
             // 
             // richTextBox2
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(256, 42);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(199, 331);
-            this.richTextBox2.TabIndex = 5;
-            this.richTextBox2.Text = "";
+            richTextBox2.Location = new System.Drawing.Point(655, 65);
+            richTextBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            richTextBox2.Name = "richTextBox2";
+            richTextBox2.Size = new System.Drawing.Size(264, 261);
+            richTextBox2.TabIndex = 5;
+            richTextBox2.Text = "";
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(22, 42);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(199, 331);
-            this.richTextBox1.TabIndex = 4;
-            this.richTextBox1.Text = "";
+            richTextBox1.Location = new System.Drawing.Point(29, 65);
+            richTextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            richTextBox1.Name = "richTextBox1";
+            richTextBox1.Size = new System.Drawing.Size(264, 543);
+            richTextBox1.TabIndex = 4;
+            richTextBox1.Text = "";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(22, 398);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Go";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            button1.Location = new System.Drawing.Point(25, 618);
+            button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            button1.Name = "button1";
+            button1.Size = new System.Drawing.Size(100, 35);
+            button1.TabIndex = 3;
+            button1.Text = "Go";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // richTextBox3
             // 
-            this.richTextBox3.Location = new System.Drawing.Point(491, 42);
-            this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.Size = new System.Drawing.Size(199, 331);
-            this.richTextBox3.TabIndex = 6;
-            this.richTextBox3.Text = "";
+            richTextBox3.Location = new System.Drawing.Point(655, 356);
+            richTextBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            richTextBox3.Name = "richTextBox3";
+            richTextBox3.Size = new System.Drawing.Size(264, 252);
+            richTextBox3.TabIndex = 6;
+            richTextBox3.Text = "";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(19, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(31, 13);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Text:";
+            label1.AutoSize = true;
+            label1.Location = new System.Drawing.Point(29, 40);
+            label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(39, 20);
+            label1.TabIndex = 7;
+            label1.Text = "Text:";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(253, 26);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 13);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Syllables:";
+            label2.AutoSize = true;
+            label2.Location = new System.Drawing.Point(655, 40);
+            label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label2.Name = "label2";
+            label2.Size = new System.Drawing.Size(70, 20);
+            label2.TabIndex = 8;
+            label2.Text = "Syllables:";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(488, 26);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(31, 13);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "CVV:";
+            label3.AutoSize = true;
+            label3.Location = new System.Drawing.Point(655, 331);
+            label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label3.Name = "label3";
+            label3.Size = new System.Drawing.Size(39, 20);
+            label3.TabIndex = 9;
+            label3.Text = "CVV:";
+            // 
+            // richTextBox4
+            // 
+            richTextBox4.Location = new System.Drawing.Point(343, 65);
+            richTextBox4.Name = "richTextBox4";
+            richTextBox4.Size = new System.Drawing.Size(264, 543);
+            richTextBox4.TabIndex = 10;
+            richTextBox4.Text = "";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new System.Drawing.Point(343, 42);
+            label4.Name = "label4";
+            label4.Size = new System.Drawing.Size(106, 20);
+            label4.TabIndex = 11;
+            label4.Text = "Transliteration:";
             // 
             // TestView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.richTextBox3);
-            this.Controls.Add(this.richTextBox2);
-            this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.button1);
-            this.Name = "TestView";
-            this.Size = new System.Drawing.Size(703, 438);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            Controls.Add(label4);
+            Controls.Add(richTextBox4);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(richTextBox3);
+            Controls.Add(richTextBox2);
+            Controls.Add(richTextBox1);
+            Controls.Add(button1);
+            Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            Name = "TestView";
+            Size = new System.Drawing.Size(937, 674);
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -125,5 +153,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.RichTextBox richTextBox4;
+        private System.Windows.Forms.Label label4;
     }
 }

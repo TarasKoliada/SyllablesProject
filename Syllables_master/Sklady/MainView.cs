@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Core.Helpers.Models;
 using Sklady.Export;
 using Sklady.Models;
 
@@ -20,7 +21,7 @@ namespace Sklady
         private const int UPDATE_UI_EVERY_N_ITEMS = 2000;
 
         private CharactersTable charsTable = GlobalSettings.CharactersTable;
-        private ResultsExporter _export; 
+        private ResultsExporter _export;
 
         private List<InputFileModel> _inputData;
         public List<InputFileModel> InputData
@@ -35,7 +36,7 @@ namespace Sklady
                 {
                     _inputData = value;
                     OnInputDataChanged();
-                }                
+                }
             }
         }
 
@@ -63,7 +64,7 @@ namespace Sklady
                 PhoneticsMode = GlobalSettings.PhoneticsMode,
                 SeparateAfterFirst = GlobalSettings.SeparateAfterFirst,
                 SyllableSeparator = GlobalSettings.SyllableSeparator,
-                CharsToSkip = GlobalSettings.CharsToSkip                
+                CharsToSkip = GlobalSettings.CharsToSkip
             };
 
             _export = new ResultsExporter(settings);
@@ -104,7 +105,7 @@ namespace Sklady
                     var syllables = _export.GetSyllables(res.ReadableResults);
                     var firstSyllables = _export.GetFirstSyllables(res.ReadableResults);
                     (var syllablesCVV, var firstSyllablesCVV) = _export.GetSyllablesCVVUnified(res.ReadableResults);
-                  
+
                     exportResult.FileExportResults.Add(new FileExportResults()
                     {
                         Syllables = syllables,
@@ -132,7 +133,7 @@ namespace Sklady
 
                 if (OnFilesProcessed != null)
                     OnFilesProcessed(exportResult);
-            });         
+            });
         }
 
         private void UpdateProcessingPanel(bool visible)
@@ -242,7 +243,7 @@ namespace Sklady
 
         private void MainView_Load(object sender, EventArgs e)
         {
-           
+
         }
 
         private void UpdateMainProgressBar(int total)
@@ -262,33 +263,63 @@ namespace Sklady
             }
         }
 
-        public bool GetCheckboxValue ()
+        public bool GetCheckboxValue()
         {
             return checkBox1.Checked;
         }
 
-        public bool GetCheckboxValue2 ()
+        public bool GetCheckboxValue2()
         {
             return checkBox2.Checked;
         }
 
-        public bool GetCheckboxValue3 ( )
+        public bool GetCheckboxValue3()
         {
             return checkBox3.Checked;
         }
 
         //checked if ę=е
 
-        public bool GetCheckboxValue4 ( )
+        public bool GetCheckboxValue4()
         {
             return checkBox4.Checked;
         }
 
         //checked if ą=о
-        public bool GetCheckboxValue5 ( )
+        public bool GetCheckboxValue5()
         {
             return checkBox5.Checked;
         }
 
+        //Checked if russian г == ґ
+        private void checkBox3_CheckedChanged(object sender, EventArgs e)
+        {
+            CheckBoxData.RussianLetter_G_CheckboxState = checkBox3.Checked;
+        }
+
+
+        //checked if g = г
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            CheckBoxData.PolishLetter_G_CheckboxState = checkBox1.Checked;
+        }
+
+        //checked if L = u
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            CheckBoxData.PolishLetter_L_CheckboxState = checkBox2.Checked;
+        }
+
+        //checked if ę=е
+        private void checkBox4_CheckedChanged(object sender, EventArgs e)
+        {
+            CheckBoxData.PolishLetter_E_CheckboxState = checkBox4.Checked;
+        }
+
+        //checked if ą=о
+        private void checkBox5_CheckedChanged(object sender, EventArgs e)
+        {
+            CheckBoxData.PolishLetter_O_CheckboxState = checkBox5.Checked;
+        }
     }
 }

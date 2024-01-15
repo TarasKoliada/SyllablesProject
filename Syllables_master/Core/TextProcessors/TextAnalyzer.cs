@@ -108,8 +108,8 @@ namespace Sklady
                 {
                     UpdateRepetitions(result.Repetitions, _words[i]);
 
-                    //if (settings.PhoneticsMode)
-                      //      _words[i] = _phoneticProcessor.Process(_words[i], isCheckbox); // In case of phonetics mode make corresponding replacements
+                    if (settings.PhoneticsMode)
+                            _words[i] = _phoneticProcessor.Process(_words[i], isCheckbox); // In case of phonetics mode make corresponding replacements
 
                     _words[i] = _phoneticProcessor.ProcessNonStableCharacters(_words[i], settings.PhoneticsMode); // Replace some chars according to their power
 
@@ -117,8 +117,8 @@ namespace Sklady
 
                     var tempWord = _words[i];
 
-                    if (settings.PhoneticsMode)
-                        _words[i] = _phoneticProcessor.Process(_words[i], isCheckbox); // In case of phonetics mode make corresponding replacements
+                    //if (settings.PhoneticsMode)
+                      //  _words[i] = _phoneticProcessor.Process(_words[i], isCheckbox); // In case of phonetics mode make corresponding replacements
 
                     if (settings.PhoneticsMode)
                     {

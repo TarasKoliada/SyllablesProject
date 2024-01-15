@@ -28,228 +28,248 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.processingPanel = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.processingPanel.SuspendLayout();
-            this.SuspendLayout();
+            button1 = new System.Windows.Forms.Button();
+            progressBar1 = new System.Windows.Forms.ProgressBar();
+            richTextBox1 = new System.Windows.Forms.RichTextBox();
+            label1 = new System.Windows.Forms.Label();
+            panel1 = new System.Windows.Forms.Panel();
+            label2 = new System.Windows.Forms.Label();
+            pictureBox1 = new System.Windows.Forms.PictureBox();
+            processingPanel = new System.Windows.Forms.Panel();
+            label3 = new System.Windows.Forms.Label();
+            label4 = new System.Windows.Forms.Label();
+            checkBox1 = new System.Windows.Forms.CheckBox();
+            checkBox2 = new System.Windows.Forms.CheckBox();
+            checkBox3 = new System.Windows.Forms.CheckBox();
+            label5 = new System.Windows.Forms.Label();
+            label6 = new System.Windows.Forms.Label();
+            checkBox4 = new System.Windows.Forms.CheckBox();
+            checkBox5 = new System.Windows.Forms.CheckBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            processingPanel.SuspendLayout();
+            SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button1.Location = new System.Drawing.Point(16, 511);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(99, 32);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Process";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
+            button1.Location = new System.Drawing.Point(21, 786);
+            button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            button1.Name = "button1";
+            button1.Size = new System.Drawing.Size(132, 49);
+            button1.TabIndex = 0;
+            button1.Text = "Process";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // progressBar1
             // 
-            this.progressBar1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.progressBar1.Location = new System.Drawing.Point(16, 343);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(659, 39);
-            this.progressBar1.TabIndex = 1;
+            progressBar1.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            progressBar1.Location = new System.Drawing.Point(21, 528);
+            progressBar1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            progressBar1.Name = "progressBar1";
+            progressBar1.Size = new System.Drawing.Size(879, 60);
+            progressBar1.TabIndex = 1;
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.richTextBox1.Location = new System.Drawing.Point(330, 57);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(345, 248);
-            this.richTextBox1.TabIndex = 2;
-            this.richTextBox1.Text = "";
+            richTextBox1.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            richTextBox1.Location = new System.Drawing.Point(440, 88);
+            richTextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            richTextBox1.Name = "richTextBox1";
+            richTextBox1.Size = new System.Drawing.Size(459, 379);
+            richTextBox1.TabIndex = 2;
+            richTextBox1.Text = "";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(327, 41);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Errors log:";
+            label1.AutoSize = true;
+            label1.Location = new System.Drawing.Point(436, 63);
+            label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(76, 20);
+            label1.TabIndex = 3;
+            label1.Text = "Errors log:";
             // 
             // panel1
             // 
-            this.panel1.AutoScroll = true;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Location = new System.Drawing.Point(16, 57);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(309, 248);
-            this.panel1.TabIndex = 4;
+            panel1.AutoScroll = true;
+            panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            panel1.Location = new System.Drawing.Point(21, 88);
+            panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            panel1.Name = "panel1";
+            panel1.Size = new System.Drawing.Size(411, 380);
+            panel1.TabIndex = 4;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(14, 40);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(31, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Files:";
+            label2.AutoSize = true;
+            label2.Location = new System.Drawing.Point(19, 62);
+            label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label2.Name = "label2";
+            label2.Size = new System.Drawing.Size(41, 20);
+            label2.TabIndex = 5;
+            label2.Text = "Files:";
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::Sklady.Properties.Resources.ajax_loader;
-            this.pictureBox1.InitialImage = global::Sklady.Properties.Resources.ajax_loader;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 9);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(24, 19);
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            pictureBox1.Image = Properties.Resources.ajax_loader;
+            pictureBox1.InitialImage = Properties.Resources.ajax_loader;
+            pictureBox1.Location = new System.Drawing.Point(4, 14);
+            pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new System.Drawing.Size(32, 29);
+            pictureBox1.TabIndex = 6;
+            pictureBox1.TabStop = false;
             // 
             // processingPanel
             // 
-            this.processingPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.processingPanel.Controls.Add(this.label3);
-            this.processingPanel.Controls.Add(this.pictureBox1);
-            this.processingPanel.Location = new System.Drawing.Point(133, 511);
-            this.processingPanel.Name = "processingPanel";
-            this.processingPanel.Size = new System.Drawing.Size(171, 30);
-            this.processingPanel.TabIndex = 7;
-            this.processingPanel.Visible = false;
+            processingPanel.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
+            processingPanel.Controls.Add(label3);
+            processingPanel.Controls.Add(pictureBox1);
+            processingPanel.Location = new System.Drawing.Point(177, 786);
+            processingPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            processingPanel.Name = "processingPanel";
+            processingPanel.Size = new System.Drawing.Size(228, 46);
+            processingPanel.TabIndex = 7;
+            processingPanel.Visible = false;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(33, 7);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(101, 13);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Processing results...";
+            label3.AutoSize = true;
+            label3.Location = new System.Drawing.Point(44, 11);
+            label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label3.Name = "label3";
+            label3.Size = new System.Drawing.Size(134, 20);
+            label3.TabIndex = 7;
+            label3.Text = "Processing results...";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(14, 318);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(96, 13);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Export preparation:";
+            label4.AutoSize = true;
+            label4.Location = new System.Drawing.Point(19, 489);
+            label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label4.Name = "label4";
+            label4.Size = new System.Drawing.Size(137, 20);
+            label4.TabIndex = 8;
+            label4.Text = "Export preparation:";
             // 
             // checkBox1
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.checkBox1.Location = new System.Drawing.Point(364, 418);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(116, 21);
-            this.checkBox1.TabIndex = 9;
-            this.checkBox1.Text = "checked if g=г";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            checkBox1.AutoSize = true;
+            checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            checkBox1.Location = new System.Drawing.Point(485, 643);
+            checkBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new System.Drawing.Size(139, 24);
+            checkBox1.TabIndex = 9;
+            checkBox1.Text = "checked if g=г";
+            checkBox1.UseVisualStyleBackColor = true;
+            checkBox1.CheckedChanged += checkBox1_CheckedChanged;
             // 
             // checkBox2
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.checkBox2.Location = new System.Drawing.Point(364, 445);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(114, 21);
-            this.checkBox2.TabIndex = 10;
-            this.checkBox2.Text = "checked if l=u";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            checkBox2.AutoSize = true;
+            checkBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            checkBox2.Location = new System.Drawing.Point(485, 685);
+            checkBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            checkBox2.Name = "checkBox2";
+            checkBox2.Size = new System.Drawing.Size(135, 24);
+            checkBox2.TabIndex = 10;
+            checkBox2.Text = "checked if l=u";
+            checkBox2.UseVisualStyleBackColor = true;
+            checkBox2.CheckedChanged += checkBox2_CheckedChanged;
             // 
             // checkBox3
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.checkBox3.Location = new System.Drawing.Point(548, 421);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(115, 21);
-            this.checkBox3.TabIndex = 11;
-            this.checkBox3.Text = "checked if г=ґ";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            checkBox3.AutoSize = true;
+            checkBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            checkBox3.Location = new System.Drawing.Point(731, 648);
+            checkBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            checkBox3.Name = "checkBox3";
+            checkBox3.Size = new System.Drawing.Size(138, 24);
+            checkBox3.TabIndex = 11;
+            checkBox3.Text = "checked if г=ґ";
+            checkBox3.UseVisualStyleBackColor = true;
+            checkBox3.CheckedChanged += checkBox3_CheckedChanged;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(381, 395);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(79, 20);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "For Polish";
+            label5.AutoSize = true;
+            label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label5.Location = new System.Drawing.Point(508, 608);
+            label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label5.Name = "label5";
+            label5.Size = new System.Drawing.Size(99, 25);
+            label5.TabIndex = 12;
+            label5.Text = "For Polish";
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(554, 395);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(95, 20);
-            this.label6.TabIndex = 13;
-            this.label6.Text = "For Russian";
+            label6.AutoSize = true;
+            label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label6.Location = new System.Drawing.Point(739, 608);
+            label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label6.Name = "label6";
+            label6.Size = new System.Drawing.Size(116, 25);
+            label6.TabIndex = 13;
+            label6.Text = "For Russian";
             // 
             // checkBox4
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.checkBox4.Location = new System.Drawing.Point(364, 472);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(119, 21);
-            this.checkBox4.TabIndex = 14;
-            this.checkBox4.Text = "checked if ę=е";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            checkBox4.AutoSize = true;
+            checkBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            checkBox4.Location = new System.Drawing.Point(485, 726);
+            checkBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            checkBox4.Name = "checkBox4";
+            checkBox4.Size = new System.Drawing.Size(141, 24);
+            checkBox4.TabIndex = 14;
+            checkBox4.Text = "checked if ę=е";
+            checkBox4.UseVisualStyleBackColor = true;
+            checkBox4.CheckedChanged += checkBox4_CheckedChanged;
             // 
             // checkBox5
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.checkBox5.Location = new System.Drawing.Point(364, 499);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(119, 21);
-            this.checkBox5.TabIndex = 15;
-            this.checkBox5.Text = "checked if ą=о";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            checkBox5.AutoSize = true;
+            checkBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            checkBox5.Location = new System.Drawing.Point(485, 768);
+            checkBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            checkBox5.Name = "checkBox5";
+            checkBox5.Size = new System.Drawing.Size(141, 24);
+            checkBox5.TabIndex = 15;
+            checkBox5.Text = "checked if ą=о";
+            checkBox5.UseVisualStyleBackColor = true;
+            checkBox5.CheckedChanged += checkBox5_CheckedChanged;
             // 
             // MainView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.checkBox5);
-            this.Controls.Add(this.checkBox4);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.processingPanel);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.progressBar1);
-            this.Controls.Add(this.button1);
-            this.Name = "MainView";
-            this.Size = new System.Drawing.Size(688, 560);
-            this.Load += new System.EventHandler(this.MainView_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.processingPanel.ResumeLayout(false);
-            this.processingPanel.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            Controls.Add(checkBox5);
+            Controls.Add(checkBox4);
+            Controls.Add(label6);
+            Controls.Add(label5);
+            Controls.Add(checkBox3);
+            Controls.Add(checkBox2);
+            Controls.Add(checkBox1);
+            Controls.Add(label4);
+            Controls.Add(processingPanel);
+            Controls.Add(label2);
+            Controls.Add(panel1);
+            Controls.Add(label1);
+            Controls.Add(richTextBox1);
+            Controls.Add(progressBar1);
+            Controls.Add(button1);
+            Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            Name = "MainView";
+            Size = new System.Drawing.Size(917, 862);
+            Load += MainView_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            processingPanel.ResumeLayout(false);
+            processingPanel.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

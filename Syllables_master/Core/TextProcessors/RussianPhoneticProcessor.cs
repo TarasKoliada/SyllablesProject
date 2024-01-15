@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Core.Helpers.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -71,7 +72,7 @@ namespace Sklady.TextProcessors
             res = Regex.Replace(res, "тск", "цк");
 
 
-            if (isCheckbox[2])
+            if (CheckBoxData.RussianLetter_G_CheckboxState == true)
             {
                 res = Regex.Replace(res, "г", "ґ");
             }

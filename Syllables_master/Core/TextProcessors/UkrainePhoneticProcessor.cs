@@ -46,8 +46,8 @@ namespace Sklady.TextProcessors
         public override string Process ( string input, bool[] isCheckbox )
         {
             //Exclude russian letters  also
-            if (!ContainsOnlyUkrainianLetters(input))
-                throw new FormatException();
+           // if (!ContainsOnlyUkrainianLetters(input))
+             //   throw new FormatException();
 
             var res = ProcessTwoSoundingLetters(input);
             res = ProcessDoubleConsonants(res);

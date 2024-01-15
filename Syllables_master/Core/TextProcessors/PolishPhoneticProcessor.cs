@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Sklady;
 using Core;
 using System.Globalization;
+using Core.Helpers.Models;
 
 namespace Sklady.TextProcessors
 {
@@ -59,22 +60,22 @@ namespace Sklady.TextProcessors
             string optionalCharA = "ö";
             
             //optional
-            if (isCheckbox[0])
+            if (CheckBoxData.PolishLetter_G_CheckboxState == true)
             {
                 optionalCharG = "г";
             }
 
-            if (isCheckbox[1])
+            if (CheckBoxData.PolishLetter_L_CheckboxState == true)
             {
                 optionalCharL = "л";
             }
 
-            if (isCheckbox[3])
+            if (CheckBoxData.PolishLetter_E_CheckboxState == true)
             {
                 optionalCharE = "е";
             }
 
-            if (isCheckbox[4])
+            if (CheckBoxData.PolishLetter_O_CheckboxState == true)
             {
                 optionalCharA = "о";
             }

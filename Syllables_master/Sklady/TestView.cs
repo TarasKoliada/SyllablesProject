@@ -30,6 +30,7 @@ namespace Sklady
                 CharsToSkip = GlobalSettings.CharsToSkip
             };
 
+
             var export = new ResultsExporter(settings);
             bool[] test = new bool[1];
             var analyzer = new TextAnalyzer(richTextBox1.Text, "", settings, export, test);

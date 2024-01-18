@@ -36,10 +36,6 @@ namespace Sklady.TextProcessors
 
             return res.ToString();
         }
-        public override string TranscribeToUkrainianSpelling(string word)
-        {
-            return word;
-        }
 
         private void GenerateCharacterMap(StringBuilder res)
         {

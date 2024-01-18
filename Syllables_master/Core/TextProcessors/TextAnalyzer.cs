@@ -128,7 +128,6 @@ namespace Sklady
                     }
 
                     var syllables = _wordAnalyzer.GetSyllables(tempWord);
-                    var transcribedWordToUkrainian = _phoneticProcessor.TranscribeToUkrainianSpelling(tempWord);
 
                     result.CvvResults[i].Word = _words[i];
                     result.CvvResults[i].Syllables = RemoveApos(syllables);
@@ -136,7 +135,8 @@ namespace Sklady
                     result.ReadableResults[i].Word = _words[i];
                     result.ReadableResults[i].Syllables = settings.PhoneticsMode ? syllables : UnprocessPhonetics(syllables);
 
-                    result.TranscribedToUkrainianSpellingWords[i] = tempWord;
+                    var transcribedWordToUkrainian = _phoneticProcessor.TranscribeToUkrainianSpelling(tempWord, settings.Language);
+                    result.TranscribedToUkrainianSpellingWords[i] = transcribedWordToUkrainian;
                     //TODO
                     //Firstly - create new ABSTRACT method TranscribeToUkrainianSpelling in PhoneticProcessorBase class and implement it in every ...PhoneticProcessor class
                     //Add var transcribedWord = _phoneticProcessor.TranscribeToUkrainianSpelling(_words[i])

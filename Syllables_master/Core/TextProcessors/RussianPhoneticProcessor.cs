@@ -34,10 +34,6 @@ namespace Sklady.TextProcessors
 
             return res;
         }
-        public override string TranscribeToUkrainianSpelling(string word)
-        {
-            return word;
-        }
 
         private string ProcessTwoSoundingLetters(string input)
         {

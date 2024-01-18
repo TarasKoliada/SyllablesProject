@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Core.TextProcessors.Transcribers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,7 +19,38 @@ namespace Sklady.TextProcessors
 
         public abstract string Process(string input, bool[] isCheckbox);
         public abstract string RemoveTechnicalCharacters(string word);
-        public abstract string TranscribeToUkrainianSpelling(string word);
+        public virtual string TranscribeToUkrainianSpelling(string word, Languages languageToTranscribeFrom)
+        {
+            ISpellingTranscriber transcriber;
+
+            switch (languageToTranscribeFrom)
+            {
+                case Languages.Ukraine:
+                    return word;
+                case Languages.Russian:
+                    transcriber = new RussianTranscriber();
+                    break;
+                case Languages.Ancient:
+                    transcriber = new AncientTranscriber();
+                    break;
+                case Languages.English:
+                    transcriber = new EnglishTranscriber();
+                    break;
+                case Languages.Polish:
+                    transcriber = new PolishTranscriber();
+                    break;
+                case Languages.Bulgarian:
+                    transcriber = new BulgarianTranscriber();
+                    break;
+                default:
+                    transcriber = null;
+                    break;
+            }
+            
+            var transcribedText = transcriber.Transcribe(word);
+
+            return transcribedText;
+        }
 
         public virtual string ProcessNonStableCharacters(string word, bool isPhoneticsMode = true)
         {

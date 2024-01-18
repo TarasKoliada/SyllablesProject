@@ -81,10 +81,10 @@ namespace Sklady.TextProcessors
 
             return res;
         }
-        public override string TranscribeToUkrainianSpelling(string word)
+        /*public override string TranscribeToUkrainianSpelling(string word, Languages language)
         {
             return word;
-        }
+        }*/
 
         private bool ContainsOnlyUkrainianLetters(string word)
         {

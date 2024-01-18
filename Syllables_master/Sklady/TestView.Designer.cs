@@ -120,9 +120,9 @@
             label4.AutoSize = true;
             label4.Location = new System.Drawing.Point(343, 42);
             label4.Name = "label4";
-            label4.Size = new System.Drawing.Size(106, 20);
+            label4.Size = new System.Drawing.Size(101, 20);
             label4.TabIndex = 11;
-            label4.Text = "Transliteration:";
+            label4.Text = "Transcription: ";
             // 
             // TestView
             // 

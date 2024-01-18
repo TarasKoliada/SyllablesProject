@@ -18,6 +18,7 @@ namespace Sklady.TextProcessors
 
         public abstract string Process(string input, bool[] isCheckbox);
         public abstract string RemoveTechnicalCharacters(string word);
+        public abstract string TranscribeToUkrainianSpelling(string word);
 
         public virtual string ProcessNonStableCharacters(string word, bool isPhoneticsMode = true)
         {

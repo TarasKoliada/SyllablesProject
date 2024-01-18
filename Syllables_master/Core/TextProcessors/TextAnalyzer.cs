@@ -91,13 +91,15 @@ namespace Sklady
             var result = new FileProcessingResult(exporter)
             {
                 CvvResults = new List<AnalyzeResults>(_words.Length),
-                ReadableResults = new List<AnalyzeResults>(_words.Length)
+                ReadableResults = new List<AnalyzeResults>(_words.Length),
+                TranscribedToUkrainianSpellingWords = new List<string>(_words.Length)
             };
 
             foreach (var word in _words)
             {
                 result.CvvResults.Add(new AnalyzeResults());
                 result.ReadableResults.Add(new AnalyzeResults());
+                result.TranscribedToUkrainianSpellingWords.Add("");
             }
 
             var invokeStep = _words.Length / 10;
@@ -126,12 +128,21 @@ namespace Sklady
                     }
 
                     var syllables = _wordAnalyzer.GetSyllables(tempWord);
+                    var transcribedWordToUkrainian = _phoneticProcessor.TranscribeToUkrainianSpelling(tempWord);
 
                     result.CvvResults[i].Word = _words[i];
                     result.CvvResults[i].Syllables = RemoveApos(syllables);
 
                     result.ReadableResults[i].Word = _words[i];
                     result.ReadableResults[i].Syllables = settings.PhoneticsMode ? syllables : UnprocessPhonetics(syllables);
+
+                    result.TranscribedToUkrainianSpellingWords[i] = tempWord;
+                    //TODO
+                    //Firstly - create new ABSTRACT method TranscribeToUkrainianSpelling in PhoneticProcessorBase class and implement it in every ...PhoneticProcessor class
+                    //Add var transcribedWord = _phoneticProcessor.TranscribeToUkrainianSpelling(_words[i])
+                    //Add result.TranscriptionResults[i] = transcribedWord
+                    //Then move to TestView.cs and code there.
+                    //Then work on MainView.cs
 
                     if (result.ReadableResults[i].Syllables == null)
                     {

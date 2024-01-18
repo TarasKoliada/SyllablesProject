@@ -12,6 +12,7 @@ namespace Sklady.Models
         private Dictionary<string, int> _cvvStatistics;
         private List<AnalyzeResults> _cvvResults;
         private List<double> _candVSums;
+        private List<string> _transcribedToUkrainian;
 
         private ResultsExporter exporter;
 
@@ -22,6 +23,7 @@ namespace Sklady.Models
             this.exporter = exporter;
             Repetitions = new Dictionary<string, int>();
             Letters = new Dictionary<char, int>();
+            //TranscribedToUkrainianSpellingWords = new List<string>();
         }
 
         public void DisposeReadableResults()
@@ -70,8 +72,10 @@ namespace Sklady.Models
             _candVSums.Clear();
             Repetitions.Clear();
             Letters.Clear();
+            _transcribedToUkrainian.Clear();
 
             _cvvStatistics = null;
+            _transcribedToUkrainian = null;
             _candVSums = null;
             exporter = null;
             Repetitions = null;
@@ -158,6 +162,14 @@ namespace Sklady.Models
 
             return res;
         }
+        
+
+        public List<string> TranscribedToUkrainianSpellingWords
+        {
+            get { return _transcribedToUkrainian; }
+            set { _transcribedToUkrainian = value; }
+        }
+
 
         private bool IsEmptySyllable(string syllable)
         {

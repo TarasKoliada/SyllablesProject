@@ -35,6 +35,9 @@ namespace Sklady
             bool[] test = new bool[1];
             var analyzer = new TextAnalyzer(richTextBox1.Text, "", settings, export, test);
 
+            //add output in richTextBox4 
+            //var transcribed = result.transcribedToUkrainianSpelling (or something else)
+
             var result = analyzer.GetResults(test);
             var resText = export.GetSyllables(result.ReadableResults);
             richTextBox2.Text = resText;
@@ -42,6 +45,8 @@ namespace Sklady
             //var resCVV = export.GetSyllablesCVV(result.CvvResults);
             (var resCVV, _) = export.GetSyllablesCVVUnified(result.CvvResults);
             richTextBox3.Text = resCVV;
+
+            richTextBox4.Text = export.GetTranscribedToUkrainianSingleString(result.TranscribedToUkrainianSpellingWords);
         }
 
     }

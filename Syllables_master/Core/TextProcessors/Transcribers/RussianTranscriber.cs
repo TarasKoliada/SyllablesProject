@@ -7,87 +7,77 @@ namespace Core.TextProcessors.Transcribers
     /*CHECK correct RemoveJAfterConsonant method working (which checks index of modified element)
      * CHECK word file with questions to the teacher
      * THINK what word also should be added to charsToReplace dictionary
-     * also run program and wriite word 'вольяжный' it must be волjажниY
+     * also run program and wriite word 'вольяжный' it must be волjажниY --- DONE (NEED MORE TESTING)!!!
      * TEST program with other words
      */
     public class RussianTranscriber : ISpellingTranscriber
     {
         private readonly Dictionary<string, string> charsToReplace;
         private readonly HashSet<char> consonants;
-        private bool[] modifiedIndices;
         public RussianTranscriber()
         {
             charsToReplace = new Dictionary<string, string>
             {
-                {"ы", "и"},
                 {"и", "і"},
                 {"е", "jе"},
                 {"э", "е"},
                 {"ю", "jу"},
-                {"я", "jа"}
-
+                {"я", "jа"},
+                {"ы", "и"}
             };
 
             consonants = new HashSet<char>
             {'б', 'в', 'г', 'д', 'ж', 'з', 'й', 'к', 'л', 'м', 'н', 'п', 'р', 'с', 'т', 'ф', 'х', 'ц', 'ч', 'ш', 'щ'};
         }
-        public string Transcribe(string text)
+        public string Transcribe(string inputWord)
         {
-            var stringBuilder = new StringBuilder(text);
+            List<int> noDeletableJindexes = new();
 
-            foreach (var pattern in charsToReplace)
-            {
-                stringBuilder.Replace(pattern.Key, pattern.Value);
-            }
+            var currentWord = new StringBuilder(inputWord);
 
-            var result = RemoveJAfterConsonant(stringBuilder.ToString());
-            return result;
+            if (inputWord.Contains('j'))
+                noDeletableJindexes = GetNotToDeleteJindexes(inputWord);
+
+            foreach (var charsPair in charsToReplace)
+                currentWord.Replace(charsPair.Key, charsPair.Value);
+
+            var transcribedWord = RemoveJAfterConsonant(currentWord.ToString(), noDeletableJindexes);
+            return transcribedWord;
         }
 
 
-        /*private string RemoveJAfterConsonant(string text)
+        //Returns list with existing letter 'j' indexes in input string to save them
+        private List<int> GetNotToDeleteJindexes(string word)
         {
-            for (int i = 0; i < text.Length; i++)
-            {
-                // Якщо поточний символ - 'j'
-                if (text[i] == 'j')
-                {
-                    // Якщо перед ним стоїть символ із consonantCharacters
-                    if (i > 0 && consonants.Contains(text[i - 1]))
-                    {
-                        // Видаляємо символ 'j'
-                        text = text.Remove(i, 1);
-                    }
-                }
-            }
-            return text;
-        }*/
-        
-        private string RemoveJAfterConsonant(string text)
+            List<int> indexes = new();
+
+            for (int i = 0; i < word.Length; i++)
+                if (word[i] == 'j')
+                    indexes.Add(i);
+
+            return indexes;
+        }
+
+        private string RemoveJAfterConsonant(string word, List<int> inputJindices)
         {
-            int currentIndex = 0;
+            bool[] isProcessed = new bool[word.Length];
 
-            bool[] isProcessed = new bool[text.Length];
-
-            for (int i = 0; i < text.Length; i++)
+            for (int i = 0; i < word.Length; i++)
             {
-                if (text[i] == 'j')
+                if (word[i] == 'j' && !inputJindices.Contains(i))
                 {
                     //if previous symbol is consonant
-                    if (i > 0 && consonants.Contains(text[i - 1]))
+                    if (i > 0 && consonants.Contains(word[i - 1]))
                     {
                         if (!isProcessed[i])
                         {
-                            text = text.Remove(i, 1);
-                            currentIndex = i;
+                            word = word.Remove(i, 1);
                             isProcessed[i] = true;
                         }
                     }
                 }
             }
-            return text;
+            return word;
         }
-           
-
-        }
+    }
 }

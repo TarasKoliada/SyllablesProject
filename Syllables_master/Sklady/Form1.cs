@@ -267,7 +267,7 @@ namespace Sklady
                 int syllables = 0;
                 //avgSylLength = Math.Round((double)result[i].Length / syllables, 4);
                 //avgSylLengthPh = Math.Round((double)phonems / syllables, 4);
-                for (int i = 1; i < result.Length; i++)
+                for (int i = 0; i < result.Length; i++)
                 {
                     syllables = Regex.Matches(result[i], @"a|e|i|o|u|y").Count;
                     if (syllables == 0)

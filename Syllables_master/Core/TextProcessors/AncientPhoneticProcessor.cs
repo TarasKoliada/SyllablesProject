@@ -31,6 +31,15 @@ namespace Sklady.TextProcessors
             return res;
         }
 
+        public string ProcessWithoutJ(string word)
+        {
+            var res = HandleSolidAndSoftSigns(word);
+            res = ReplaceAncientSymbols(res);
+
+            return res;
+        }
+
+
         private string ReplaceAncientSymbols(string word)
         {
             return new StringBuilder(word)

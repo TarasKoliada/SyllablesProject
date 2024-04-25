@@ -218,7 +218,7 @@
             tabPage3.Location = new System.Drawing.Point(4, 29);
             tabPage3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             tabPage3.Name = "tabPage3";
-            tabPage3.Size = new System.Drawing.Size(965, 827);
+            tabPage3.Size = new System.Drawing.Size(965, 783);
             tabPage3.TabIndex = 4;
             tabPage3.Text = "Words Statistics(EN)";
             tabPage3.UseVisualStyleBackColor = true;
@@ -275,7 +275,7 @@
             tabPage5.Location = new System.Drawing.Point(4, 29);
             tabPage5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             tabPage5.Name = "tabPage5";
-            tabPage5.Size = new System.Drawing.Size(965, 827);
+            tabPage5.Size = new System.Drawing.Size(965, 783);
             tabPage5.TabIndex = 5;
             tabPage5.Text = "Word Statistics(UA/RU/BG)";
             tabPage5.UseVisualStyleBackColor = true;

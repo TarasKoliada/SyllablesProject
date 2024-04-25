@@ -110,6 +110,8 @@ namespace Sklady
                 {
                     UpdateRepetitions(result.Repetitions, _words[i]);
 
+                    var wordBeforeProcessing = _words[i];
+
                     if (settings.PhoneticsMode)
                             _words[i] = _phoneticProcessor.Process(_words[i], isCheckbox); // In case of phonetics mode make corresponding replacements
 
@@ -119,8 +121,6 @@ namespace Sklady
 
                     var tempWord = _words[i];
 
-                    //if (settings.PhoneticsMode)
-                      //  _words[i] = _phoneticProcessor.Process(_words[i], isCheckbox); // In case of phonetics mode make corresponding replacements
 
                     if (settings.PhoneticsMode)
                     {
@@ -135,14 +135,15 @@ namespace Sklady
                     result.ReadableResults[i].Word = _words[i];
                     result.ReadableResults[i].Syllables = settings.PhoneticsMode ? syllables : UnprocessPhonetics(syllables);
 
-                    var transcribedWordToUkrainian = _phoneticProcessor.TranscribeToUkrainianSpelling(tempWord, settings.Language);
-                    result.TranscribedToUkrainianSpellingWords[i] = transcribedWordToUkrainian;
-                    //TODO
-                    //Firstly - create new ABSTRACT method TranscribeToUkrainianSpelling in PhoneticProcessorBase class and implement it in every ...PhoneticProcessor class
-                    //Add var transcribedWord = _phoneticProcessor.TranscribeToUkrainianSpelling(_words[i])
-                    //Add result.TranscriptionResults[i] = transcribedWord
-                    //Then move to TestView.cs and code there.
-                    //Then work on MainView.cs
+                    if (settings.Language == Languages.Ancient)
+                    {
+                        AncientPhoneticProcessor ancientProcessor = _phoneticProcessor as AncientPhoneticProcessor;
+                        result.TranscribedToUkrainianSpellingWords[i] = _phoneticProcessor.TranscribeToUkrainianSpelling(ancientProcessor.ProcessWithoutJ(wordBeforeProcessing), Languages.Ancient);
+                    }
+                    else
+                    {
+                        result.TranscribedToUkrainianSpellingWords[i] = _phoneticProcessor.TranscribeToUkrainianSpelling(tempWord, settings.Language);
+                    }
 
                     if (result.ReadableResults[i].Syllables == null)
                     {

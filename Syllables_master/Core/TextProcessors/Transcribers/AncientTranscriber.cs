@@ -15,11 +15,16 @@ namespace Core.TextProcessors.Transcribers
         {
             charsToReplace = new Dictionary<string, string>
             {
-                {"и", "і"},
-                {"е", "jе"},
-                {"ю", "jу"},
-                {"я", "jа"},
-                {"ы", "и"}
+                {"jу", "JУ"},
+                {"jе", "JЕ"},
+                {"jа", "JА"},
+                {"и", "І"},
+                {"е", "JЕ"},
+                {"э", "Е"},
+                {"ю", "JУ"},
+                {"я", "JА"},
+                {"ы", "И"},
+                {"j", "J"}
             };
 
             consonants = new HashSet<char>
@@ -58,7 +63,7 @@ namespace Core.TextProcessors.Transcribers
 
             for (int i = 0; i < word.Length; i++)
             {
-                if (word[i] == 'j' && !inputJindices.Contains(i))
+                if (word[i] == 'J' && !inputJindices.Contains(i))
                 {
                     //if previous symbol is consonant
                     if (i > 0 && consonants.Contains(word[i - 1]))

@@ -26,7 +26,8 @@ namespace Sklady.TextProcessors
             switch (languageToTranscribeFrom)
             {
                 case Languages.Ukraine:
-                    return word;
+                    transcriber = new UkrainianTranscriber();
+                    break;
                 case Languages.Russian:
                     transcriber = new RussianTranscriber();
                     break;

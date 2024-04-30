@@ -31,6 +31,7 @@ namespace Sklady.TextProcessors
             return res;
         }
 
+        //This method do returns processed word withoud processed letter 'j' if it exists
         public string ProcessWithoutJ(string word)
         {
             var res = HandleSolidAndSoftSigns(word);

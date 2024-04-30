@@ -81,11 +81,18 @@ namespace Sklady.TextProcessors
 
             return res;
         }
-        /*public override string TranscribeToUkrainianSpelling(string word, Languages language)
-        {
-            return word;
-        }*/
 
+        //This method do returns processed word withoud processed letter 'j' if it exists
+        public string ProcessWithoutJ(string word) 
+        {
+            var res = ProcessDoubleConsonants(word);
+            res = ProcessDzDj(res);
+            res = ReductionReplacements(res);
+            res = AsymilativeReplacements(res);
+            res = ProcessV(res);
+
+            return res;
+        }
         private bool ContainsOnlyUkrainianLetters(string word)
         {
             return Regex.IsMatch(word, @"^[а-яґєіїй']+$");

@@ -105,6 +105,7 @@ namespace Sklady
                     var syllables = _export.GetSyllables(res.ReadableResults);
                     var firstSyllables = _export.GetFirstSyllables(res.ReadableResults);
                     (var syllablesCVV, var firstSyllablesCVV) = _export.GetSyllablesCVVUnified(res.ReadableResults);
+                    var transcriberToUkrainianSpelling = _export.GetTranscribedToUkrainianSingleString(res.TranscribedToUkrainianSpellingWords);
 
                     exportResult.FileExportResults.Add(new FileExportResults()
                     {
@@ -112,6 +113,7 @@ namespace Sklady
                         FirstSyllables = firstSyllables,
                         SyllablesCVV = syllablesCVV,
                         SyllablesFirstCVV = firstSyllablesCVV,
+                        TranscribedToUkrainianSpelling = transcriberToUkrainianSpelling,
                         FileName = textAnalyzer.FileName
                     });
 

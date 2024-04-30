@@ -53,22 +53,22 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="Core.dll" size="58880">
+  <file name="Core.dll" size="60416">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>9gy7d6TucOlBPQE3Tf7YAfkNrUS2Zj1SwXjJu/EDDIs=</dsig:DigestValue>
+      <dsig:DigestValue>c0UFbUUGB/P2JVBH5L3WUM06H7sRvJCtJPZiR6M5T6Y=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Sklady.dll" size="52224">
+  <file name="Sklady.dll" size="52736">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>GQj0j2K7hCqCsuY6wUC9CrJFcLQSRi08Nx/+UQQOOBk=</dsig:DigestValue>
+      <dsig:DigestValue>8IRed2ADcanTxLpSSA/Lrk6OKmbSUq5KKasaefFS5Tc=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Sklady.dll.config" size="184">

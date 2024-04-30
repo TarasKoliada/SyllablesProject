@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Sklady.Export
+﻿namespace Sklady.Export
 {
     public class FileExportResults
     {
@@ -12,6 +6,7 @@ namespace Sklady.Export
         public string FirstSyllables { get; set; }
         public string SyllablesCVV { get; set; }
         public string SyllablesFirstCVV { get; set; }
+        public string TranscribedToUkrainianSpelling { get; set; }
         public string FileName { get; set; }         
     }
 }

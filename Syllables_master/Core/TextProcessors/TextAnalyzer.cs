@@ -135,15 +135,12 @@ namespace Sklady
                     result.ReadableResults[i].Word = _words[i];
                     result.ReadableResults[i].Syllables = settings.PhoneticsMode ? syllables : UnprocessPhonetics(syllables);
 
-                    if (settings.Language == Languages.Ancient)
-                    {
-                        AncientPhoneticProcessor ancientProcessor = _phoneticProcessor as AncientPhoneticProcessor;
-                        result.TranscribedToUkrainianSpellingWords[i] = _phoneticProcessor.TranscribeToUkrainianSpelling(ancientProcessor.ProcessWithoutJ(wordBeforeProcessing), Languages.Ancient);
-                    }
-                    else
-                    {
-                        result.TranscribedToUkrainianSpellingWords[i] = _phoneticProcessor.TranscribeToUkrainianSpelling(tempWord, settings.Language);
-                    }
+
+                    //This part of code check if chosen language is Ancient or Ukrainian. If it is - it pass 'wordBeforeProcessing' to transcribe, else - tempWord. 'i' - current word to trancsribe index
+                    //It is made to provide correct transcribing due to some code shortcomings made in UkrainePhoneticProcessor and AncientPhoneticProcessor classes
+                    var isUkrainianOrAncient = settings.Language == Languages.Ukraine || settings.Language == Languages.Ancient;
+                    TranscribeWord(isUkrainianOrAncient, ref result, isUkrainianOrAncient ? wordBeforeProcessing : tempWord, i);
+
 
                     if (result.ReadableResults[i].Syllables == null)
                     {
@@ -166,6 +163,26 @@ namespace Sklady
             result.FileName = FileName;
 
             return result;
+        }
+
+        private string TranscribeWord(bool isUkrainianOrAncient, ref FileProcessingResult fileProcessingResult, string word, int wordIndex)
+        {
+            if (isUkrainianOrAncient)
+            {
+                AncientPhoneticProcessor ancientProcessor = settings.Language == Languages.Ancient ? _phoneticProcessor as AncientPhoneticProcessor : null;
+                UkrainePhoneticProcessor ukraineProcessor = settings.Language == Languages.Ukraine ? _phoneticProcessor as UkrainePhoneticProcessor : null;
+
+                word = _phoneticProcessor.ProcessNonStableCharacters(word, settings.PhoneticsMode);
+                fileProcessingResult.TranscribedToUkrainianSpellingWords[wordIndex] =
+                    settings.Language == Languages.Ancient ?
+                    _phoneticProcessor.TranscribeToUkrainianSpelling(ancientProcessor.ProcessWithoutJ(word), Languages.Ancient) :
+                    _phoneticProcessor.TranscribeToUkrainianSpelling(ukraineProcessor.ProcessWithoutJ(word), Languages.Ukraine);
+            }
+            else
+            {
+                fileProcessingResult.TranscribedToUkrainianSpellingWords[wordIndex] = _phoneticProcessor.TranscribeToUkrainianSpelling(word, settings.Language);
+            }
+            return fileProcessingResult.TranscribedToUkrainianSpellingWords[wordIndex];
         }
 
         private void UpdateLetters(Dictionary<char, int> letters, string word)

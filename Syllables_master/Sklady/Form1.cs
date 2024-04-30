@@ -69,6 +69,7 @@ namespace Sklady
             const string FirstSyllablesFolderName = "FirstSyllables";
             const string SyllablesCVVFolderName = "SyllablesCVV";
             const string FirstSyllablesCVVFolderName = "FirstSyllablesCVV";
+            const string TranscribedToUkrainianSpelling = "Transcribed";
 
             var folderDialog = new FolderBrowserDialog();
             folderDialog.Description = "Save results to folder.";
@@ -80,6 +81,7 @@ namespace Sklady
                 var syllablesFirstDirectory = Directory.CreateDirectory(Path.Combine(folderDialog.SelectedPath, FirstSyllablesFolderName)).FullName;
                 var syllablesCVVDirectory = Directory.CreateDirectory(Path.Combine(folderDialog.SelectedPath, SyllablesCVVFolderName)).FullName;
                 var syllablesFirstCVVDirectory = Directory.CreateDirectory(Path.Combine(folderDialog.SelectedPath, FirstSyllablesCVVFolderName)).FullName;
+                var transcribedWordsDirectory = Directory.CreateDirectory(Path.Combine(folderDialog.SelectedPath, TranscribedToUkrainianSpelling)).FullName;
 
                 foreach (var fileResult in _exportResults.FileExportResults)
                 {
@@ -87,6 +89,7 @@ namespace Sklady
                     SaveFile(fileResult.FirstSyllables, syllablesFirstDirectory, fileResult.FileName);
                     SaveFile(fileResult.SyllablesCVV, syllablesCVVDirectory, fileResult.FileName);
                     SaveFile(fileResult.SyllablesFirstCVV, syllablesFirstCVVDirectory, fileResult.FileName);
+                    SaveFile(fileResult.TranscribedToUkrainianSpelling, transcribedWordsDirectory, fileResult.FileName);
                 }
 
                 SaveCvv(_exportResults.StatisticsTableCsv, folderDialog.SelectedPath);

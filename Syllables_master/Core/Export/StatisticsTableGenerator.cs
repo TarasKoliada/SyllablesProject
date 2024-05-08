@@ -11,7 +11,7 @@ namespace Sklady.Export
 {
     public class StatisticsTableGenerator
     {
-        private const string _separator = "\t";
+        private const string _separator = ";";
         private List<string> _cvvHeaders;
         private List<string> _repetitionsHeaders;
         private List<char> _lettersHeaders;
@@ -48,23 +48,23 @@ namespace Sklady.Export
 
             for (var i = 0; i < results.Count; i++)
             {
-                sb.AppendLine(String.Format("{0}\t{1}", results[i].FileName, String.Join(_separator, allFileStatistics[i])));
+                sb.AppendLine(String.Format("{0};{1}", results[i].FileName, String.Join(_separator, allFileStatistics[i])));
             }
 
             var groupedStatistics = GroupByMeasure(filesStatistics);
             _statisticsCalculator = new StatisticsCalculator(groupedStatistics[0]); // at 0 position we have list of file lengths
 
             var weightedAvg = groupedStatistics.Select(c => String.Format("{0}", _statisticsCalculator.GetAvarage(c)));
-            sb.AppendLine(String.Format("{0}\t{1}", "Average", String.Join(_separator, weightedAvg)));
+            sb.AppendLine(String.Format("{0};{1}", "Average", String.Join(_separator, weightedAvg)));
 
             var avg = groupedStatistics.Select(c => String.Format("{0}", _statisticsCalculator.GetWeightedAvarage(c)));
-            sb.AppendLine(String.Format("{0}\t{1}", "Weighted Average", String.Join(_separator, avg)));
+            sb.AppendLine(String.Format("{0};{1}", "Weighted Average", String.Join(_separator, avg)));
 
             var weightedDelta = groupedStatistics.Select(c => String.Format("{0}", _statisticsCalculator.GetWeightedDelta(c)));
-            sb.AppendLine(String.Format("{0}\t{1}", "Avg Square Weighted Delta", String.Join(_separator, weightedDelta)));
+            sb.AppendLine(String.Format("{0};{1}", "Avg Square Weighted Delta", String.Join(_separator, weightedDelta)));
 
             var delta = groupedStatistics.Select(c => String.Format("{0}", _statisticsCalculator.GetDelta(c)));
-            sb.AppendLine(String.Format("{0}\t{1}", "Avg Square Delta", String.Join(_separator, delta)));
+            sb.AppendLine(String.Format("{0};{1}", "Avg Square Delta", String.Join(_separator, delta)));
 
             return sb.ToString();
         }       
@@ -83,7 +83,9 @@ namespace Sklady.Export
             {                
                 for (var j = 0; j < fileStatistics.Count; j++)
                 {
-                    res[i].Add(fileStatistics[j][i]);
+                    if (fileStatistics[j] != null)
+                        res[i].Add(fileStatistics[j][i]);
+                    else res[i].Add(0);
                 }
             }
 

@@ -113,7 +113,7 @@ namespace Sklady
                     var wordBeforeProcessing = _words[i];
 
                     if (settings.PhoneticsMode)
-                            _words[i] = _phoneticProcessor.Process(_words[i], isCheckbox); // In case of phonetics mode make corresponding replacements
+                        _words[i] = _phoneticProcessor.Process(_words[i], isCheckbox); // In case of phonetics mode make corresponding replacements
 
                     _words[i] = _phoneticProcessor.ProcessNonStableCharacters(_words[i], settings.PhoneticsMode); // Replace some chars according to their power
 
@@ -156,7 +156,7 @@ namespace Sklady
                 {
                     OnErrorOccured?.Invoke(ex, _words[i], FileName);
                 }
-            });
+             });
 
             OnWordAnalyzed?.Invoke(_words.Length, _words.Length, FileName);
 

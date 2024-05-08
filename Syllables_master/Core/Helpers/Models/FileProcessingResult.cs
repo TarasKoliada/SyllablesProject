@@ -13,6 +13,7 @@ namespace Sklady.Models
         private List<AnalyzeResults> _cvvResults;
         private List<double> _candVSums;
         private List<string> _transcribedToUkrainian;
+        private int _syllablesCount = 0;
 
         private ResultsExporter exporter;
 
@@ -28,6 +29,7 @@ namespace Sklady.Models
 
         public void DisposeReadableResults()
         {
+            _syllablesCount = SyllablesCount;
             foreach (var res in ReadableResults)
             {
                 res.Dispose();
@@ -35,7 +37,12 @@ namespace Sklady.Models
 
             ReadableResults.Clear();
         }
+        /*public void DisposeTranscribedresults()
+        {
+            _transcribedToUkrainian.Clear();
+            _transcribedToUkrainian = null;
 
+        }*/
         public void DisposeCvvResults()
         {
             foreach (var res in CvvResults)
@@ -48,7 +55,7 @@ namespace Sklady.Models
 
         public void Dispose()
         {
-            var itemsToDispose = new List<List<AnalyzeResults>>
+           /* var itemsToDispose = new List<List<AnalyzeResults>>
             {
                 //ReadableResults,
                 CvvResults,
@@ -63,7 +70,7 @@ namespace Sklady.Models
                 }
 
                 item.Clear();
-            }
+            }*/
 
             ReadableResults = null;
             CvvResults = null;
@@ -113,7 +120,13 @@ namespace Sklady.Models
         {
             get
             {
-                return ReadableResults.Sum(r => r.Syllables.Length);
+                //return ReadableResults.Sum(r => r.Syllables.Length);
+                if (ReadableResults.Count != 0)
+                {
+                    return ReadableResults.Sum(r => r.Syllables.Length);
+                }
+                else return _syllablesCount;
+
             }
         }
 

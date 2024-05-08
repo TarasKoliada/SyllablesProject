@@ -116,10 +116,11 @@ namespace Sklady
                         TranscribedToUkrainianSpelling = transcriberToUkrainianSpelling,
                         FileName = textAnalyzer.FileName
                     });
-
+                    
                     res.DisposeReadableResults();
                     res.DisposeCvvResults();
-
+                    //res.DisposeTranscribedresults();
+ 
                     UpdateMainProgressBar(analyzers.Count);
                 }
 

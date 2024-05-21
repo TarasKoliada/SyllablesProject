@@ -47,13 +47,13 @@ namespace Sklady.TextProcessors
                 {'д', ProcessCharacterD},
                 {'ж', ProcessCharacterZh},
                 {'з', ProcessCharacterZ},
-                {'и', (str, index) => 'і'},
-                {'щ', (str, index) => { res.Append("шч"); return '\0'; }},
-                {'ъ', (str, index) => 'а'},
+                //{'и', (str, index) => 'і'},
+                //{'щ', (str, index) => { res.Append("шт"); return '\0'; }},
+                //{'ъ', (str, index) => 'а'},
                 {'ь', (str, index) => '\0'},
-                {'й', (str, index) => 'j'},
-                {'ю', (str, index) => { res.Append("jу"); return '\0'; }},
-                {'я', (str, index) => { res.Append("jа"); return '\0'; }},
+                //{'й', (str, index) => 'j'},
+                //{'ю', (str, index) => { res.Append("jу"); return '\0'; }},
+                //{'я', (str, index) => { res.Append("jа"); return '\0'; }},
             };
         }
         private bool IsFirstLetterOfWord(string input, int index) => index == 0 || input[index - 1] == ' ';

@@ -22,6 +22,7 @@ namespace Core.TextProcessors.Transcribers
                 {"jе", "JЕ"},
                 {"jа", "JА"},
                 {"и", "І"},
+                {"ё", "JO"},
                 {"е", "JЕ"},
                 {"э", "Е"},
                 {"ю", "JУ"},

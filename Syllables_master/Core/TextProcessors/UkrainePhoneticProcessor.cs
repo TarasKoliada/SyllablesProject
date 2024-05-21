@@ -82,17 +82,7 @@ namespace Sklady.TextProcessors
             return res;
         }
 
-        //This method do returns processed word withoud processed letter 'j' if it exists
-        public string ProcessWithoutJ(string word) 
-        {
-            var res = ProcessDoubleConsonants(word);
-            res = ProcessDzDj(res);
-            res = ReductionReplacements(res);
-            res = AsymilativeReplacements(res);
-            res = ProcessV(res);
 
-            return res;
-        }
         private bool ContainsOnlyUkrainianLetters(string word)
         {
             return Regex.IsMatch(word, @"^[а-яґєіїй']+$");
@@ -134,10 +124,10 @@ namespace Sklady.TextProcessors
             input = ReplacePhoneticCharacter('ю', "jу", input);
             input = ReplacePhoneticCharacter('я', "jа", input);
             input = ReplacePhoneticCharacter('є', "jе", input);            
-            input = Regex.Replace(input, "ї", "і");
-            input = Regex.Replace(input, "щ", "шч");
-            input = Regex.Replace(input, "ю", "jy");
-            input = Regex.Replace(input, "я", "ja");
+            //input = Regex.Replace(input, "ї", "і");
+            //input = Regex.Replace(input, "щ", "шч");
+            //input = Regex.Replace(input, "ю", "jy");
+            //input = Regex.Replace(input, "я", "ja");
 
             return input;
         }

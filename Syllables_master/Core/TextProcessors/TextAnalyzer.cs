@@ -119,15 +119,19 @@ namespace Sklady
 
                     UpdateLetters(result.Letters, _words[i]);
 
-                    var tempWord = _words[i];
+                    var tempWord = RemoveAposWord(ref _words[i]);
+
+                    // var tempWord = _words[i];
 
 
-                    if (settings.PhoneticsMode)
+                    /*if (settings.PhoneticsMode)
                     {
                         RemoveAposWord(tempWord);
-                    }
+                    }*/
+                    result.TranscribedToUkrainianSpellingWords[i] = TranscribeWord(tempWord);
 
-                    var syllables = _wordAnalyzer.GetSyllables(tempWord);
+                    //GetSyllables method gets transcribed to ukrainian word converted to lowercase (excluding 'Y' - it is in lowercase)
+                    var syllables = _wordAnalyzer.GetSyllables(new string(result.TranscribedToUkrainianSpellingWords[i].Select(c => c != 'Y' ? char.ToLower(c) : c).ToArray()));
 
                     result.CvvResults[i].Word = _words[i];
                     result.CvvResults[i].Syllables = RemoveApos(syllables);
@@ -138,8 +142,10 @@ namespace Sklady
 
                     //This part of code check if chosen language is Ancient or Ukrainian. If it is - it pass 'wordBeforeProcessing' to transcribe, else - tempWord. 'i' - current word to trancsribe index
                     //It is made to provide correct transcribing due to some code shortcomings made in UkrainePhoneticProcessor and AncientPhoneticProcessor classes
-                    var isUkrainianOrAncient = settings.Language == Languages.Ukraine || settings.Language == Languages.Ancient;
-                    TranscribeWord(isUkrainianOrAncient, ref result, isUkrainianOrAncient ? wordBeforeProcessing : tempWord, i);
+                    // var isUkrainianOrAncient = settings.Language == Languages.Ukraine || settings.Language == Languages.Ancient;
+                    //TranscribeWord(isUkrainianOrAncient, ref result, isUkrainianOrAncient ? wordBeforeProcessing : tempWord, i);
+
+                    //result.TranscribedToUkrainianSpellingWords[i] = TranscribeWord(tempWord);
 
 
                     if (result.ReadableResults[i].Syllables == null)
@@ -165,7 +171,7 @@ namespace Sklady
             return result;
         }
 
-        private string TranscribeWord(bool isUkrainianOrAncient, ref FileProcessingResult fileProcessingResult, string word, int wordIndex)
+        /*private string TranscribeWord(bool isUkrainianOrAncient, ref FileProcessingResult fileProcessingResult, string word, int wordIndex)
         {
             if (isUkrainianOrAncient)
             {
@@ -183,7 +189,8 @@ namespace Sklady
                 fileProcessingResult.TranscribedToUkrainianSpellingWords[wordIndex] = _phoneticProcessor.TranscribeToUkrainianSpelling(word, settings.Language);
             }
             return fileProcessingResult.TranscribedToUkrainianSpellingWords[wordIndex];
-        }
+        }*/
+        private string TranscribeWord(string word) => _phoneticProcessor.TranscribeToUkrainianSpelling(word, settings.Language);
 
         private void UpdateLetters(Dictionary<char, int> letters, string word)
         {
@@ -262,10 +269,10 @@ namespace Sklady
             return result;
         }
 
-        private string RemoveAposWord(string input)
+        private string RemoveAposWord(ref string input)
         {
-            //return MyRegex().Replace(input, "");
-            return input.Replace("'", "");
+            input = input.Replace("'", "");//return MyRegex().Replace(input, "");
+            return input;
         }
 
         //[GeneratedRegex(@"\'")]

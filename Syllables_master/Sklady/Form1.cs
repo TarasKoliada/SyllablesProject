@@ -14,7 +14,7 @@ using Sklady.Models;
 using System.Text.RegularExpressions;
 using System.Globalization;
 using Sklady.TextProcessors;
-
+using System.Reflection;
 
 namespace Sklady
 {

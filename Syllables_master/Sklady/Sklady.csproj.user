@@ -13,6 +13,7 @@
   </PropertyGroup>
   <PropertyGroup>
     <EnableSecurityDebugging>false</EnableSecurityDebugging>
+    <_LastSelectedProfileId>D:\Laboratories\Дипломна\SyllablesProgram\SyllablesProject\Syllables_master\Sklady\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
   </PropertyGroup>
   <ItemGroup>
     <Compile Update="CharactersBase.cs">

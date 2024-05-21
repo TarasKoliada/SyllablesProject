@@ -16,8 +16,8 @@ namespace Sklady.TextProcessors
 
         public override string Process ( string input, bool[] isCheckbox )
         {
-            var res = HandleJ(input);
-            res = HandleSolidAndSoftSigns(res);
+            //var res = HandleJ(input);
+            var res = HandleSolidAndSoftSigns(input);
             res = ReplaceAncientSymbols(res);    
 
             return res;

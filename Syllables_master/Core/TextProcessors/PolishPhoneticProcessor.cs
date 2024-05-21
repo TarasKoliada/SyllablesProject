@@ -55,7 +55,7 @@ namespace Sklady.TextProcessors
         private string ReductionReplacements ( string res, bool[] isCheckbox)
         {
             string optionalCharG = "ґ";
-            string optionalCharL = "u";
+            string optionalCharL = "л";
             string optionalCharE = "ë";
             string optionalCharA = "ö";
             
@@ -67,7 +67,7 @@ namespace Sklady.TextProcessors
 
             if (CheckBoxData.PolishLetter_L_CheckboxState == true)
             {
-                optionalCharL = "л";
+                optionalCharL = "u";
             }
 
             if (CheckBoxData.PolishLetter_E_CheckboxState == true)

@@ -1,0 +1,3 @@
+D:\Laboratories\Дипломна\SyllablesProgram\SyllablesProject\Syllables_master\Core\bin\Release\net7.0\publish\Core.dll
+D:\Laboratories\Дипломна\SyllablesProgram\SyllablesProject\Syllables_master\Core\bin\Release\net7.0\publish\Core.deps.json
+D:\Laboratories\Дипломна\SyllablesProgram\SyllablesProject\Syllables_master\Core\bin\Release\net7.0\publish\Core.pdb

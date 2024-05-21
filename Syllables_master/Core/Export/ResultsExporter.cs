@@ -171,8 +171,7 @@ namespace Sklady.Export
             return anResults;
         }
 
-        //TEST WITH BIG TEXTS
-        public string GetTranscribedToUkrainianSingleString(List<string> transcribedWords)
+        public string GetTranscribedToUkrainianText(List<string> transcribedWords)
         {
             return string.Join(" ", transcribedWords);
         }

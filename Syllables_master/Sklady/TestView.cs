@@ -46,7 +46,7 @@ namespace Sklady
             (var resCVV, _) = export.GetSyllablesCVVUnified(result.CvvResults);
             richTextBox3.Text = resCVV;
 
-            richTextBox4.Text = export.GetTranscribedToUkrainianSingleString(result.TranscribedToUkrainianSpellingWords);
+            richTextBox4.Text = export.GetTranscribedToUkrainianText(result.TranscribedToUkrainianSpellingWords);
         }
 
     }

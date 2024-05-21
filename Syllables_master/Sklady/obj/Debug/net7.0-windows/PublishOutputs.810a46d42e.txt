@@ -1,0 +1,8 @@
+D:\Laboratories\Дипломна\SyllablesProgram\SyllablesProject\Syllables_master\Sklady\bin\Debug\net7.0-windows\publish-debug\Sklady.exe
+D:\Laboratories\Дипломна\SyllablesProgram\SyllablesProject\Syllables_master\Sklady\bin\Debug\net7.0-windows\publish-debug\Sklady.dll
+D:\Laboratories\Дипломна\SyllablesProgram\SyllablesProject\Syllables_master\Sklady\bin\Debug\net7.0-windows\publish-debug\Sklady.deps.json
+D:\Laboratories\Дипломна\SyllablesProgram\SyllablesProject\Syllables_master\Sklady\bin\Debug\net7.0-windows\publish-debug\Sklady.runtimeconfig.json
+D:\Laboratories\Дипломна\SyllablesProgram\SyllablesProject\Syllables_master\Sklady\bin\Debug\net7.0-windows\publish-debug\Sklady.dll.config
+D:\Laboratories\Дипломна\SyllablesProgram\SyllablesProject\Syllables_master\Sklady\bin\Debug\net7.0-windows\publish-debug\Sklady.pdb
+D:\Laboratories\Дипломна\SyllablesProgram\SyllablesProject\Syllables_master\Sklady\bin\Debug\net7.0-windows\publish-debug\Core.dll
+D:\Laboratories\Дипломна\SyllablesProgram\SyllablesProject\Syllables_master\Sklady\bin\Debug\net7.0-windows\publish-debug\Core.pdb

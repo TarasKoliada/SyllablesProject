@@ -3,13 +3,6 @@ using System.Text;
 
 namespace Core.TextProcessors.Transcribers
 {
-    //TODO
-    /*CHECK correct RemoveJAfterConsonant method working (which checks index of modified element)
-     * CHECK word file with questions to the teacher
-     * THINK what word also should be added to charsToReplace dictionary
-     * also run program and wriite word 'вольяжный' it must be волjажниY --- DONE (NEED MORE TESTING)!!!
-     * TEST program with other words
-     */
     public class RussianTranscriber : ISpellingTranscriber
     {
         private readonly Dictionary<string, string> charsToReplace;

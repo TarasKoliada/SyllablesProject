@@ -24,6 +24,7 @@ namespace Core.TextProcessors.Transcribers
                 {"я", "JА"},
                 {"j", "J"},
                 {"щ", "ШЧ"},
+                {"шч", "ШЧ"},
                 {"ь", ""} 
                 
             };

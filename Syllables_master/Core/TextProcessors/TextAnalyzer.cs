@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Sklady
 {
@@ -39,7 +40,7 @@ namespace Sklady
 
             switch (settings.Language)
             {
-                case Languages.Ukraine:
+                case Languages.Ukrainian:
                     _phoneticProcessor = new UkrainePhoneticProcessor(table, isCheckBox);
                     break;
                 case Languages.Russian:
@@ -110,21 +111,28 @@ namespace Sklady
                 {
                     UpdateRepetitions(result.Repetitions, _words[i]);
 
-                    var wordBeforeProcessing = _words[i];
 
                     if (settings.PhoneticsMode)
                         _words[i] = _phoneticProcessor.Process(_words[i], isCheckbox); // In case of phonetics mode make corresponding replacements
 
                     _words[i] = _phoneticProcessor.ProcessNonStableCharacters(_words[i], settings.PhoneticsMode); // Replace some chars according to their power
 
-                    UpdateLetters(result.Letters, _words[i]);
+                    // if lang = bulgarian and current word is 'в' - pass current word and the next char the new word starts with
+                    if (settings.Language == Languages.Bulgarian && _words[i] == "ф")
+                        _words[i] = ProcessBulgarianCase(_words[i], _phoneticProcessor.Process(_words[i + 1], isCheckbox)[0]);
 
-                    var tempWord = RemoveAposWord(ref _words[i]);
+                    //UpdateLetters(result.Letters, _words[i]);
 
-                    result.TranscribedToUkrainianSpellingWords[i] = TranscribeWord(tempWord);
+                    //var tempWord = RemoveAposWord(ref _words[i]);
+
+                    result.TranscribedToUkrainianSpellingWords[i] = TranscribeWord(RemoveAposWord(ref _words[i]));
 
                     //GetSyllables method gets transcribed to ukrainian word converted to lowercase (excluding 'Y' - it is in lowercase)
                     var syllables = _wordAnalyzer.GetSyllables(new string(result.TranscribedToUkrainianSpellingWords[i].Select(c => c != 'Y' ? char.ToLower(c) : c).ToArray()));
+
+                    //_words[i] = result.TranscribedToUkrainianSpellingWords[i].ToLower();
+
+                    UpdateLetters(result.Letters, _words[i]);
 
                     result.CvvResults[i].Word = _words[i];
                     result.CvvResults[i].Syllables = RemoveApos(syllables);
@@ -137,10 +145,11 @@ namespace Sklady
                         throw new Exception("Syllables are null");
                     }
 
-                    if (i % invokeStep == 0)
+                    /*if (i % invokeStep == 0)
                     {
                         OnWordAnalyzed?.Invoke(i + 1, _words.Length, FileName);
-                    }
+                    }*/
+                    OnWordAnalyzed?.Invoke(i + 1, _words.Length, FileName);
                 }
                 catch (Exception ex)
                 {
@@ -156,6 +165,16 @@ namespace Sklady
         }
         
         private string TranscribeWord(string word) => _phoneticProcessor.TranscribeToUkrainianSpelling(word, settings.Language);
+
+        private string ProcessBulgarianCase(string currentWordF, char charTheNextWordStartsWith)
+        {
+            var processor = _phoneticProcessor as BulgraianProneticProcessor;
+            if (processor != null) 
+            {
+                return processor.ProcessSingleV(currentWordF, charTheNextWordStartsWith);
+            }
+            return currentWordF;
+        }
 
         private void UpdateLetters(Dictionary<char, int> letters, string word)
         {
@@ -189,7 +208,7 @@ namespace Sklady
                 { 'ё', 'о' }
             };
 
-            if (settings.Language == Languages.Russian)
+            if (settings.Language == Languages.Russian)//
                 predefinedPairs.Add('е', 'э');
 
             return predefinedPairs.TryGetValue(letter, out char value) ? value : letter;

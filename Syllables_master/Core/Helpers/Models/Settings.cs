@@ -26,7 +26,7 @@ namespace Sklady.Models
             SeparateAfterFirst = true;
             SyllableSeparator = "-";
             PhoneticsMode = true;
-            Language = Languages.Ukraine;
+            Language = Languages.Ukrainian;
             LastOpenFolderPath = "";
             LastSaveFolderPath = "";
             AbsoluteMeasures = false;

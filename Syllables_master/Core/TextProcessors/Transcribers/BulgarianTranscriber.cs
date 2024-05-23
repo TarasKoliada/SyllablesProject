@@ -15,11 +15,15 @@ namespace Core.TextProcessors.Transcribers
         {
             charsToReplace = new Dictionary<string, string>
             {
+                {"jа", "JА"},
+                {"jу", "JУ"},
                 {"я", "JА"},
                 {"ю", "JУ"},
                 {"и", "І"},
                 {"щ", "ШТ"},
+                {"шт", "ШТ"},
                 {"й", "J"},
+                {"j", "J"},
                 {"ъ", "А"},
             };
             consonants = new HashSet<char>
@@ -28,14 +32,14 @@ namespace Core.TextProcessors.Transcribers
         public string Transcribe(string inputWord)
         {
             var currentWord = new StringBuilder(inputWord);
-
+            
             foreach (var charsPair in charsToReplace)
                 currentWord.Replace(charsPair.Key, charsPair.Value);
 
             var transcribedWord = RemoveJAfterConsonant(currentWord.ToString());
+            transcribedWord = RemoveConsecutiveDuplicates(transcribedWord);
 
             return transcribedWord;
-            //return inputWord;
         }
 
         private string RemoveJAfterConsonant(string word)
@@ -58,6 +62,29 @@ namespace Core.TextProcessors.Transcribers
                 }
             }
             return word;
+        }
+
+        //Remove chars duplication like `нн`, 'лл' ...
+        public static string RemoveConsecutiveDuplicates(string input)
+        {
+            if (string.IsNullOrEmpty(input))
+                return input;
+
+            StringBuilder result = new StringBuilder();
+            char previousChar = input[0];
+            result.Append(previousChar);
+
+            for (int i = 1; i < input.Length; i++)
+            {
+                char currentChar = input[i];
+                if (currentChar != previousChar)
+                {
+                    result.Append(currentChar);
+                    previousChar = currentChar;
+                }
+            }
+
+            return result.ToString();
         }
     }
 }

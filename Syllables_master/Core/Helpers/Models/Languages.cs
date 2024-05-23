@@ -8,7 +8,7 @@ namespace Sklady
 {
     public enum Languages
     {
-        Ukraine,
+        Ukrainian,
         Russian,
         Ancient,
         English,

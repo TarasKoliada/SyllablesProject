@@ -9,11 +9,15 @@ namespace Sklady.TextProcessors
 {
     public class BulgraianProneticProcessor : PhoneticProcessorBase
     {
-        private readonly char[] specialChars = new char[] { 'п', 'ф', 'т', 'с', 'ц', 'ш', 'ч', 'к' };
-        private Dictionary<char, Func<string, int, char>> characterMap;
+        private readonly char[] specialChars;
+        private readonly char[] ringingSounds;
+        private Dictionary<char, Func<string, int, string>> characterMap;
         public BulgraianProneticProcessor(CharactersTable charactersTable, bool[] isCheckbox)
             : base(charactersTable, isCheckbox)
-        {    }
+        {   
+            specialChars = new char[] { 'п', 'ф', 'т', 'с', 'ц', 'ш', 'ч', 'к' };
+            ringingSounds = new char[] { 'б', 'в', 'г', 'ґ', 'д', 'ж', 'з'}; //дзвінкі звуки
+        }
 
 
         
@@ -23,23 +27,25 @@ namespace Sklady.TextProcessors
             var res = new StringBuilder(input.Length);
             GenerateCharacterMap(res);
 
+
             foreach (char c in input)
             {
                 if (characterMap.TryGetValue(c, out var processChar))
                 {
                     var processedChar = processChar(input, res.Length);
-                    if (processedChar != '\0')
+                    if (processedChar != "\0")
                         res.Append(processedChar);
                 }
                 else res.Append(c);
             }
+            var result = ProcessTwoSoundingLetters(res.ToString());
 
-            return res.ToString();
+            return result;
         }
 
         private void GenerateCharacterMap(StringBuilder res)
         {
-            characterMap = new Dictionary<char, Func<string, int, char>>()
+            characterMap = new Dictionary<char, Func<string, int, string>>()
             {
                 {'б', ProcessCharacterB},
                 {'в', ProcessCharacterV},
@@ -47,61 +53,65 @@ namespace Sklady.TextProcessors
                 {'д', ProcessCharacterD},
                 {'ж', ProcessCharacterZh},
                 {'з', ProcessCharacterZ},
-                //{'и', (str, index) => 'і'},
-                //{'щ', (str, index) => { res.Append("шт"); return '\0'; }},
-                //{'ъ', (str, index) => 'а'},
-                {'ь', (str, index) => '\0'},
-                //{'й', (str, index) => 'j'},
-                //{'ю', (str, index) => { res.Append("jу"); return '\0'; }},
-                //{'я', (str, index) => { res.Append("jа"); return '\0'; }},
+                {'щ', ProcessCharacterShch},
+                {'ь', (str, index) => "\0"},
             };
         }
-        private bool IsFirstLetterOfWord(string input, int index) => index == 0 || input[index - 1] == ' ';
 
-        private bool IsInMiddleOfWord(string input, int index)
-            => index > 0 && index < input.Length - 1 && input[index - 1] != ' ' && input[index + 1] != ' ';
+        //This method processing single ukrainian sound 'В'
+        public string ProcessSingleV(string char_F, char nextWordFirstChar)
+        {
+            return ringingSounds.Contains(nextWordFirstChar) ? "в" : char_F; 
+        }
 
-        private bool IsAfterSpecialCharacter(string input, int index)
-            => IsInMiddleOfWord(input, index - 1) && IsInMiddleOfWord(input, index) && specialChars.Contains(input[index - 1]);
+        private bool IsBeforeSpecialCharacter(string input, int index) => specialChars.Contains(input[index + 1]);
 
-        private bool IsBeforeSpecialCharacter(string input, int index)
-            => IsInMiddleOfWord(input, index) && IsInMiddleOfWord(input, index + 1) && specialChars.Contains(input[index + 1]);
+        private bool IsLastLetterOfWord(string input, int index) => index + 1 == input.Length || input[index + 1] == ' ';
 
-        private bool IsLastLetterOfWord(string input, int index)
-            => index + 1 == input.Length || input[index + 1] == ' ';
+        private bool HasOtherSymbolsInString(int stringLength) => stringLength > 1;
 
         public override string RemoveTechnicalCharacters(string word) => word;
 
 
         //remove all characters that do not belong to the Bulgarian alphabet
         public override string ProcessNonStableCharacters(string word, bool isPhoneticsMode = true)
-        {
-            string bulgarianAlphabetPattern = @"[А-Яа-яЁёҐґJjІі]";
+        {    
+            /*string bulgarianAlphabetPattern = @"[А-Яа-яЁёҐґJjІіVv]";
             var builder = new StringBuilder();
             foreach (char c in word.Where(c => Regex.IsMatch(c.ToString(), bulgarianAlphabetPattern)))
-                builder.Append(c);
+                builder.Append(c);*/
 
-            return builder.ToString();
+            word = base.ProcessJ(word);
+
+            return word;
         }
 
-        private char ProcessCharacterB(string input, int index)
-            => IsLastLetterOfWord(input, index) || IsBeforeSpecialCharacter(input, index) ? 'п' : 'б';
+        private string ProcessCharacterB(string input, int index)
+            => IsLastLetterOfWord(input, index) || IsBeforeSpecialCharacter(input, index) ? "п" : "б";
 
-        private char ProcessCharacterV(string input, int index)
-            => IsLastLetterOfWord(input, index) /*|| IsFirstLetterOfWord(input, index)*/ || IsBeforeSpecialCharacter(input, index) ? 'ф' : 'в';
+        private string ProcessCharacterV(string input, int index)
+            => IsLastLetterOfWord(input, index) || IsBeforeSpecialCharacter(input, index) && HasOtherSymbolsInString(input.Length) ? "ф" : "v";
 
-        private char ProcessCharacterG(string input, int index)
-            => IsLastLetterOfWord(input, index) || IsBeforeSpecialCharacter(input, index)
-                ? 'к' : 'ґ';/*(IsFirstLetterOfWord(input, index) ? 'ґ' : 'г');*/
+        private string ProcessCharacterG(string input, int index)
+            => IsLastLetterOfWord(input, index) || IsBeforeSpecialCharacter(input, index) ? "к" : "ґ";
 
-        private char ProcessCharacterD(string input, int index)
-            => IsLastLetterOfWord(input, index) || IsBeforeSpecialCharacter(input, index) ? 'т' : 'д';
+        private string ProcessCharacterD(string input, int index)
+            => IsLastLetterOfWord(input, index) || IsBeforeSpecialCharacter(input, index) ? "т" : "д";
 
 
-        private char ProcessCharacterZh(string input, int index)
-            => IsLastLetterOfWord(input, index) || IsBeforeSpecialCharacter(input, index) ? 'ш' : 'ж';
+        private string ProcessCharacterZh(string input, int index)
+            => IsLastLetterOfWord(input, index) || IsBeforeSpecialCharacter(input, index) ? "ш" : "ж";
 
-        private char ProcessCharacterZ(string input, int index)
-            => IsLastLetterOfWord(input, index) || IsBeforeSpecialCharacter(input, index) ? 'с' : 'з';
+        private string ProcessCharacterZ(string input, int index)
+            => IsLastLetterOfWord(input, index) || IsBeforeSpecialCharacter(input, index) ? "с" : "з";
+
+        private string ProcessCharacterShch(string input, int index) => "шт";
+
+        private string ProcessTwoSoundingLetters(string input)
+        {
+            input = ReplacePhoneticCharacter('ю', "jу", input);
+            input = ReplacePhoneticCharacter('я', "jа", input);
+            return input;
+        }
     }
 }
